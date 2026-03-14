@@ -138,10 +138,10 @@ CATEGORY_CONFIG = {
 }
 
 COLLECTION_NAMES = {
-    "COMPLETED": "AI: Completed",
-    "IN_PROGRESS": "AI: In Progress",
-    "ENDLESS": "AI: Endless",
-    "NOT_A_GAME": "AI: Not a Game",
+    "COMPLETED": "SBO: Completed",
+    "IN_PROGRESS": "SBO: In Progress",
+    "ENDLESS": "SBO: Endless",
+    "NOT_A_GAME": "SBO: Not a Game",
 }
 
 
@@ -321,7 +321,7 @@ class SteamOrganizerApp(ctk.CTk):
                 existing = organizer.get_existing_collections(self.cloud_data)
                 user_hints = {}
                 for name, coll in existing.items():
-                    if not name.startswith("AI: "):
+                    if not name.startswith("SBO:"):
                         for appid in coll.get("added", []):
                             user_hints[appid] = name
             else:

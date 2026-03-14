@@ -468,7 +468,7 @@ def write_collections_to_steam(
     Write classification results as Steam collections.
 
     categories: {"COMPLETED": [...], "IN_PROGRESS": [...], "ENDLESS": [...]}
-    collection_names: {"COMPLETED": "AI: Completed", ...}
+    collection_names: {"COMPLETED": "SBO: Completed", ...}
     """
     existing = get_existing_collections(cloud_data)
     version = get_next_version(cloud_data)
@@ -1248,10 +1248,10 @@ def write_steam_collections(cloud_data: list, cloud_path: Path, categories: dict
     console.print(
         "[bold]Ready to update your Steam library collections.[/bold]\n"
         "  This will create/update these collections in Steam:\n"
-        "    [green]AI: Completed[/green]\n"
-        "    [yellow]AI: In Progress[/yellow]\n"
-        "    [cyan]AI: Endless[/cyan]\n"
-        "    [dim]AI: Not a Game[/dim]\n"
+        "    [green]SBO: Completed[/green]\n"
+        "    [yellow]SBO: In Progress[/yellow]\n"
+        "    [cyan]SBO: Endless[/cyan]\n"
+        "    [dim]SBO: Not a Game[/dim]\n"
         "\n"
         "  [dim]Your existing collections will NOT be touched — only 'AI:' prefixed ones are managed.\n"
         "  If these collections already exist from a previous run, they will be updated.\n"
@@ -1266,10 +1266,10 @@ def write_steam_collections(cloud_data: list, cloud_path: Path, categories: dict
             )
         else:
             collection_names = {
-                "COMPLETED": "AI: Completed",
-                "IN_PROGRESS": "AI: In Progress",
-                "ENDLESS": "AI: Endless",
-                "NOT_A_GAME": "AI: Not a Game",
+                "COMPLETED": "SBO: Completed",
+                "IN_PROGRESS": "SBO: In Progress",
+                "ENDLESS": "SBO: Endless",
+                "NOT_A_GAME": "SBO: Not a Game",
             }
             write_collections_to_steam(
                 cloud_data, cloud_path, categories, collection_names
@@ -1463,7 +1463,7 @@ def main():
             user_collections = {
                 name: coll
                 for name, coll in existing_collections.items()
-                if not name.startswith("AI: ")
+                if not name.startswith("SBO:")
             }
             if user_collections:
                 console.print("[dim]Found existing Steam collections:[/dim]")
