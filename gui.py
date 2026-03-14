@@ -277,8 +277,10 @@ class SteamOrganizerApp(ctk.CTk):
         state = "normal" if enabled else "disabled"
         self.simple_view.classify_btn.configure(state=state)
         self.simple_view.write_btn.configure(state=state)
+        self.simple_view.refresh_btn.configure(state=state)
         self.detailed_view.classify_btn.configure(state=state)
         self.detailed_view.write_btn.configure(state=state)
+        self.detailed_view.refresh_btn.configure(state=state)
 
     def _log(self, message: str):
         """Append to the log in detailed view."""
@@ -292,14 +294,19 @@ class SteamOrganizerApp(ctk.CTk):
 
     # ── Background operations ──
 
-    def start_classify(self):
+    def start_classify(self, force_refresh: bool = False):
         if self._running:
             return
         self._running = True
+        self._force_refresh = force_refresh
         self._set_buttons_enabled(False)
         self._set_progress(0)
         thread = threading.Thread(target=self._classify_worker, daemon=True)
         thread.start()
+
+    def start_refresh(self):
+        """Re-fetch library from Steam API, then classify."""
+        self.start_classify(force_refresh=True)
 
     def _progress_callback(self, event, data):
         """Called from background thread — schedules GUI update on main thread."""
@@ -357,15 +364,9 @@ class SteamOrganizerApp(ctk.CTk):
             else:
                 user_hints = {}
 
-            # Determine cache usage: auto-use if <24h, otherwise refresh
-            steam_id = self.config["steam_id"]
-            cache_result = organizer.load_library_cache(steam_id)
-            use_cache = False
-            if cache_result:
-                _, age_hours = cache_result
-                use_cache = age_hours < 24
-
-            self.after(0, self._log, "Fetching library data...")
+            # Use cache unless user clicked Refresh
+            use_cache = not self._force_refresh
+            self.after(0, self._log, "Refreshing library from Steam..." if self._force_refresh else "Loading library data...")
             self.games_data = organizer.fetch_library_data(
                 self.config, use_cache=use_cache,
                 progress_callback=self._progress_callback,
@@ -539,6 +540,14 @@ class SimpleView(ctk.CTkFrame):
             fg_color="#6b5b3e", hover_color="#5a4c33",
             command=parent.open_override_dialog,
         ).pack(side="left", padx=5)
+
+        self.refresh_btn = ctk.CTkButton(
+            action_frame, text="↻  Refresh", width=100, height=36,
+            fg_color="#4a4a4a", hover_color="#5a5a5a",
+            command=parent.start_refresh,
+        )
+        self.refresh_btn.pack(side="left", padx=5)
+        Tooltip(self.refresh_btn, "Re-fetch library data from Steam.\nUse this if you've played new games\nsince the last run.")
 
         # Progress + status
         status_frame = ctk.CTkFrame(self, fg_color="transparent")
@@ -732,6 +741,14 @@ class DetailedView(ctk.CTkFrame):
             command=self.app.start_write_to_steam,
         )
         self.write_btn.pack(side="left", padx=10)
+
+        self.refresh_btn = ctk.CTkButton(
+            btn_frame, text="↻  Refresh Library", width=160, height=40,
+            fg_color="#4a4a4a", hover_color="#5a5a5a",
+            command=self.app.start_refresh,
+        )
+        self.refresh_btn.pack(side="left", padx=10)
+        Tooltip(self.refresh_btn, "Re-fetch library data from Steam.\nUse this if you've played new games\nsince the last run.")
 
     def _build_results_tab(self):
         tab = self.tabview.add("  Results  ")
