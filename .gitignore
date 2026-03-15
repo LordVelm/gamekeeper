@@ -6,3 +6,4 @@ dist/
 build/
 *.spec
 *.pyc
+steam_library_organized.json
