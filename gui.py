@@ -12,9 +12,11 @@ import tkinter as tk
 from tkinter import messagebox
 from pathlib import Path
 import webbrowser
+from concurrent.futures import ThreadPoolExecutor
 
 import ctypes
 import customtkinter as ctk
+from PIL import Image as PILImage
 
 import organizer
 
@@ -118,6 +120,55 @@ THEMES = {
 }
 
 T = dict(THEMES["dark"])
+
+
+# ── Image manager ────────────────────────────────────────────────────────────
+
+class ImageManager:
+    """Downloads, caches, and serves game cover art thumbnails."""
+
+    THUMB_SIZE = (120, 56)
+    VIBE_SIZE = (230, 107)
+    MAX_CACHED = 400
+
+    def __init__(self):
+        self._images: dict[int, ctk.CTkImage] = {}
+        self._executor = ThreadPoolExecutor(max_workers=4, thread_name_prefix="img")
+        self._placeholder = None
+
+    def get_placeholder(self) -> ctk.CTkImage:
+        if self._placeholder is None:
+            img = PILImage.new("RGB", self.THUMB_SIZE, color=(42, 71, 94))
+            self._placeholder = ctk.CTkImage(light_image=img, dark_image=img,
+                                              size=self.THUMB_SIZE)
+        return self._placeholder
+
+    def load_async(self, appid: int, callback, size=None):
+        """Download image in background. callback(appid, ctk_image) on completion."""
+        size = size or self.THUMB_SIZE
+        cache_key = (appid, size)
+        cached = self._images.get(cache_key)
+        if cached:
+            callback(appid, cached)
+            return
+        self._executor.submit(self._download_and_convert, appid, size, callback)
+
+    def _download_and_convert(self, appid, size, callback):
+        path = organizer.download_header_image(appid)
+        if path and path.exists():
+            try:
+                pil_img = PILImage.open(path).resize(size, PILImage.LANCZOS)
+                ctk_img = ctk.CTkImage(light_image=pil_img, dark_image=pil_img,
+                                        size=size)
+                cache_key = (appid, size)
+                if len(self._images) >= self.MAX_CACHED:
+                    oldest = next(iter(self._images))
+                    del self._images[oldest]
+                self._images[cache_key] = ctk_img
+                callback(appid, ctk_img)
+            except Exception:
+                pass
+
 
 # ── Help button hints ────────────────────────────────────────────────────────
 
@@ -329,6 +380,7 @@ class SteamOrganizerApp(ctk.CTk):
 
         # ── Shared state ──
         self.config = None
+        self.image_manager = ImageManager()
         self.games_data = []
         self.categories = {}
         self.playtime_lookup = {}
@@ -982,7 +1034,9 @@ class DetailedView(ctk.CTkFrame):
         tab.grid_rowconfigure(1, weight=1)
 
         self.result_headers = {}
-        self.result_textboxes = {}
+        self.result_scroll_frames = {}
+        self._game_cards = {}  # appid -> img_label for async image updates
+
         for col, (cat_key, cfg) in enumerate(CATEGORY_CONFIG.items()):
             header = ctk.CTkLabel(tab, text=f"{cfg['label']} (0)",
                                   font=ctk.CTkFont(family=FONT_FAMILY, size=13, weight="bold"),
@@ -990,10 +1044,51 @@ class DetailedView(ctk.CTkFrame):
             header.grid(row=0, column=col, padx=5, pady=(8, 3), sticky="w")
             self.result_headers[cat_key] = header
 
-            textbox = ctk.CTkTextbox(tab, font=ctk.CTkFont(family=FONT_FAMILY, size=11))
-            textbox.grid(row=1, column=col, padx=5, pady=(0, 5), sticky="nsew")
-            textbox.configure(state="disabled")
-            self.result_textboxes[cat_key] = textbox
+            scroll = ctk.CTkScrollableFrame(tab, fg_color=T["bg_frame"])
+            scroll.grid(row=1, column=col, padx=5, pady=(0, 5), sticky="nsew")
+            self.result_scroll_frames[cat_key] = scroll
+
+    def _create_game_card(self, parent, appid: int, name: str, hours: float):
+        """Create a game card with thumbnail, name, and playtime."""
+        card = ctk.CTkFrame(parent, fg_color=T["bg_input"], corner_radius=4)
+        card.pack(fill="x", padx=2, pady=2)
+
+        # Thumbnail placeholder
+        img_label = ctk.CTkLabel(card, text="",
+                                  image=self.app.image_manager.get_placeholder(),
+                                  width=120, height=56)
+        img_label.pack(side="left", padx=(6, 8), pady=6)
+
+        # Text info
+        info = ctk.CTkFrame(card, fg_color="transparent")
+        info.pack(side="left", fill="both", expand=True, pady=6)
+
+        ctk.CTkLabel(info, text=name,
+                     font=ctk.CTkFont(family=FONT_FAMILY, size=11, weight="bold"),
+                     text_color=T["text_primary"],
+                     anchor="w", wraplength=120).pack(fill="x")
+
+        pt_text = f"{hours:.0f}h played" if hours >= 1 else "Not yet played"
+        ctk.CTkLabel(info, text=pt_text,
+                     font=ctk.CTkFont(family=FONT_FAMILY, size=10),
+                     text_color=T["text_secondary"],
+                     anchor="w").pack(fill="x")
+
+        # Store reference and request async image
+        self._game_cards[appid] = img_label
+        self.app.image_manager.load_async(
+            appid, lambda aid, img: self._on_image_loaded(aid, img))
+
+    def _on_image_loaded(self, appid: int, ctk_image):
+        """Thread-safe callback to update a card's thumbnail."""
+        def _update():
+            label = self._game_cards.get(appid)
+            if label and label.winfo_exists():
+                label.configure(image=ctk_image)
+        try:
+            self.after(0, _update)
+        except Exception:
+            pass
 
     def _build_overrides_tab(self):
         tab = self.tabview.add("  Overrides  ")
@@ -1136,19 +1231,22 @@ class DetailedView(ctk.CTkFrame):
         self.log_box.configure(state="disabled")
 
     def refresh(self, categories: dict, playtime_lookup: dict):
-        # Results tab
+        # Results tab — rebuild game cards
+        self._game_cards.clear()
+
         for cat_key, cfg in CATEGORY_CONFIG.items():
             games = categories.get(cat_key, [])
             self.result_headers[cat_key].configure(text=f"{cfg['label']} ({len(games)})")
 
-            tb = self.result_textboxes[cat_key]
-            tb.configure(state="normal")
-            tb.delete("1.0", "end")
+            scroll = self.result_scroll_frames[cat_key]
+            for w in scroll.winfo_children():
+                w.destroy()
+
             for g in games:
-                h = playtime_lookup.get(g.get("appid"), 0)
-                pt = f" ({h}h)" if h > 0 else ""
-                tb.insert("end", f"  {g.get('name', '?')}{pt}\n")
-            tb.configure(state="disabled")
+                appid = g.get("appid")
+                name = g.get("name", "?")
+                hours = playtime_lookup.get(appid, 0)
+                self._create_game_card(scroll, appid, name, hours)
 
         # Overrides tab
         self._refresh_overrides_list()
@@ -1214,10 +1312,15 @@ class VibeCheckView(ctk.CTkFrame):
 
         self.result_inner = ctk.CTkFrame(self.result_frame, fg_color="transparent")
 
+        # Cover art (larger size for the recommendation)
+        self._vibe_placeholder = None
+        self.vibe_image_label = ctk.CTkLabel(self.result_inner, text="")
+        self.vibe_image_label.pack(pady=(20, 10))
+
         self.game_name_label = ctk.CTkLabel(
             self.result_inner, text="",
             font=ctk.CTkFont(family=FONT_FAMILY, size=20, weight="bold"), text_color="#66c0f4")
-        self.game_name_label.pack(pady=(20, 5))
+        self.game_name_label.pack(pady=(0, 5))
 
         self.playtime_label = ctk.CTkLabel(
             self.result_inner, text="",
@@ -1273,6 +1376,24 @@ class VibeCheckView(ctk.CTkFrame):
         else:
             hours = result["playtime_hours"]
             pt_text = f"{hours:.0f}h played" if hours >= 1 else "Not yet played"
+
+            # Show placeholder, then load cover art async
+            if self._vibe_placeholder is None:
+                vibe_size = ImageManager.VIBE_SIZE
+                ph = PILImage.new("RGB", vibe_size, color=(42, 71, 94))
+                self._vibe_placeholder = ctk.CTkImage(
+                    light_image=ph, dark_image=ph, size=vibe_size)
+            self.vibe_image_label.configure(image=self._vibe_placeholder)
+
+            appid = result["appid"]
+            def _on_vibe_image(aid, img, expected=appid):
+                if aid == expected:
+                    try:
+                        self.after(0, lambda: self.vibe_image_label.configure(image=img))
+                    except Exception:
+                        pass
+            self.app.image_manager.load_async(
+                appid, _on_vibe_image, size=ImageManager.VIBE_SIZE)
 
             self.game_name_label.configure(text=result["name"])
             self.playtime_label.configure(text=pt_text)

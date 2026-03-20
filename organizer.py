@@ -43,6 +43,7 @@ LIBRARY_CACHE = CACHE_DIR / "library.json"
 CLASSIFICATIONS_FILE = CACHE_DIR / "classifications_final.json"
 STORE_CACHE = CACHE_DIR / "store_details.json"
 OVERRIDES_FILE = CONFIG_DIR / "overrides.json"
+IMAGE_CACHE_DIR = CACHE_DIR / "images"
 
 # Old progress cache — no longer used
 PROGRESS_CACHE = CACHE_DIR / "classification_progress.json"
@@ -50,6 +51,7 @@ PROGRESS_CACHE = CACHE_DIR / "classification_progress.json"
 # ── Constants ────────────────────────────────────────────────────────────────
 
 STEAM_API_BASE = "https://api.steampowered.com"
+STEAM_CDN_HEADER = "https://cdn.cloudflare.steamstatic.com/steam/apps/{appid}/header.jpg"
 STEAM_STORE_API = "https://store.steampowered.com/api/appdetails"
 STEAM_BASE = Path("C:/Program Files (x86)/Steam")
 
@@ -245,6 +247,27 @@ def get_player_achievements(api_key: str, steam_id: str, app_id: int) -> dict | 
         }
     except (requests.RequestException, json.JSONDecodeError, KeyError):
         return None
+
+
+# ── Game cover art ───────────────────────────────────────────────────────────
+
+
+def download_header_image(appid: int) -> Path | None:
+    """Download a game's header image from Steam CDN. Returns cached path."""
+    cache_path = IMAGE_CACHE_DIR / f"{appid}.jpg"
+    if cache_path.exists():
+        return cache_path
+    try:
+        IMAGE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        resp = requests.get(
+            STEAM_CDN_HEADER.format(appid=appid), timeout=10,
+        )
+        if resp.status_code == 200 and resp.content:
+            cache_path.write_bytes(resp.content)
+            return cache_path
+    except (requests.RequestException, OSError):
+        pass
+    return None
 
 
 # ── Steam Store API ──────────────────────────────────────────────────────────
