@@ -908,6 +908,121 @@ def classify_all_games(
     return list(results.values())
 
 
+# ── Vibe Check: mood-based game recommendation ──────────────────────────────
+
+
+def recommend_game(
+    mood: str,
+    games_data: list,
+    classifications: dict,
+    store_cache: dict,
+    playtime_lookup: dict,
+) -> dict | None:
+    """Pick a game from the user's library based on their current mood.
+
+    Returns {"appid", "name", "playtime_hours", "reason"} or None.
+    """
+    import random
+
+    # Build a lookup: appid -> classification info
+    cat_lookup = {}
+    for appid_int, info in classifications.items():
+        cat_lookup[appid_int] = info.get("category", "ENDLESS")
+
+    # Exclude NOT_A_GAME from all moods except surprise_me handles it itself
+    real_games = [
+        g for g in games_data
+        if cat_lookup.get(g["appid"]) != "NOT_A_GAME"
+    ]
+
+    candidates = []
+
+    if mood == "comfort_zone":
+        # High-playtime familiar favorites
+        pool = [g for g in real_games if playtime_lookup.get(g["appid"], 0) >= 5]
+        pool.sort(key=lambda g: playtime_lookup.get(g["appid"], 0), reverse=True)
+        candidates = pool[:15]  # top 15, pick randomly
+        reason_fn = lambda g: (
+            f"You've put {playtime_lookup.get(g['appid'], 0):.0f}h into this one "
+            f"— a familiar favorite"
+        )
+
+    elif mood == "something_new":
+        # Unplayed or barely-touched backlog games
+        candidates = [
+            g for g in real_games
+            if playtime_lookup.get(g["appid"], 0) < 1
+        ]
+        reason_fn = lambda g: "Sitting in your library unplayed — time to give it a shot"
+
+    elif mood == "challenge_me":
+        # Games you've started but haven't conquered — must have playtime
+        for g in real_games:
+            hours = playtime_lookup.get(g["appid"], 0)
+            if hours < 1:
+                continue  # skip unplayed — that's "Something New" territory
+            cat = cat_lookup.get(g["appid"])
+            if cat == "COMPLETED":
+                continue  # already conquered
+            ach = g.get("achievements")
+            if ach and 0 < ach.get("percentage", 100) < 50:
+                candidates.append(g)
+        if not candidates:
+            # Fallback: started games in action/adventure/RPG not yet completed
+            for g in real_games:
+                hours = playtime_lookup.get(g["appid"], 0)
+                cat = cat_lookup.get(g["appid"])
+                if hours < 1 or cat == "COMPLETED":
+                    continue
+                store = store_cache.get(str(g["appid"]), {})
+                genres = [x.lower() for x in store.get("genres", [])]
+                if any(x in genres for x in ("action", "adventure", "rpg")):
+                    candidates.append(g)
+        reason_fn = lambda g: (
+            f"{playtime_lookup.get(g['appid'], 0):.0f}h in and only "
+            f"{g['achievements']['percentage']:.0f}% achievements "
+            f"— time to push further"
+            if g.get("achievements") and g["achievements"].get("percentage", 100) < 50
+            else f"{playtime_lookup.get(g['appid'], 0):.0f}h in — still unfinished"
+        )
+
+    elif mood == "quick_session":
+        quick_genres = {"casual", "indie", "arcade", "puzzle", "platformer",
+                        "sports", "racing", "party"}
+        for g in real_games:
+            store = store_cache.get(str(g["appid"]), {})
+            genres = {x.lower() for x in store.get("genres", [])}
+            if genres & quick_genres:
+                candidates.append(g)
+        reason_fn = lambda g: "Perfect for a quick session"
+
+    elif mood == "competitive":
+        for g in real_games:
+            store = store_cache.get(str(g["appid"]), {})
+            cats = [c.lower() for c in store.get("categories", [])]
+            if any("multi" in c for c in cats):
+                candidates.append(g)
+        reason_fn = lambda g: "Multiplayer game — time to compete"
+
+    elif mood == "surprise_me":
+        candidates = list(real_games)
+        reason_fn = lambda g: "Random pick from your library — enjoy!"
+
+    else:
+        return None
+
+    if not candidates:
+        return None
+
+    pick = random.choice(candidates)
+    return {
+        "appid": pick["appid"],
+        "name": pick.get("name", f"App {pick['appid']}"),
+        "playtime_hours": playtime_lookup.get(pick["appid"], 0),
+        "reason": reason_fn(pick),
+    }
+
+
 # ── Setup & config loading ───────────────────────────────────────────────────
 
 

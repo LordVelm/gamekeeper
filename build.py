@@ -34,6 +34,8 @@ else:
             "--add-data=icon_64.png;.",
             "--add-data=icon_128.png;.",
             "--add-data=icon_256.png;.",
+            "--add-data=fonts/Inter-Regular.ttf;fonts",
+            "--add-data=fonts/Inter-Bold.ttf;fonts",
             "--hidden-import=rich",
             "--hidden-import=requests",
             "--hidden-import=customtkinter",
