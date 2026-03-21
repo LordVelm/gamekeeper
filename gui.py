@@ -485,7 +485,6 @@ class SteamOrganizerApp(ctk.CTk):
                 text_color=T["text_primary"],
             )
             self._apply_theme()
-            self.update_idletasks()
         finally:
             # Unfreeze and repaint everything in one shot
             ctypes.windll.user32.SendMessageW(hwnd, WM_SETREDRAW, True, 0)
@@ -510,24 +509,13 @@ class SteamOrganizerApp(ctk.CTk):
             scroll = dv.result_scroll_frames.get(cat_key)
             if scroll:
                 scroll.configure(fg_color=T["bg_frame"])
-        for label in dv._game_cards.values():
+        for appid, (card, name_lbl, pt_lbl) in dv._card_widgets.items():
             try:
-                if not label.winfo_exists():
+                if not card.winfo_exists():
                     continue
-                card = label.master
-                if card.winfo_exists():
-                    card.configure(fg_color=T["bg_input"])
-                    info = card.winfo_children()[-1]  # info frame
-                    for child in info.winfo_children():
-                        if hasattr(child, 'cget'):
-                            try:
-                                cur = child.cget("text_color")
-                                if cur in (THEMES["dark"]["text_primary"], THEMES["light"]["text_primary"]):
-                                    child.configure(text_color=T["text_primary"])
-                                elif cur in (THEMES["dark"]["text_secondary"], THEMES["light"]["text_secondary"]):
-                                    child.configure(text_color=T["text_secondary"])
-                            except Exception:
-                                pass
+                card.configure(fg_color=T["bg_input"])
+                name_lbl.configure(text_color=T["text_primary"])
+                pt_lbl.configure(text_color=T["text_secondary"])
             except Exception:
                 pass
 
@@ -947,6 +935,7 @@ class DetailedView(ctk.CTkFrame):
         self.result_headers = {}
         self.result_scroll_frames = {}
         self._game_cards = {}  # appid -> img_label for async image updates
+        self._card_widgets = {}  # appid -> (card_frame, name_label, playtime_label)
         self._remaining_games = {}  # cat_key -> list of (appid, name, hours) not yet shown
 
         for col, (cat_key, cfg) in enumerate(CATEGORY_CONFIG.items()):
@@ -975,19 +964,22 @@ class DetailedView(ctk.CTkFrame):
         info = ctk.CTkFrame(card, fg_color="transparent")
         info.pack(side="left", fill="both", expand=True, pady=6)
 
-        ctk.CTkLabel(info, text=name,
+        name_lbl = ctk.CTkLabel(info, text=name,
                      font=_font(11, "bold"),
                      text_color=T["text_primary"],
-                     anchor="w", wraplength=120).pack(fill="x")
+                     anchor="w", wraplength=120)
+        name_lbl.pack(fill="x")
 
         pt_text = f"{hours:.0f}h played" if hours >= 1 else "Not yet played"
-        ctk.CTkLabel(info, text=pt_text,
+        pt_lbl = ctk.CTkLabel(info, text=pt_text,
                      font=_font(10),
                      text_color=T["text_secondary"],
-                     anchor="w").pack(fill="x")
+                     anchor="w")
+        pt_lbl.pack(fill="x")
 
-        # Store reference and request async image
+        # Store references for async image updates and fast theme switching
         self._game_cards[appid] = img_label
+        self._card_widgets[appid] = (card, name_lbl, pt_lbl)
         self.app.image_manager.load_async(
             appid, lambda aid, img: self._on_image_loaded(aid, img))
 
@@ -1155,6 +1147,7 @@ class DetailedView(ctk.CTkFrame):
 
         # Results tab — show first N cards per column, rest behind "Show More"
         self._game_cards.clear()
+        self._card_widgets.clear()
         self._pending_cards = []
         self._remaining_games.clear()
 
@@ -1250,10 +1243,18 @@ class VibeCheckView(ctk.CTkFrame):
          "Random pick — let fate decide"),
     ]
 
+    FOR_YOU_MOOD = ("for_you", "🔍 For You", "#4CAF50", "#388E3C", "#E8F5E9",
+                    "Discover new games based on your taste")
+
     def __init__(self, parent: SteamOrganizerApp):
         super().__init__(parent, fg_color="transparent")
         self.app = parent
         self._current_mood = None
+        self._for_you_pool: list[dict] = []
+        self._for_you_start = 0
+        self._for_you_loading = False
+        self._is_for_you_result = False
+        self._current_appid = None
 
         # ── Header ──
         self._header_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=2)
@@ -1268,7 +1269,7 @@ class VibeCheckView(ctk.CTkFrame):
                      font=_font(13))
         self._subtitle_label.pack(pady=(0, 20))
 
-        # ── Mood buttons: 3x2 grid ──
+        # ── Mood buttons: 3x2 grid + full-width For You tile ──
         mood_frame = ctk.CTkFrame(self, fg_color="transparent")
         mood_frame.pack(pady=(0, 15))
 
@@ -1290,6 +1291,26 @@ class VibeCheckView(ctk.CTkFrame):
                          font=_font(10))
             desc_lbl.pack(pady=(3, 0))
             self._mood_desc_labels.append(desc_lbl)
+
+        # Separator + "For You" discovery tile
+        sep_label = ctk.CTkLabel(mood_frame, text="── or discover something new ──",
+                                  text_color=T["text_muted"], font=_font(10))
+        sep_label.grid(row=2, column=0, columnspan=3, pady=(8, 4))
+        self._mood_desc_labels.append(sep_label)
+
+        fy_key, fy_label, fy_fg, fy_hover, fy_text_clr, fy_desc = self.FOR_YOU_MOOD
+        fy_container = ctk.CTkFrame(mood_frame, fg_color="transparent")
+        fy_container.grid(row=3, column=0, columnspan=3, pady=8)
+        ctk.CTkButton(
+            fy_container, text=fy_label, width=520, height=50,
+            font=_font(14, "bold"), corner_radius=2,
+            fg_color=fy_fg, hover_color=fy_hover, text_color=fy_text_clr,
+            command=lambda: self._pick("for_you"),
+        ).pack()
+        fy_desc_lbl = ctk.CTkLabel(fy_container, text=fy_desc,
+                                    text_color=T["text_muted"], font=_font(10))
+        fy_desc_lbl.pack(pady=(3, 0))
+        self._mood_desc_labels.append(fy_desc_lbl)
 
         # ── Result area (initially empty) ──
         self.result_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=2)
@@ -1336,6 +1357,14 @@ class VibeCheckView(ctk.CTkFrame):
         )
         self.back_btn.pack(side="left", padx=8)
 
+        self.view_store_btn = ctk.CTkButton(
+            btn_row, text="View on Steam", width=130, height=34,
+            fg_color="#5c7e10", hover_color="#4a6a08",
+            text_color="#d2efa9", corner_radius=2,
+            command=self._open_store_page,
+        )
+        # Hidden by default — only shown for "For You" results
+
         # No-match label (hidden by default)
         self.no_match_label = ctk.CTkLabel(
             self.result_frame, text="",
@@ -1343,6 +1372,11 @@ class VibeCheckView(ctk.CTkFrame):
 
     def _pick(self, mood: str):
         self._current_mood = mood
+        if mood == "for_you":
+            self._pick_for_you()
+            return
+        self._is_for_you_result = False
+        self.view_store_btn.pack_forget()
         classifications = getattr(self.app, '_cached_classifications', None)
         if classifications is None:
             classifications = organizer.load_saved_classifications()
@@ -1403,8 +1437,114 @@ class VibeCheckView(ctk.CTkFrame):
             self.result_inner.pack()
 
     def _try_again(self):
-        if self._current_mood:
+        if self._current_mood == "for_you":
+            self._pick_for_you()
+        elif self._current_mood:
             self._pick(self._current_mood)
+
+    def _pick_for_you(self):
+        """Handle the 'For You' discovery mood."""
+        if self._for_you_pool:
+            self._show_for_you_result(self._for_you_pool.pop(0))
+            return
+
+        if self._for_you_loading:
+            return
+        self._for_you_loading = True
+
+        # Show loading state
+        self.no_match_label.pack_forget()
+        self.result_inner.pack_forget()
+        self.no_match_label.configure(text="Finding games for you...")
+        self.no_match_label.pack(pady=25)
+
+        classifications = getattr(self.app, '_cached_classifications', None)
+        if classifications is None:
+            classifications = organizer.load_saved_classifications()
+            self.app._cached_classifications = classifications
+        store_cache = getattr(self.app, '_cached_store', None)
+        if store_cache is None:
+            store_cache = organizer.load_store_cache()
+            self.app._cached_store = store_cache
+
+        def _search():
+            try:
+                result = organizer.recommend_for_you(
+                    self.app.games_data, classifications,
+                    store_cache, self.app.playtime_lookup,
+                    start=self._for_you_start,
+                )
+                self.after(0, lambda: self._on_for_you_results(result))
+            except Exception:
+                self.after(0, lambda: self._on_for_you_error(
+                    "Couldn't reach Steam Store. Check your connection."))
+
+        threading.Thread(target=_search, daemon=True).start()
+
+    def _on_for_you_results(self, result: dict):
+        """Callback when For You search completes."""
+        self._for_you_loading = False
+
+        if result.get("error") == "not_enough_data":
+            self._on_for_you_error(
+                "Play more games to unlock personalized recommendations!")
+            return
+
+        results = result.get("results", [])
+        self._for_you_start = result.get("start", 0)
+
+        if not results:
+            self._on_for_you_error(
+                "No recommendations found. Play more games to improve suggestions!")
+            return
+
+        self._for_you_pool = results[1:]  # cache the rest
+        self._show_for_you_result(results[0])
+
+    def _on_for_you_error(self, message: str):
+        """Show error message for For You mood."""
+        self._for_you_loading = False
+        self.no_match_label.pack_forget()
+        self.result_inner.pack_forget()
+        self.no_match_label.configure(text=message)
+        self.no_match_label.pack(pady=25)
+
+    def _show_for_you_result(self, result: dict):
+        """Display a For You recommendation in the result card."""
+        self._is_for_you_result = True
+        self._current_appid = result["appid"]
+
+        self.no_match_label.pack_forget()
+        self.result_inner.pack_forget()
+
+        # Show placeholder, then load cover art async
+        if self._vibe_placeholder is None:
+            vibe_size = ImageManager.VIBE_SIZE
+            ph = PILImage.new("RGB", vibe_size, color=(42, 71, 94))
+            self._vibe_placeholder = ctk.CTkImage(
+                light_image=ph, dark_image=ph, size=vibe_size)
+        self.vibe_image_label.configure(image=self._vibe_placeholder)
+
+        appid = result["appid"]
+        def _on_vibe_image(aid, img, expected=appid):
+            if aid == expected:
+                try:
+                    self.after(0, lambda: self.vibe_image_label.configure(image=img))
+                except Exception:
+                    pass
+        self.app.image_manager.load_async(
+            appid, _on_vibe_image, size=ImageManager.VIBE_SIZE)
+
+        self.game_name_label.configure(text=result["name"])
+        self.playtime_label.configure(text=result.get("reason", "Recommended for you"))
+        self.reason_label.configure(text="")
+        self.view_store_btn.pack(side="left", padx=8)
+        self.result_inner.pack()
+
+    def _open_store_page(self):
+        """Open the Steam store page for the current For You recommendation."""
+        if self._current_appid:
+            webbrowser.open(f"https://store.steampowered.com/app/{self._current_appid}/")
 
     def _fetch_missing_store(self, missing_appids: list):
         """Background fetch of store details for games not yet in cache."""

@@ -16,6 +16,7 @@ import string
 import subprocess
 import sys
 import time
+from html.parser import HTMLParser
 from pathlib import Path
 
 import requests
@@ -46,6 +47,19 @@ STORE_CACHE = CACHE_DIR / "store_details.json"
 OVERRIDES_FILE = CONFIG_DIR / "overrides.json"
 IMAGE_CACHE_DIR = CACHE_DIR / "images"
 IMAGE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+TAG_CACHE = CACHE_DIR / "tag_mappings.json"
+
+STEAM_SEARCH_URL = "https://store.steampowered.com/search/results/"
+STEAM_TAGS_URL = "https://store.steampowered.com/tagdata/populartags/english"
+
+# Fallback genre→tag mapping if the tag endpoint is unreachable
+GENRE_TAG_FALLBACK = {
+    "action": 19, "adventure": 21, "rpg": 122, "strategy": 9,
+    "simulation": 599, "casual": 597, "indie": 492, "racing": 699,
+    "sports": 701, "puzzle": 1664, "platformer": 1625,
+    "massively multiplayer": 128, "free to play": 113,
+    "early access": 493, "horror": 1667, "survival": 1662,
+}
 
 # Old progress cache — no longer used
 PROGRESS_CACHE = CACHE_DIR / "classification_progress.json"
@@ -943,6 +957,228 @@ def classify_all_games(
 # ── Vibe Check: mood-based game recommendation ──────────────────────────────
 
 
+# — Tag mapping —
+
+def load_tag_cache() -> dict:
+    """Load cached Steam tag mappings. Returns {name_lower: tagid}."""
+    if not TAG_CACHE.exists():
+        return {}
+    try:
+        return json.loads(TAG_CACHE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def save_tag_cache(cache: dict):
+    TAG_CACHE.write_text(json.dumps(cache, indent=2), encoding="utf-8")
+
+
+def fetch_tag_mappings() -> dict:
+    """Fetch Steam tag ID mappings, cache permanently. Falls back to hardcoded."""
+    cached = load_tag_cache()
+    if cached:
+        return cached
+    try:
+        resp = requests.get(STEAM_TAGS_URL, timeout=15)
+        resp.raise_for_status()
+        tags = resp.json()
+        mapping = {t["name"].lower(): t["tagid"] for t in tags}
+        save_tag_cache(mapping)
+        return mapping
+    except Exception:
+        return dict(GENRE_TAG_FALLBACK)
+
+
+# — Taste profiling —
+
+def build_taste_profile(
+    games_data: list,
+    classifications: dict,
+    store_cache: dict,
+    playtime_lookup: dict,
+) -> dict:
+    """Build a genre taste profile from the user's play history."""
+    genre_scores: dict[str, float] = {}
+    genre_examples: dict[str, str] = {}  # genre -> example game name
+
+    for g in games_data:
+        appid = g["appid"]
+        info = classifications.get(appid, {})
+        cat = info.get("category")
+        if cat == "NOT_A_GAME":
+            continue
+
+        store = store_cache.get(str(appid), {})
+        genres = store.get("genres", [])
+        if not genres:
+            continue
+
+        hours = playtime_lookup.get(appid, 0)
+
+        # Determine weight based on classification + playtime
+        if cat == "COMPLETED":
+            weight = 3.0
+        elif cat == "ENDLESS" and hours >= 20:
+            weight = 2.0
+        elif cat == "IN_PROGRESS" and hours >= 5:
+            weight = 1.0
+        elif cat == "IN_PROGRESS" and hours < 1:
+            weight = -1.0
+        else:
+            continue
+
+        for genre in genres:
+            gl = genre.lower()
+            genre_scores[gl] = genre_scores.get(gl, 0) + weight
+            # Track highest-playtime example per genre
+            if weight > 0 and (gl not in genre_examples or hours > playtime_lookup.get(
+                    next((gg["appid"] for gg in games_data if gg.get("name") == genre_examples[gl]), 0), 0)):
+                genre_examples[gl] = g.get("name", f"App {appid}")
+
+    # Sort by score, keep positive
+    ranked = sorted(
+        ((g, s) for g, s in genre_scores.items() if s > 0),
+        key=lambda x: x[1], reverse=True,
+    )
+    top_genres = [g for g, _ in ranked[:5]]
+
+    owned_appids = {g["appid"] for g in games_data}
+
+    return {
+        "top_genres": top_genres,
+        "genre_scores": genre_scores,
+        "genre_examples": genre_examples,
+        "owned_appids": owned_appids,
+    }
+
+
+# — Steam store search —
+
+class _SearchResultParser(HTMLParser):
+    """Parse Steam search results HTML to extract app IDs, titles, and tags."""
+
+    def __init__(self):
+        super().__init__()
+        self.results: list[dict] = []
+        self._current_appid: int | None = None
+        self._current_tagids: list[int] = []
+        self._in_title = False
+
+    def handle_starttag(self, tag, attrs):
+        attr_dict = dict(attrs)
+        if tag == "a" and "data-ds-appid" in attr_dict:
+            try:
+                self._current_appid = int(attr_dict["data-ds-appid"])
+            except (ValueError, TypeError):
+                self._current_appid = None
+            # Extract tag IDs from data-ds-tagids="[19,122,...]"
+            tagids_str = attr_dict.get("data-ds-tagids", "")
+            try:
+                self._current_tagids = json.loads(tagids_str) if tagids_str else []
+            except (json.JSONDecodeError, TypeError):
+                self._current_tagids = []
+        if tag == "span" and attr_dict.get("class") == "title":
+            self._in_title = True
+
+    def handle_data(self, data):
+        if self._in_title and self._current_appid is not None:
+            self.results.append({
+                "appid": self._current_appid,
+                "name": data.strip(),
+                "tagids": list(self._current_tagids),
+            })
+            self._in_title = False
+            self._current_appid = None
+            self._current_tagids = []
+
+    def handle_endtag(self, tag):
+        if tag == "span":
+            self._in_title = False
+
+
+def search_steam_store(
+    tag_ids: list[int],
+    owned_appids: set[int],
+    start: int = 0,
+    count: int = 50,
+) -> list[dict]:
+    """Search Steam store by tags, excluding owned games."""
+    params = {
+        "json": 1,
+        "tags": ",".join(str(t) for t in tag_ids),
+        "category1": 998,  # Games only
+        "sort_by": "Reviews_DESC",
+        "start": start,
+        "count": count,
+        "infinite": 1,
+    }
+    try:
+        resp = requests.get(STEAM_SEARCH_URL, params=params, timeout=15)
+        if resp.status_code == 429:
+            time.sleep(3)
+            resp = requests.get(STEAM_SEARCH_URL, params=params, timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception:
+        return []
+
+    html = data.get("results_html", "")
+    parser = _SearchResultParser()
+    parser.feed(html)
+
+    return [r for r in parser.results if r["appid"] not in owned_appids]
+
+
+def recommend_for_you(
+    games_data: list,
+    classifications: dict,
+    store_cache: dict,
+    playtime_lookup: dict,
+    start: int = 0,
+) -> dict:
+    """Recommend games the user doesn't own based on their taste profile."""
+    profile = build_taste_profile(games_data, classifications, store_cache, playtime_lookup)
+    top_genres = profile["top_genres"]
+
+    if len(top_genres) < 1:
+        return {"results": [], "top_genres": [], "start": start, "error": "not_enough_data"}
+
+    tag_map = fetch_tag_mappings()
+    genre_examples = profile["genre_examples"]
+
+    # Search per-genre separately and tag each result with its source genre
+    # This ensures recommendations are tightly coupled to specific games
+    seen_appids = set()
+    results = []
+    for genre in top_genres:
+        if genre not in tag_map:
+            continue
+        tag_id = tag_map[genre]
+        genre_results = search_steam_store(
+            [tag_id], profile["owned_appids"], start=start, count=15,
+        )
+        example = genre_examples.get(genre)
+        for r in genre_results:
+            if r["appid"] in seen_appids:
+                continue
+            seen_appids.add(r["appid"])
+            if example:
+                r["reason"] = f"Because you played {example}"
+            else:
+                r["reason"] = f"Based on your love of {genre.title()} games"
+            r["store_url"] = f"https://store.steampowered.com/app/{r['appid']}/"
+            results.append(r)
+
+    if not results:
+        return {"results": [], "top_genres": top_genres, "start": start, "error": "no_results"}
+
+    return {
+        "results": results,
+        "top_genres": top_genres,
+        "start": start + len(results),
+    }
+
+
 def recommend_game(
     mood: str,
     games_data: list,
@@ -1029,12 +1265,16 @@ def recommend_game(
         reason_fn = lambda g: "Perfect for a quick session"
 
     elif mood == "competitive":
+        pvp_genres = {"massively multiplayer", "sports"}
         for g in real_games:
             store = store_cache.get(str(g["appid"]), {})
-            cats = [c.lower() for c in store.get("categories", [])]
-            if any("multi" in c for c in cats):
+            cats = {c.lower() for c in store.get("categories", [])}
+            genres = {x.lower() for x in store.get("genres", [])}
+            has_pvp = any("pvp" in c for c in cats)
+            is_pvp_genre = bool(genres & pvp_genres)
+            if has_pvp or is_pvp_genre:
                 candidates.append(g)
-        reason_fn = lambda g: "Multiplayer game — time to compete"
+        reason_fn = lambda g: "PvP game — time to compete"
 
     elif mood == "surprise_me":
         candidates = list(real_games)
