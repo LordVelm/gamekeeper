@@ -9,6 +9,7 @@ Results are written directly to your Steam library as collections:
 
 import json
 import os
+import random
 import re
 import secrets
 import string
@@ -953,7 +954,7 @@ def recommend_game(
 
     Returns {"appid", "name", "playtime_hours", "reason"} or None.
     """
-    import random
+
 
     # Build a lookup: appid -> classification info
     cat_lookup = {}

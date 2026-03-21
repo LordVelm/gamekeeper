@@ -212,7 +212,7 @@ class HelpButton:
             parent, text="?", width=24, height=24,
             font=_font(12, "bold"),
             fg_color=T["btn_help_fg"], hover_color=T["btn_help_hover"],
-            corner_radius=12,
+            corner_radius=2,
             command=self._toggle,
         )
 
@@ -397,6 +397,9 @@ class SteamOrganizerApp(ctk.CTk):
         self.cloud_path = None
         self.overrides = {}
         self._running = False  # prevent double-clicks
+        self._force_refresh = False
+        self._cached_classifications = None
+        self._cached_store = None
 
         # Load saved config into fields
         self._saved = organizer.load_saved_config()
@@ -463,17 +466,33 @@ class SteamOrganizerApp(ctk.CTk):
         self._current_theme = new
         T.clear()
         T.update(THEMES[new])
-        ctk.set_appearance_mode(T["appearance"])
-        self.configure(fg_color=T["bg_window"])
-        self.top_bar.configure(fg_color=T["bg_frame"])
-        self.title_label.configure(text_color=T["text_primary"])
-        self.credit_label.configure(text_color=T["text_muted"])
-        self.theme_btn.configure(
-            text="☀ Light" if new == "dark" else "🌙 Dark",
-            fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"],
-            text_color=T["text_primary"],
-        )
-        self._apply_theme()
+
+        # Freeze window rendering at the OS level — the old frame stays on screen
+        # while all widget updates happen invisibly, then repaints once at the end.
+        WM_SETREDRAW = 0x000B
+        hwnd = ctypes.windll.user32.GetAncestor(self.winfo_id(), 2)  # GA_ROOT
+        ctypes.windll.user32.SendMessageW(hwnd, WM_SETREDRAW, False, 0)
+
+        try:
+            ctk.set_appearance_mode(T["appearance"])
+            self.configure(fg_color=T["bg_window"])
+            self.top_bar.configure(fg_color=T["bg_frame"])
+            self.title_label.configure(text_color=T["text_primary"])
+            self.credit_label.configure(text_color=T["text_muted"])
+            self.theme_btn.configure(
+                text="☀ Light" if new == "dark" else "🌙 Dark",
+                fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"],
+                text_color=T["text_primary"],
+            )
+            self._apply_theme()
+            self.update_idletasks()
+        finally:
+            # Unfreeze and repaint everything in one shot
+            ctypes.windll.user32.SendMessageW(hwnd, WM_SETREDRAW, True, 0)
+            ctypes.windll.user32.RedrawWindow(
+                hwnd, None, None,
+                0x0001 | 0x0080 | 0x0100,  # RDW_INVALIDATE | RDW_ALLCHILDREN | RDW_UPDATENOW
+            )
 
     def _apply_theme(self):
         """Re-apply theme colors to all stored widget refs."""
@@ -485,6 +504,47 @@ class SteamOrganizerApp(ctk.CTk):
         dv.classify_progress.configure(progress_color=T["progress_fg"], fg_color=T["progress_bg"])
         if hasattr(dv, 'setup_status'):
             dv.setup_status.configure(text_color=T["success_text"])
+
+        # Results tab — update colors in-place (no rebuild)
+        for cat_key in CATEGORY_CONFIG:
+            scroll = dv.result_scroll_frames.get(cat_key)
+            if scroll:
+                scroll.configure(fg_color=T["bg_frame"])
+        for label in dv._game_cards.values():
+            try:
+                if not label.winfo_exists():
+                    continue
+                card = label.master
+                if card.winfo_exists():
+                    card.configure(fg_color=T["bg_input"])
+                    info = card.winfo_children()[-1]  # info frame
+                    for child in info.winfo_children():
+                        if hasattr(child, 'cget'):
+                            try:
+                                cur = child.cget("text_color")
+                                if cur in (THEMES["dark"]["text_primary"], THEMES["light"]["text_primary"]):
+                                    child.configure(text_color=T["text_primary"])
+                                elif cur in (THEMES["dark"]["text_secondary"], THEMES["light"]["text_secondary"]):
+                                    child.configure(text_color=T["text_secondary"])
+                            except Exception:
+                                pass
+            except Exception:
+                pass
+
+        # Vibe Check view
+        vv = self.vibe_view
+        vv._header_frame.configure(fg_color=T["bg_frame"])
+        vv._subtitle_label.configure(text_color=T["text_secondary"])
+        vv.result_frame.configure(fg_color=T["bg_frame"])
+        vv.playtime_label.configure(text_color=T["text_secondary"])
+        vv.reason_label.configure(text_color=T["text_muted"])
+        vv.no_match_label.configure(text_color=T["text_secondary"])
+        vv.try_again_btn.configure(fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"],
+                                    text_color=T["text_primary"])
+        vv.back_btn.configure(fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"],
+                               text_color=T["text_primary"])
+        for lbl in vv._mood_desc_labels:
+            lbl.configure(text_color=T["text_muted"])
 
     def _toggle_vibe_check(self):
         """Switch between the organizer views and the Vibe Check page."""
@@ -583,7 +643,7 @@ class SteamOrganizerApp(ctk.CTk):
         elif event == "store_progress":
             cur, total = data["current"], data["total"]
             self._set_progress(0.5 + cur / total * 0.3)  # 50-80% for store
-            self._set_status(f"Store details ({cur}/{total})")
+            self._set_status(f"Store details ({cur}/{total}) — one-time fetch, cached for future runs")
         elif event == "classify_status":
             self._set_status(data["message"])
             self._log(data["message"])
@@ -641,16 +701,21 @@ class SteamOrganizerApp(ctk.CTk):
             self.overrides = organizer.load_overrides()
             saved = organizer.load_saved_classifications()
 
-            # Fetch store details for unclassified games
-            games_needing = [
-                g for g in self.games_data
-                if g["appid"] not in saved and str(g["appid"]) not in self.overrides
-            ]
+            # Fetch store details for all games missing from cache
+            # (needed for classification AND Vibe Check genre/category filtering)
             store_cache = organizer.load_store_cache()
-            if games_needing:
-                self.after(0, self._log, f"Fetching store details for {len(games_needing)} games...")
+            games_needing_store = [
+                g for g in self.games_data
+                if str(g["appid"]) not in store_cache
+            ]
+            if games_needing_store:
+                eta = len(games_needing_store) * 0.4  # ~0.3s rate limit + request time
+                eta_str = f"{eta / 60:.0f} min" if eta >= 60 else f"{eta:.0f}s"
+                self.after(0, self._log,
+                    f"Fetching store details for {len(games_needing_store)} games "
+                    f"(~{eta_str}, one-time only — cached for future runs)...")
                 store_cache = organizer.fetch_store_details_batch(
-                    [g["appid"] for g in games_needing], store_cache,
+                    [g["appid"] for g in games_needing_store], store_cache,
                     progress_callback=self._progress_callback,
                 )
 
@@ -661,9 +726,10 @@ class SteamOrganizerApp(ctk.CTk):
                 progress_callback=self._progress_callback,
             )
 
-            # Save and update cache
+            # Save and update caches
             organizer.save_final_classifications(all_classified)
             self._cached_classifications = {g["appid"]: g for g in all_classified if "appid" in g}
+            self._cached_store = store_cache
 
             # Pre-download cover art in background
             self.after(0, self._preload_images, all_classified)
@@ -745,7 +811,7 @@ class DetailedView(ctk.CTkFrame):
         super().__init__(parent, fg_color="transparent")
         self.app = parent
 
-        self.tabview = ctk.CTkTabview(self)
+        self.tabview = ctk.CTkTabview(self, corner_radius=2)
         self.tabview.pack(fill="both", expand=True)
 
         self._build_setup_tab()
@@ -755,6 +821,7 @@ class DetailedView(ctk.CTkFrame):
 
         self.tabview.set("  Classify  ")
         self._last_fingerprint = None  # skip no-op refreshes
+        self._pending_cards = []
 
     def _build_setup_tab(self):
         tab = self.tabview.add("  Setup  ")
@@ -895,7 +962,7 @@ class DetailedView(ctk.CTkFrame):
 
     def _create_game_card(self, parent, appid: int, name: str, hours: float):
         """Create a game card with thumbnail, name, and playtime."""
-        card = ctk.CTkFrame(parent, fg_color=T["bg_input"], corner_radius=4)
+        card = ctk.CTkFrame(parent, fg_color=T["bg_input"], corner_radius=2)
         card.pack(fill="x", padx=2, pady=2)
 
         # Thumbnail placeholder
@@ -1189,20 +1256,23 @@ class VibeCheckView(ctk.CTkFrame):
         self._current_mood = None
 
         # ── Header ──
-        header_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=4)
-        header_frame.pack(fill="x", pady=(0, 15))
+        self._header_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=2)
+        self._header_frame.pack(fill="x", pady=(0, 15))
 
-        ctk.CTkLabel(header_frame, text="What's the vibe?",
+        ctk.CTkLabel(self._header_frame, text="What's the vibe?",
                      font=_font(22, "bold"),
                      text_color="#66c0f4").pack(pady=(20, 5))
-        ctk.CTkLabel(header_frame, text="Pick a mood and we'll find a game from your library.",
+        self._subtitle_label = ctk.CTkLabel(self._header_frame,
+                     text="Pick a mood and we'll find a game from your library.",
                      text_color=T["text_secondary"],
-                     font=_font(13)).pack(pady=(0, 20))
+                     font=_font(13))
+        self._subtitle_label.pack(pady=(0, 20))
 
         # ── Mood buttons: 3x2 grid ──
         mood_frame = ctk.CTkFrame(self, fg_color="transparent")
         mood_frame.pack(pady=(0, 15))
 
+        self._mood_desc_labels = []
         for i, (key, label, fg, hover, text_clr, desc) in enumerate(self.MOODS):
             row, col = divmod(i, 3)
             btn_container = ctk.CTkFrame(mood_frame, fg_color="transparent")
@@ -1215,12 +1285,14 @@ class VibeCheckView(ctk.CTkFrame):
                 command=lambda k=key: self._pick(k),
             )
             btn.pack()
-            ctk.CTkLabel(btn_container, text=desc,
+            desc_lbl = ctk.CTkLabel(btn_container, text=desc,
                          text_color=T["text_muted"],
-                         font=_font(10)).pack(pady=(3, 0))
+                         font=_font(10))
+            desc_lbl.pack(pady=(3, 0))
+            self._mood_desc_labels.append(desc_lbl)
 
         # ── Result area (initially empty) ──
-        self.result_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=4)
+        self.result_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=2)
         self.result_frame.pack(fill="x", padx=40, pady=(5, 0))
 
         self.result_inner = ctk.CTkFrame(self.result_frame, fg_color="transparent")
@@ -1280,6 +1352,17 @@ class VibeCheckView(ctk.CTkFrame):
             store_cache = organizer.load_store_cache()
             self.app._cached_store = store_cache
 
+        # Check for missing store details (needed for genre-based moods)
+        missing = [
+            g["appid"] for g in self.app.games_data
+            if str(g["appid"]) not in store_cache
+        ]
+        if missing and not getattr(self, '_store_fetch_started', False):
+            self._store_fetch_started = True
+            threading.Thread(
+                target=self._fetch_missing_store, args=(missing,), daemon=True
+            ).start()
+
         result = organizer.recommend_game(
             mood, self.app.games_data, classifications,
             store_cache, self.app.playtime_lookup,
@@ -1322,6 +1405,19 @@ class VibeCheckView(ctk.CTkFrame):
     def _try_again(self):
         if self._current_mood:
             self._pick(self._current_mood)
+
+    def _fetch_missing_store(self, missing_appids: list):
+        """Background fetch of store details for games not yet in cache."""
+        try:
+            store_cache = self.app._cached_store or {}
+            store_cache = organizer.fetch_store_details_batch(
+                missing_appids, store_cache,
+            )
+            self.app._cached_store = store_cache
+        except Exception:
+            pass
+        finally:
+            self._store_fetch_started = False
 
 
 if __name__ == "__main__":
