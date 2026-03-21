@@ -44,6 +44,7 @@ CLASSIFICATIONS_FILE = CACHE_DIR / "classifications_final.json"
 STORE_CACHE = CACHE_DIR / "store_details.json"
 OVERRIDES_FILE = CONFIG_DIR / "overrides.json"
 IMAGE_CACHE_DIR = CACHE_DIR / "images"
+IMAGE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Old progress cache — no longer used
 PROGRESS_CACHE = CACHE_DIR / "classification_progress.json"
@@ -262,7 +263,6 @@ def download_header_image(appid: int) -> Path | None:
     if cache_path.exists():
         return cache_path
     try:
-        IMAGE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
         for url_template in (STEAM_CDN_CAPSULE, STEAM_CDN_HEADER):
             try:
                 resp = requests.get(

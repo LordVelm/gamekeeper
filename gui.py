@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Steam Backlog Organizer — GUI
-CustomTkinter interface with Simple and Detailed view modes.
+CustomTkinter interface with tabbed layout.
 """
 
 import json
@@ -45,6 +45,19 @@ def _load_custom_fonts():
 
 
 _load_custom_fonts()
+
+# ── Reusable font constants (avoid creating CTkFont per widget) ──────────────
+
+_FONTS: dict[str, ctk.CTkFont] = {}
+
+
+def _font(size: int, weight: str = "normal") -> ctk.CTkFont:
+    """Return a cached CTkFont for the given size and weight."""
+    key = f"{size}-{weight}"
+    if key not in _FONTS:
+        _FONTS[key] = ctk.CTkFont(family=FONT_FAMILY, size=size, weight=weight)
+    return _FONTS[key]
+
 
 # ── Theme system ─────────────────────────────────────────────────────────────
 
@@ -129,7 +142,6 @@ class ImageManager:
 
     THUMB_SIZE = (120, 56)
     VIBE_SIZE = (230, 107)
-    MAX_CACHED = 400
 
     def __init__(self):
         self._images: dict[int, ctk.CTkImage] = {}
@@ -161,9 +173,6 @@ class ImageManager:
                 ctk_img = ctk.CTkImage(light_image=pil_img, dark_image=pil_img,
                                         size=size)
                 cache_key = (appid, size)
-                if len(self._images) >= self.MAX_CACHED:
-                    oldest = next(iter(self._images))
-                    del self._images[oldest]
                 self._images[cache_key] = ctk_img
                 callback(appid, ctk_img)
             except Exception:
@@ -201,7 +210,7 @@ class HelpButton:
         self._unbind_dismiss = lambda: None
         self.btn = ctk.CTkButton(
             parent, text="?", width=24, height=24,
-            font=ctk.CTkFont(family=FONT_FAMILY, size=12, weight="bold"),
+            font=_font(12, "bold"),
             fg_color=T["btn_help_fg"], hover_color=T["btn_help_hover"],
             corner_radius=12,
             command=self._toggle,
@@ -398,12 +407,12 @@ class SteamOrganizerApp(ctk.CTk):
         self.top_bar.pack(fill="x", padx=0, pady=0)
 
         self.title_label = ctk.CTkLabel(self.top_bar, text="STEAM BACKLOG ORGANIZER",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=14, weight="bold"),
+                     font=_font(14, "bold"),
                      text_color=T["text_primary"])
         self.title_label.pack(side="left", padx=(15, 0))
 
         self.credit_label = ctk.CTkLabel(self.top_bar, text="by LordVelm",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=10),
+                     font=_font(10),
                      text_color=T["text_muted"], cursor="hand2")
         self.credit_label.pack(side="left", padx=(6, 0))
         self.credit_label.bind("<Button-1>",
@@ -413,7 +422,7 @@ class SteamOrganizerApp(ctk.CTk):
         self.support_btn = ctk.CTkButton(
             self.top_bar, text="☕ Support", width=90, height=26,
             fg_color="#5c7e10", hover_color="#4a6a08", text_color="#d2efa9",
-            font=ctk.CTkFont(family=FONT_FAMILY, size=11, weight="bold"), corner_radius=2,
+            font=_font(11, "bold"), corner_radius=2,
             command=lambda: webbrowser.open("https://buymeacoffee.com/lordvelm")
         )
         self.support_btn.pack(side="left", padx=(12, 0))
@@ -422,7 +431,7 @@ class SteamOrganizerApp(ctk.CTk):
         self._current_theme = "dark"
         self.theme_btn = ctk.CTkButton(
             self.top_bar, text="☀ Light", width=70, height=26, corner_radius=2,
-            font=ctk.CTkFont(family=FONT_FAMILY, size=11), fg_color=T["btn_neutral_fg"],
+            font=_font(11), fg_color=T["btn_neutral_fg"],
             hover_color=T["btn_neutral_hover"], text_color=T["text_primary"],
             command=self._toggle_theme)
         self.theme_btn.pack(side="left", padx=(12, 0))
@@ -431,32 +440,16 @@ class SteamOrganizerApp(ctk.CTk):
         self._vibe_active = False
         self.vibe_btn = ctk.CTkButton(
             self.top_bar, text="🎲 Vibe Check", width=110, height=26,
-            corner_radius=2, font=ctk.CTkFont(family=FONT_FAMILY, size=11, weight="bold"),
+            corner_radius=2, font=_font(11, "bold"),
             fg_color="#9b59b6", hover_color="#7d3c98", text_color="#f0e6f6",
             command=self._toggle_vibe_check,
         )
         self.vibe_btn.pack(side="left", padx=(12, 0))
 
-        # View toggle
-        self.view_var = ctk.StringVar(value="simple")
-        toggle_frame = ctk.CTkFrame(self.top_bar, fg_color="transparent")
-        toggle_frame.pack(side="right", padx=(0, 15))
-        ctk.CTkLabel(toggle_frame, text="Detailed", text_color=T["text_secondary"],
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(side="right", padx=(5, 0))
-        self.view_switch = ctk.CTkSwitch(toggle_frame, text="", width=40,
-                                         command=self._toggle_view,
-                                         onvalue="detailed", offvalue="simple",
-                                         variable=self.view_var,
-                                         progress_color="#66c0f4")
-        self.view_switch.pack(side="right")
-        ctk.CTkLabel(toggle_frame, text="Simple", text_color=T["text_secondary"],
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(side="right", padx=(0, 5))
-
         # ── Views ──
-        self.simple_view = SimpleView(self)
         self.detailed_view = DetailedView(self)
         self.vibe_view = VibeCheckView(self)
-        self.simple_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
+        self.detailed_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
 
         # Load any existing results on startup
         self._load_existing_data()
@@ -484,16 +477,6 @@ class SteamOrganizerApp(ctk.CTk):
 
     def _apply_theme(self):
         """Re-apply theme colors to all stored widget refs."""
-        # Simple view buttons + progress
-        sv = self.simple_view
-        sv.classify_btn.configure(fg_color=T["btn_primary_fg"], hover_color=T["btn_primary_hover"])
-        sv.write_btn.configure(fg_color=T["btn_write_fg"], hover_color=T["btn_write_hover"])
-        sv.override_btn.configure(fg_color=T["btn_override_fg"], hover_color=T["btn_override_hover"])
-        sv.refresh_btn.configure(fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"])
-        sv.status_label.configure(text_color=T["status_text"])
-        sv.progress_bar.configure(progress_color=T["progress_fg"], fg_color=T["progress_bg"])
-
-        # Detailed view buttons + progress
         dv = self.detailed_view
         dv.classify_btn.configure(fg_color=T["btn_primary_fg"], hover_color=T["btn_primary_hover"])
         dv.write_btn.configure(fg_color=T["btn_write_fg"], hover_color=T["btn_write_hover"])
@@ -506,38 +489,23 @@ class SteamOrganizerApp(ctk.CTk):
     def _toggle_vibe_check(self):
         """Switch between the organizer views and the Vibe Check page."""
         if self._vibe_active:
-            # Return to organizer
             self._vibe_active = False
             self.vibe_btn.configure(fg_color="#9b59b6")
             self.vibe_view.pack_forget()
-            if self.view_var.get() == "detailed":
-                self.detailed_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
-            else:
-                self.simple_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
+            self.detailed_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
         else:
             if not self.categories or not any(self.categories.values()):
                 messagebox.showwarning("No Data", "Run classification first to use Vibe Check.")
                 return
             self._vibe_active = True
             self.vibe_btn.configure(fg_color="#7d3c98")
-            self.simple_view.pack_forget()
             self.detailed_view.pack_forget()
             self.vibe_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
-
-    def _toggle_view(self):
-        if self._vibe_active:
-            return  # ignore view toggle while vibe check is open
-        if self.view_var.get() == "detailed":
-            self.simple_view.pack_forget()
-            self.detailed_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
-        else:
-            self.detailed_view.pack_forget()
-            self.simple_view.pack(fill="both", expand=True, padx=15, pady=(10, 15))
-        self._refresh_views()
 
     def _load_existing_data(self):
         """Load cached classifications on startup so results show immediately."""
         saved = organizer.load_saved_classifications()
+        self._cached_classifications = saved
         if saved:
             all_classified = list(saved.values())
             self.categories = {"COMPLETED": [], "IN_PROGRESS": [], "ENDLESS": [], "NOT_A_GAME": []}
@@ -561,25 +529,17 @@ class SteamOrganizerApp(ctk.CTk):
             self._set_status(f"Loaded {len(all_classified)} cached classifications")
 
     def _refresh_views(self):
-        """Update both views with current state."""
-        self.simple_view.refresh(self.categories, self.playtime_lookup)
+        """Update the view with current state."""
         self.detailed_view.refresh(self.categories, self.playtime_lookup)
 
     def _set_status(self, message: str):
-        """Update status in both views."""
-        self.simple_view.set_status(message)
         self.detailed_view.set_status(message)
 
     def _set_progress(self, value: float):
-        """Update progress bar in both views (0.0 to 1.0)."""
-        self.simple_view.set_progress(value)
         self.detailed_view.set_progress(value)
 
     def _set_buttons_enabled(self, enabled: bool):
         state = "normal" if enabled else "disabled"
-        self.simple_view.classify_btn.configure(state=state)
-        self.simple_view.write_btn.configure(state=state)
-        self.simple_view.refresh_btn.configure(state=state)
         self.detailed_view.classify_btn.configure(state=state)
         self.detailed_view.write_btn.configure(state=state)
         self.detailed_view.refresh_btn.configure(state=state)
@@ -590,9 +550,7 @@ class SteamOrganizerApp(ctk.CTk):
 
     # ── Get config from current field values ──
     def _get_field_values(self):
-        """Get current config field values from whichever view is active."""
-        # Simple view fields are canonical
-        return self.simple_view.get_field_values()
+        return self.detailed_view.get_field_values()
 
     # ── Background operations ──
 
@@ -703,8 +661,9 @@ class SteamOrganizerApp(ctk.CTk):
                 progress_callback=self._progress_callback,
             )
 
-            # Save
+            # Save and update cache
             organizer.save_final_classifications(all_classified)
+            self._cached_classifications = {g["appid"]: g for g in all_classified if "appid" in g}
 
             # Pre-download cover art in background
             self.after(0, self._preload_images, all_classified)
@@ -779,141 +738,6 @@ class SteamOrganizerApp(ctk.CTk):
         except Exception as e:
             messagebox.showerror("Error", f"Failed to write collections:\n{e}")
 
-    def open_override_dialog(self):
-        OverrideDialog(self)
-
-
-class SimpleView(ctk.CTkFrame):
-    """Single-screen layout: settings bar → buttons → progress → results columns."""
-
-    def __init__(self, parent: SteamOrganizerApp):
-        super().__init__(parent, fg_color="transparent")
-        self.app = parent
-
-        # ── Settings bar ──
-        settings_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=4)
-        settings_frame.pack(fill="x", pady=(0, 8))
-
-        ctk.CTkLabel(settings_frame, text="Steam ID:").pack(side="left", padx=(10, 5), pady=8)
-        self.steam_id_entry = ctk.CTkEntry(settings_frame, width=140,
-                                           placeholder_text="76561198...")
-        self.steam_id_entry.pack(side="left", padx=5)
-        HelpButton(settings_frame, HELP_STEAM_ID).btn.pack(side="left", padx=(0, 5))
-
-        ctk.CTkLabel(settings_frame, text="API Key:").pack(side="left", padx=(10, 5))
-        self.api_key_entry = ctk.CTkEntry(settings_frame, width=160,
-                                          placeholder_text="Steam API Key", show="•")
-        self.api_key_entry.pack(side="left", padx=5)
-        HelpButton(settings_frame, HELP_API_KEY).btn.pack(side="left", padx=(0, 5))
-
-        # Pre-fill from saved config
-        saved = parent._saved
-        if saved.get("steam_id") or saved.get("steam_id_input"):
-            self.steam_id_entry.insert(0, saved.get("steam_id") or saved.get("steam_id_input", ""))
-        if saved.get("steam_api_key"):
-            self.api_key_entry.insert(0, saved["steam_api_key"])
-
-        # ── Action buttons + progress ──
-        action_frame = ctk.CTkFrame(self, fg_color="transparent")
-        action_frame.pack(fill="x", pady=5)
-
-        self.classify_btn = ctk.CTkButton(
-            action_frame, text="▶  Classify Library", width=160, height=34,
-            font=ctk.CTkFont(family=FONT_FAMILY, size=13, weight="bold"), corner_radius=2,
-            fg_color=T["btn_primary_fg"], hover_color=T["btn_primary_hover"],
-            text_color="#171a21",
-            command=parent.start_classify,
-        )
-        self.classify_btn.pack(side="left", padx=(0, 8))
-
-        self.write_btn = ctk.CTkButton(
-            action_frame, text="Write to Steam", width=140, height=34,
-            fg_color=T["btn_write_fg"], hover_color=T["btn_write_hover"],
-            text_color="#d2efa9", corner_radius=2,
-            command=parent.start_write_to_steam,
-        )
-        self.write_btn.pack(side="left", padx=4)
-
-        self.override_btn = ctk.CTkButton(
-            action_frame, text="Overrides", width=100, height=34,
-            fg_color=T["btn_override_fg"], hover_color=T["btn_override_hover"],
-            text_color=T["text_primary"], corner_radius=2,
-            command=parent.open_override_dialog,
-        )
-        self.override_btn.pack(side="left", padx=4)
-
-        self.refresh_btn = ctk.CTkButton(
-            action_frame, text="↻  Refresh", width=100, height=34,
-            fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"],
-            text_color=T["text_primary"], corner_radius=2,
-            command=parent.start_refresh,
-        )
-        self.refresh_btn.pack(side="left", padx=5)
-        Tooltip(self.refresh_btn, "Re-fetch library data from Steam.\nUse this if you've played new games\nsince the last run.")
-
-        # Progress + status
-        status_frame = ctk.CTkFrame(self, fg_color="transparent")
-        status_frame.pack(fill="x", pady=(0, 5))
-
-        self.progress_bar = ctk.CTkProgressBar(status_frame, width=300,
-                                                  progress_color=T["progress_fg"],
-                                                  fg_color=T["progress_bg"])
-        self.progress_bar.pack(side="left", padx=(0, 10), pady=5)
-        self.progress_bar.set(0)
-
-        self.status_label = ctk.CTkLabel(status_frame, text="Ready",
-                                         text_color=T["status_text"],
-                                         font=ctk.CTkFont(family=FONT_FAMILY, size=12))
-        self.status_label.pack(side="left", fill="x", expand=True, anchor="w")
-
-        # ── Results: 4 columns ──
-        self.results_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=4)
-        self.results_frame.pack(fill="both", expand=True)
-        self.results_frame.grid_columnconfigure((0, 1, 2, 3), weight=1)
-        self.results_frame.grid_rowconfigure(1, weight=1)
-
-        self.col_headers = {}
-        self.col_textboxes = {}
-        for col, (cat_key, cfg) in enumerate(CATEGORY_CONFIG.items()):
-            header = ctk.CTkLabel(self.results_frame, text=f"{cfg['label']} (0)",
-                                  font=ctk.CTkFont(family=FONT_FAMILY, size=13, weight="bold"),
-                                  text_color=cfg["color"])
-            header.grid(row=0, column=col, padx=5, pady=(8, 3), sticky="w")
-            self.col_headers[cat_key] = header
-
-            textbox = ctk.CTkTextbox(self.results_frame, font=ctk.CTkFont(family=FONT_FAMILY, size=11),
-                                     activate_scrollbars=True)
-            textbox.grid(row=1, column=col, padx=5, pady=(0, 5), sticky="nsew")
-            textbox.configure(state="disabled")
-            self.col_textboxes[cat_key] = textbox
-
-    def get_field_values(self) -> dict:
-        return {
-            "steam_id": self.steam_id_entry.get().strip(),
-            "steam_api_key": self.api_key_entry.get().strip(),
-        }
-
-    def set_status(self, message: str):
-        self.status_label.configure(text=message)
-
-    def set_progress(self, value: float):
-        self.progress_bar.set(value)
-
-    def refresh(self, categories: dict, playtime_lookup: dict):
-        for cat_key, cfg in CATEGORY_CONFIG.items():
-            games = categories.get(cat_key, [])
-            self.col_headers[cat_key].configure(text=f"{cfg['label']} ({len(games)})")
-
-            tb = self.col_textboxes[cat_key]
-            tb.configure(state="normal")
-            tb.delete("1.0", "end")
-            for g in games:
-                h = playtime_lookup.get(g.get("appid"), 0)
-                pt = f" ({h}h)" if h > 0 else ""
-                tb.insert("end", f"  {g.get('name', '?')}{pt}\n")
-            tb.configure(state="disabled")
-
-
 class DetailedView(ctk.CTkFrame):
     """Tabbed layout: Setup | Classify | Results | Overrides."""
 
@@ -930,6 +754,7 @@ class DetailedView(ctk.CTkFrame):
         self._build_overrides_tab()
 
         self.tabview.set("  Classify  ")
+        self._last_fingerprint = None  # skip no-op refreshes
 
     def _build_setup_tab(self):
         tab = self.tabview.add("  Setup  ")
@@ -938,7 +763,7 @@ class DetailedView(ctk.CTkFrame):
         inner.pack(expand=True)
 
         ctk.CTkLabel(inner, text="Configuration",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=20, weight="bold"),
+                     font=_font(20, "bold"),
                      text_color=T["text_primary"]).pack(pady=(20, 5))
         ctk.CTkLabel(inner, text="Enter your API keys and Steam ID. These are saved locally.",
                      text_color=T["text_secondary"]).pack(pady=(0, 25))
@@ -948,7 +773,7 @@ class DetailedView(ctk.CTkFrame):
 
         saved = self.app._saved
 
-        ctk.CTkLabel(fields, text="Steam ID:", font=ctk.CTkFont(family=FONT_FAMILY, size=13)).grid(
+        ctk.CTkLabel(fields, text="Steam ID:", font=_font(13)).grid(
             row=0, column=0, padx=(0, 15), pady=10, sticky="e")
         self.setup_steam_id = ctk.CTkEntry(fields, width=350, placeholder_text="76561198... or vanity URL name")
         self.setup_steam_id.grid(row=0, column=1, pady=10)
@@ -956,7 +781,7 @@ class DetailedView(ctk.CTkFrame):
         if saved.get("steam_id") or saved.get("steam_id_input"):
             self.setup_steam_id.insert(0, saved.get("steam_id") or saved.get("steam_id_input", ""))
 
-        ctk.CTkLabel(fields, text="Steam API Key:", font=ctk.CTkFont(family=FONT_FAMILY, size=13)).grid(
+        ctk.CTkLabel(fields, text="Steam API Key:", font=_font(13)).grid(
             row=1, column=0, padx=(0, 15), pady=10, sticky="e")
         self.setup_api_key = ctk.CTkEntry(fields, width=350, placeholder_text="From steamcommunity.com/dev/apikey", show="•")
         self.setup_api_key.grid(row=1, column=1, pady=10)
@@ -970,8 +795,14 @@ class DetailedView(ctk.CTkFrame):
         self.setup_status = ctk.CTkLabel(inner, text="", text_color=T["success_text"])
         self.setup_status.pack()
 
+    def get_field_values(self) -> dict:
+        return {
+            "steam_id": self.setup_steam_id.get().strip(),
+            "steam_api_key": self.setup_api_key.get().strip(),
+        }
+
     def _save_settings(self):
-        """Save settings from the Setup tab and sync to Simple view."""
+        """Save settings from the Setup tab."""
         steam_id = self.setup_steam_id.get().strip()
         api_key = self.setup_api_key.get().strip()
 
@@ -990,19 +821,12 @@ class DetailedView(ctk.CTkFrame):
         self.app._saved = config
         self.setup_status.configure(text="Settings saved!")
 
-        # Sync to simple view
-        sv = self.app.simple_view
-        sv.steam_id_entry.delete(0, "end")
-        sv.steam_id_entry.insert(0, steam_id)
-        sv.api_key_entry.delete(0, "end")
-        sv.api_key_entry.insert(0, api_key)
-
     def _build_classify_tab(self):
         tab = self.tabview.add("  Classify  ")
 
         self.classify_status_label = ctk.CTkLabel(
             tab, text="Ready to classify",
-            font=ctk.CTkFont(family=FONT_FAMILY, size=14))
+            font=_font(14))
         self.classify_status_label.pack(pady=(25, 10))
 
         self.classify_progress = ctk.CTkProgressBar(tab, width=500,
@@ -1012,7 +836,7 @@ class DetailedView(ctk.CTkFrame):
         self.classify_progress.set(0)
 
         self.log_box = ctk.CTkTextbox(tab, width=600, height=220,
-                                       font=ctk.CTkFont(family=FONT_FAMILY, size=12))
+                                       font=_font(12))
         self.log_box.pack(pady=15, fill="x", padx=20)
         self.log_box.configure(state="disabled")
 
@@ -1021,7 +845,7 @@ class DetailedView(ctk.CTkFrame):
 
         self.classify_btn = ctk.CTkButton(
             btn_frame, text="▶  Classify Library", width=180, height=38,
-            font=ctk.CTkFont(family=FONT_FAMILY, size=14, weight="bold"), corner_radius=2,
+            font=_font(14, "bold"), corner_radius=2,
             fg_color=T["btn_primary_fg"], hover_color=T["btn_primary_hover"],
             text_color="#171a21",
             command=self.app.start_classify,
@@ -1045,6 +869,8 @@ class DetailedView(ctk.CTkFrame):
         self.refresh_btn.pack(side="left", padx=10)
         Tooltip(self.refresh_btn, "Re-fetch library data from Steam.\nUse this if you've played new games\nsince the last run.")
 
+    INITIAL_CARDS = 30  # cards shown per column before "Show More"
+
     def _build_results_tab(self):
         tab = self.tabview.add("  Results  ")
 
@@ -1054,10 +880,11 @@ class DetailedView(ctk.CTkFrame):
         self.result_headers = {}
         self.result_scroll_frames = {}
         self._game_cards = {}  # appid -> img_label for async image updates
+        self._remaining_games = {}  # cat_key -> list of (appid, name, hours) not yet shown
 
         for col, (cat_key, cfg) in enumerate(CATEGORY_CONFIG.items()):
             header = ctk.CTkLabel(tab, text=f"{cfg['label']} (0)",
-                                  font=ctk.CTkFont(family=FONT_FAMILY, size=13, weight="bold"),
+                                  font=_font(13, "bold"),
                                   text_color=cfg["color"])
             header.grid(row=0, column=col, padx=5, pady=(8, 3), sticky="w")
             self.result_headers[cat_key] = header
@@ -1082,13 +909,13 @@ class DetailedView(ctk.CTkFrame):
         info.pack(side="left", fill="both", expand=True, pady=6)
 
         ctk.CTkLabel(info, text=name,
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=11, weight="bold"),
+                     font=_font(11, "bold"),
                      text_color=T["text_primary"],
                      anchor="w", wraplength=120).pack(fill="x")
 
         pt_text = f"{hours:.0f}h played" if hours >= 1 else "Not yet played"
         ctk.CTkLabel(info, text=pt_text,
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=10),
+                     font=_font(10),
                      text_color=T["text_secondary"],
                      anchor="w").pack(fill="x")
 
@@ -1112,7 +939,7 @@ class DetailedView(ctk.CTkFrame):
         tab = self.tabview.add("  Overrides  ")
 
         ctk.CTkLabel(tab, text="Manual Overrides",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=16, weight="bold"),
+                     font=_font(16, "bold"),
                      text_color=T["text_primary"]).pack(pady=(15, 5))
         ctk.CTkLabel(tab, text="Search for a game and set its category manually.",
                      text_color=T["text_secondary"]).pack(pady=(0, 15))
@@ -1140,7 +967,7 @@ class DetailedView(ctk.CTkFrame):
 
         # Current overrides
         ctk.CTkLabel(tab, text="Current Overrides:",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=13, weight="bold")).pack(pady=(10, 5), anchor="w", padx=30)
+                     font=_font(13, "bold")).pack(pady=(10, 5), anchor="w", padx=30)
 
         self.overrides_list_frame = ctk.CTkScrollableFrame(tab, height=150)
         self.overrides_list_frame.pack(fill="x", padx=30, pady=(0, 10))
@@ -1176,10 +1003,10 @@ class DetailedView(ctk.CTkFrame):
             name = g.get("name", "?")
             current = self.app.overrides.get(str(appid), "—")
 
-            ctk.CTkLabel(row, text=name, font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(side="left", padx=5)
+            ctk.CTkLabel(row, text=name, font=_font(12)).pack(side="left", padx=5)
             if current != "—":
                 ctk.CTkLabel(row, text=f"[{current}]", text_color=T["success_text"],
-                             font=ctk.CTkFont(family=FONT_FAMILY, size=11)).pack(side="left", padx=5)
+                             font=_font(11)).pack(side="left", padx=5)
 
             ctk.CTkButton(
                 row, text="Set", width=50, height=24,
@@ -1197,16 +1024,17 @@ class DetailedView(ctk.CTkFrame):
         for w in self.overrides_list_frame.winfo_children():
             w.destroy()
 
-        overrides = organizer.load_overrides()
-        self.app.overrides = overrides
-
+        overrides = self.app.overrides
         if not overrides:
             ctk.CTkLabel(self.overrides_list_frame, text="No overrides set.",
                          text_color="gray").pack()
             return
 
-        # Try to get names from game data or saved classifications
-        saved = organizer.load_saved_classifications()
+        # Use cached classifications if available, else load once
+        saved = getattr(self.app, '_cached_classifications', None)
+        if saved is None:
+            saved = organizer.load_saved_classifications()
+            self.app._cached_classifications = saved
         for appid_str, category in overrides.items():
             row = ctk.CTkFrame(self.overrides_list_frame, fg_color="transparent")
             row.pack(fill="x", pady=1)
@@ -1221,9 +1049,9 @@ class DetailedView(ctk.CTkFrame):
                         name = g.get("name", name)
                         break
 
-            ctk.CTkLabel(row, text=name, font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(side="left", padx=5)
+            ctk.CTkLabel(row, text=name, font=_font(12)).pack(side="left", padx=5)
             ctk.CTkLabel(row, text=category, text_color=T["success_text"],
-                         font=ctk.CTkFont(family=FONT_FAMILY, size=11)).pack(side="left", padx=10)
+                         font=_font(11)).pack(side="left", padx=10)
 
             ctk.CTkButton(
                 row, text="✕", width=30, height=24,
@@ -1249,9 +1077,19 @@ class DetailedView(ctk.CTkFrame):
         self.log_box.configure(state="disabled")
 
     def refresh(self, categories: dict, playtime_lookup: dict):
-        # Results tab — rebuild game cards in batches
+        # Fingerprint: skip rebuild if data hasn't changed
+        fp = tuple(
+            (cat, tuple(g.get("appid", 0) for g in categories.get(cat, [])))
+            for cat in CATEGORY_CONFIG
+        )
+        if fp == self._last_fingerprint:
+            return
+        self._last_fingerprint = fp
+
+        # Results tab — show first N cards per column, rest behind "Show More"
         self._game_cards.clear()
         self._pending_cards = []
+        self._remaining_games.clear()
 
         for cat_key, cfg in CATEGORY_CONFIG.items():
             games = categories.get(cat_key, [])
@@ -1261,13 +1099,23 @@ class DetailedView(ctk.CTkFrame):
             for w in scroll.winfo_children():
                 w.destroy()
 
-            for g in games:
+            initial = games[:self.INITIAL_CARDS]
+            remaining = games[self.INITIAL_CARDS:]
+
+            for g in initial:
                 self._pending_cards.append((
                     scroll, g.get("appid"), g.get("name", "?"),
                     playtime_lookup.get(g.get("appid"), 0),
                 ))
 
-        # Create cards in batches to avoid freezing the UI
+            if remaining:
+                self._remaining_games[cat_key] = [
+                    (g.get("appid"), g.get("name", "?"),
+                     playtime_lookup.get(g.get("appid"), 0))
+                    for g in remaining
+                ]
+
+        # Create initial cards in batches, then add "Show More" buttons
         self._process_card_batch()
 
         # Overrides tab
@@ -1276,6 +1124,8 @@ class DetailedView(ctk.CTkFrame):
     def _process_card_batch(self, batch_size=20):
         """Create a batch of game cards, then yield to the event loop."""
         if not self._pending_cards:
+            # All initial cards done — add "Show More" buttons
+            self._add_show_more_buttons()
             return
         batch = self._pending_cards[:batch_size]
         self._pending_cards = self._pending_cards[batch_size:]
@@ -1283,6 +1133,36 @@ class DetailedView(ctk.CTkFrame):
             self._create_game_card(scroll, appid, name, hours)
         if self._pending_cards:
             self.after(10, self._process_card_batch)
+        else:
+            self._add_show_more_buttons()
+
+    def _add_show_more_buttons(self):
+        """Add 'Show More' buttons for categories with remaining games."""
+        for cat_key, remaining in self._remaining_games.items():
+            scroll = self.result_scroll_frames[cat_key]
+            btn = ctk.CTkButton(
+                scroll, text=f"Show {len(remaining)} more...",
+                height=30, corner_radius=2,
+                fg_color=T["btn_neutral_fg"], hover_color=T["btn_neutral_hover"],
+                text_color=T["text_primary"], font=_font(11),
+                command=lambda ck=cat_key: self._show_remaining(ck),
+            )
+            btn.pack(fill="x", padx=2, pady=(8, 4))
+
+    def _show_remaining(self, cat_key: str):
+        """Load the rest of the games for a category when 'Show More' is clicked."""
+        remaining = self._remaining_games.pop(cat_key, [])
+        if not remaining:
+            return
+        scroll = self.result_scroll_frames[cat_key]
+        # Remove the "Show More" button (last child)
+        children = scroll.winfo_children()
+        if children:
+            children[-1].destroy()
+        # Queue remaining cards for batch creation
+        for appid, name, hours in remaining:
+            self._pending_cards.append((scroll, appid, name, hours))
+        self._process_card_batch()
 
 
 class VibeCheckView(ctk.CTkFrame):
@@ -1313,11 +1193,11 @@ class VibeCheckView(ctk.CTkFrame):
         header_frame.pack(fill="x", pady=(0, 15))
 
         ctk.CTkLabel(header_frame, text="What's the vibe?",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=22, weight="bold"),
+                     font=_font(22, "bold"),
                      text_color="#66c0f4").pack(pady=(20, 5))
         ctk.CTkLabel(header_frame, text="Pick a mood and we'll find a game from your library.",
                      text_color=T["text_secondary"],
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=13)).pack(pady=(0, 20))
+                     font=_font(13)).pack(pady=(0, 20))
 
         # ── Mood buttons: 3x2 grid ──
         mood_frame = ctk.CTkFrame(self, fg_color="transparent")
@@ -1330,14 +1210,14 @@ class VibeCheckView(ctk.CTkFrame):
 
             btn = ctk.CTkButton(
                 btn_container, text=label, width=160, height=50,
-                font=ctk.CTkFont(family=FONT_FAMILY, size=14, weight="bold"), corner_radius=2,
+                font=_font(14, "bold"), corner_radius=2,
                 fg_color=fg, hover_color=hover, text_color=text_clr,
                 command=lambda k=key: self._pick(k),
             )
             btn.pack()
             ctk.CTkLabel(btn_container, text=desc,
                          text_color=T["text_muted"],
-                         font=ctk.CTkFont(family=FONT_FAMILY, size=10)).pack(pady=(3, 0))
+                         font=_font(10)).pack(pady=(3, 0))
 
         # ── Result area (initially empty) ──
         self.result_frame = ctk.CTkFrame(self, fg_color=T["bg_frame"], corner_radius=4)
@@ -1352,17 +1232,17 @@ class VibeCheckView(ctk.CTkFrame):
 
         self.game_name_label = ctk.CTkLabel(
             self.result_inner, text="",
-            font=ctk.CTkFont(family=FONT_FAMILY, size=20, weight="bold"), text_color="#66c0f4")
+            font=_font(20, "bold"), text_color="#66c0f4")
         self.game_name_label.pack(pady=(0, 5))
 
         self.playtime_label = ctk.CTkLabel(
             self.result_inner, text="",
-            font=ctk.CTkFont(family=FONT_FAMILY, size=13), text_color=T["text_secondary"])
+            font=_font(13), text_color=T["text_secondary"])
         self.playtime_label.pack(pady=(0, 5))
 
         self.reason_label = ctk.CTkLabel(
             self.result_inner, text="",
-            font=ctk.CTkFont(family=FONT_FAMILY, size=12), text_color=T["text_muted"])
+            font=_font(12), text_color=T["text_muted"])
         self.reason_label.pack(pady=(0, 15))
 
         btn_row = ctk.CTkFrame(self.result_inner, fg_color="transparent")
@@ -1387,12 +1267,18 @@ class VibeCheckView(ctk.CTkFrame):
         # No-match label (hidden by default)
         self.no_match_label = ctk.CTkLabel(
             self.result_frame, text="",
-            font=ctk.CTkFont(family=FONT_FAMILY, size=14), text_color=T["text_secondary"])
+            font=_font(14), text_color=T["text_secondary"])
 
     def _pick(self, mood: str):
         self._current_mood = mood
-        classifications = organizer.load_saved_classifications()
-        store_cache = organizer.load_store_cache()
+        classifications = getattr(self.app, '_cached_classifications', None)
+        if classifications is None:
+            classifications = organizer.load_saved_classifications()
+            self.app._cached_classifications = classifications
+        store_cache = getattr(self.app, '_cached_store', None)
+        if store_cache is None:
+            store_cache = organizer.load_store_cache()
+            self.app._cached_store = store_cache
 
         result = organizer.recommend_game(
             mood, self.app.games_data, classifications,
@@ -1436,119 +1322,6 @@ class VibeCheckView(ctk.CTkFrame):
     def _try_again(self):
         if self._current_mood:
             self._pick(self._current_mood)
-
-
-class OverrideDialog(ctk.CTkToplevel):
-    """Quick override dialog accessible from Simple view."""
-
-    def __init__(self, parent: SteamOrganizerApp):
-        super().__init__(parent)
-        self.app = parent
-        self.title("Manual Overrides")
-        self.geometry("500x500")
-        self.configure(fg_color=T["bg_window"])
-        self.transient(parent)
-        self.grab_set()
-
-        ctk.CTkLabel(self, text="Manual Overrides",
-                     font=ctk.CTkFont(family=FONT_FAMILY, size=16, weight="bold")).pack(pady=(15, 5))
-
-        # Search
-        search_frame = ctk.CTkFrame(self, fg_color="transparent")
-        search_frame.pack(fill="x", padx=20, pady=10)
-
-        self.search_entry = ctk.CTkEntry(search_frame, width=300, placeholder_text="Search game name...")
-        self.search_entry.pack(side="left", padx=(0, 10))
-        self.search_entry.bind("<Return>", lambda e: self._search())
-
-        self.category_box = ctk.CTkComboBox(
-            search_frame, width=150,
-            values=["COMPLETED", "IN_PROGRESS", "ENDLESS", "NOT_A_GAME"])
-        self.category_box.pack(side="left")
-
-        # Search results
-        ctk.CTkLabel(self, text="Search Results:", font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(
-            anchor="w", padx=20, pady=(5, 0))
-        self.results_frame = ctk.CTkScrollableFrame(self, height=120)
-        self.results_frame.pack(fill="x", padx=20, pady=5)
-
-        # Current overrides
-        ctk.CTkLabel(self, text="Current Overrides:", font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(
-            anchor="w", padx=20, pady=(10, 0))
-        self.overrides_frame = ctk.CTkScrollableFrame(self, height=150)
-        self.overrides_frame.pack(fill="both", expand=True, padx=20, pady=(5, 15))
-
-        self._refresh_overrides()
-
-    def _search(self):
-        query = self.search_entry.get().strip().lower()
-        if not query:
-            return
-
-        for w in self.results_frame.winfo_children():
-            w.destroy()
-
-        games = self.app.games_data
-        if not games:
-            ctk.CTkLabel(self.results_frame, text="No game data. Run classification first.",
-                         text_color="red").pack()
-            return
-
-        matches = [g for g in games if query in g.get("name", "").lower()][:10]
-        if not matches:
-            ctk.CTkLabel(self.results_frame, text="No matches.", text_color="gray").pack()
-            return
-
-        for g in matches:
-            row = ctk.CTkFrame(self.results_frame, fg_color="transparent")
-            row.pack(fill="x", pady=1)
-            ctk.CTkLabel(row, text=g.get("name", "?"), font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(side="left")
-            ctk.CTkButton(
-                row, text="Set", width=50, height=24,
-                command=lambda aid=g["appid"], n=g.get("name", ""): self._set(aid, n),
-            ).pack(side="right", padx=5)
-
-    def _set(self, appid, name):
-        cat = self.category_box.get()
-        self.app.overrides[str(appid)] = cat
-        organizer.save_overrides(self.app.overrides)
-        self._refresh_overrides()
-        self.app._set_status(f"Override: {name} → {cat}")
-
-    def _refresh_overrides(self):
-        for w in self.overrides_frame.winfo_children():
-            w.destroy()
-
-        overrides = organizer.load_overrides()
-        self.app.overrides = overrides
-        saved = organizer.load_saved_classifications()
-
-        if not overrides:
-            ctk.CTkLabel(self.overrides_frame, text="No overrides.", text_color="gray").pack()
-            return
-
-        for appid_str, cat in overrides.items():
-            row = ctk.CTkFrame(self.overrides_frame, fg_color="transparent")
-            row.pack(fill="x", pady=1)
-
-            name = "Unknown"
-            appid_int = int(appid_str)
-            if appid_int in saved:
-                name = saved[appid_int].get("name", name)
-
-            ctk.CTkLabel(row, text=name, font=ctk.CTkFont(family=FONT_FAMILY, size=12)).pack(side="left")
-            ctk.CTkLabel(row, text=cat, text_color=T["success_text"],
-                         font=ctk.CTkFont(family=FONT_FAMILY, size=11)).pack(side="left", padx=10)
-            ctk.CTkButton(
-                row, text="✕", width=30, height=24,
-                fg_color=T["btn_danger_fg"], hover_color=T["btn_danger_hover"],
-                command=lambda a=appid_str: self._remove(a),
-            ).pack(side="right", padx=5)
-
-    def _remove(self, appid_str):
-        self.app.overrides.pop(appid_str, None)
-        organizer.save_overrides(self.app.overrides)
-        self._refresh_overrides()
 
 
 if __name__ == "__main__":
