@@ -296,4 +296,22 @@ This is a dev-only tool — remove before shipping.
 
 ---
 
+## Future feature ideas
+
+Ideas from the retired `steam-game-recommender` concept that Gamekeeper doesn't cover yet:
+
+1. **Store discovery** — Recommend games the user *doesn't own* based on their taste profile. Use Steam store search by tags, SteamSpy data, or the AI's own knowledge to suggest purchases. Current chat only picks from the user's library.
+
+2. **Taste profile summary** — Surface an explicit "here's what your library says about you" analysis. E.g. "You're a completionist who loves narrative RPGs, sinks hundreds of hours into grand strategy, and bounces off multiplayer shooters." Could be a dedicated panel or part of the chat.
+
+3. **Anti-recommendations** — "You've bounced off every competitive FPS, so skip this despite the hype." Useful when the user is considering a purchase.
+
+4. **Non-obvious connections** — Find indie games that share DNA with the user's favorites beyond simple genre matching (similar mechanics, art style, narrative depth).
+
+5. **Wishlist integration** — Cross-reference the user's Steam wishlist with their taste profile and prioritize or deprioritize items.
+
+6. **macOS/Linux support** — Steam paths and userdata differ by platform. Currently Windows-only.
+
+---
+
 *End of CLAUDE.md — update this file when architecture or migration strategy changes.*
