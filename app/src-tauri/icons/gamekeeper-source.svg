@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#171a21"/>
+
+  <!-- Lucide gamepad-2 icon, centered with badge as a unit -->
+  <g transform="translate(48, 72) scale(16)">
+    <path fill="none" stroke="#66c0f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+      d="M6 11h4M8 9v4m-.69-8H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258c-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/>
+
+    <!-- 4 face buttons in diamond pattern -->
+    <circle cx="16.5" cy="8.5" r="0.55" fill="#66c0f4"/>
+    <circle cx="18" cy="10" r="0.55" fill="#66c0f4"/>
+    <circle cx="16.5" cy="11.5" r="0.55" fill="#66c0f4"/>
+    <circle cx="15" cy="10" r="0.55" fill="#66c0f4"/>
+  </g>
+
+  <!-- Green checkmark badge -->
+  <circle cx="388" cy="380" r="60" fill="#4CAF50"/>
+  <path d="M363 380 L382 400 L415 358" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
