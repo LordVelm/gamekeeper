@@ -292,7 +292,7 @@ export default function SettingsPanel({ onClose, onConfigUpdated }: Props) {
               <p>
                 Cache and config:{" "}
                 <span className="font-mono text-steam-text">
-                  %APPDATA%\SteamBacklogOrganizer
+                  %APPDATA%\Gamekeeper
                 </span>
               </p>
               <p>

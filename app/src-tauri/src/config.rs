@@ -8,16 +8,15 @@ pub struct AppConfig {
     pub steam_id: String,
 }
 
-/// Base data directory: %APPDATA%\SteamBacklogOrganizer (Windows)
-/// or ~/.steam-backlog-organizer (other platforms).
-/// Must match the Python version's paths for backward compatibility.
+/// Base data directory: %APPDATA%\Gamekeeper (Windows)
+/// or ~/.gamekeeper (other platforms).
 pub fn data_dir() -> PathBuf {
     if let Ok(appdata) = std::env::var("APPDATA") {
-        PathBuf::from(appdata).join("SteamBacklogOrganizer")
+        PathBuf::from(appdata).join("Gamekeeper")
     } else {
         dirs::home_dir()
             .unwrap_or_else(|| PathBuf::from("."))
-            .join(".steam-backlog-organizer")
+            .join(".gamekeeper")
     }
 }
 
