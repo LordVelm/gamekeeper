@@ -8,6 +8,10 @@ use std::time::{SystemTime, UNIX_EPOCH};
 
 const LIBRARY_CACHE_MAX_AGE_SECS: u64 = 24 * 60 * 60; // 24 hours
 
+/// Bump this whenever classification rules change to force re-classification
+/// on next app launch.
+const RULES_VERSION: u32 = 2;
+
 #[derive(Serialize, Deserialize)]
 struct LibraryCache {
     steam_id: String,
@@ -85,7 +89,15 @@ pub fn save_store_cache(cache: &HashMap<String, StoreDetails>) -> Result<(), Str
         .map_err(|e| format!("Failed to write store cache: {e}"))
 }
 
-/// Load saved classifications.
+#[derive(Serialize, Deserialize)]
+struct ClassificationsCache {
+    #[serde(default)]
+    rules_version: u32,
+    classifications: Vec<Classification>,
+}
+
+/// Load saved classifications. Returns empty if the rules version doesn't match
+/// (forces re-classification with updated rules).
 pub fn load_saved_classifications() -> HashMap<u64, Classification> {
     let path = config::classifications_file();
     if !path.exists() {
@@ -95,18 +107,29 @@ pub fn load_saved_classifications() -> HashMap<u64, Classification> {
         Ok(d) => d,
         Err(_) => return HashMap::new(),
     };
-    let list: Vec<Classification> = match serde_json::from_str(&data) {
-        Ok(l) => l,
-        Err(_) => return HashMap::new(),
-    };
-    list.into_iter().map(|c| (c.appid, c)).collect()
+
+    // Try new versioned format first
+    if let Ok(cache) = serde_json::from_str::<ClassificationsCache>(&data) {
+        if cache.rules_version != RULES_VERSION {
+            // Rules changed — discard saved classifications to force re-classification
+            return HashMap::new();
+        }
+        return cache.classifications.into_iter().map(|c| (c.appid, c)).collect();
+    }
+
+    // Fall back to old format (plain array) — treat as outdated, force re-classification
+    HashMap::new()
 }
 
-/// Save classifications to file.
+/// Save classifications to file with the current rules version.
 pub fn save_classifications(classifications: &[Classification]) -> Result<(), String> {
     let dir = config::cache_dir();
     fs::create_dir_all(&dir).map_err(|e| format!("Failed to create cache dir: {e}"))?;
-    let data = serde_json::to_string_pretty(classifications)
+    let cache = ClassificationsCache {
+        rules_version: RULES_VERSION,
+        classifications: classifications.to_vec(),
+    };
+    let data = serde_json::to_string_pretty(&cache)
         .map_err(|e| format!("Failed to serialize classifications: {e}"))?;
     fs::write(config::classifications_file(), data)
         .map_err(|e| format!("Failed to write classifications: {e}"))
