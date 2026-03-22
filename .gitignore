@@ -13,3 +13,6 @@ dist/
 build/
 app/src-tauri/target/
 package-lock.json
+
+# Personal
+linkedin-*.md
