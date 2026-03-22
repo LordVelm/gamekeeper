@@ -7,7 +7,7 @@ Automatically categorizes your Steam game library into four collections:
 - **Endless** - Games with no real ending (multiplayer, sandbox, strategy, etc.)
 - **Not a Game** - Demos, tools, utilities, soundtracks, etc.
 
-Results are written directly to your Steam library as collections (synced across machines) and optionally saved as a JSON file.
+Results are written directly to your Steam library as collections (synced across machines) and optionally exported as JSON.
 
 ## How It Works
 
@@ -16,97 +16,83 @@ Classification uses **rule-based logic** that analyzes your Steam data:
 - **Steam Store data** — Game type (demo, tool, DLC), genres, categories (single-player, multiplayer)
 - **Achievement data** — Story-completion achievement names, achievement percentage
 - **Playtime** — Hours played relative to game type
-- **Your existing Steam collections** — Used as hints for classification
+- **14 priority rules** — Deterministic, auditable, no black boxes
 
 No external AI or paid APIs needed beyond the free Steam Web API key.
 
 ## Requirements
 
-- Python 3.12+
+- Windows 10/11 (macOS/Linux support planned)
 - A [Steam Web API key](https://steamcommunity.com/dev/apikey) (free)
 - Your Steam profile's game details set to **Public**
+- Optional: ~2 GB disk space for local AI features (auto-downloaded on first use)
 
-## Setup
+## Installation
 
-```powershell
+Download the latest installer from [Releases](https://github.com/LordVelm/steam-backlog-organizer/releases).
+
+Or build from source:
+
+```bash
 cd steam-backlog-organizer
-python -m venv venv
-
-# Windows PowerShell:
-.\venv\Scripts\Activate.ps1
-# Linux/Mac:
-source venv/bin/activate
-
-pip install requests rich customtkinter
-```
-
-## Usage
-
-### GUI
-
-```powershell
-python gui.py
-```
-
-Or download the standalone `.exe` from [Releases](https://github.com/LordVelm/steam-backlog-organizer/releases).
-
-### CLI
-
-```powershell
-# First run — prompts for Steam API key and Steam ID
-python organizer.py
-
-# Update your saved configuration
-python organizer.py --setup
-
-# Manually override specific game categories
-python organizer.py --override
+npm install
+cd app
+npx tauri build
 ```
 
 ## Features
 
-- **No paid APIs** — Fully rule-based classification using Steam's own data. Free to run.
-- **Saved classifications** — Results persist between runs. Only new games get classified.
-- **Manual overrides** — Fix any game the rules got wrong. Overrides always take priority.
-- **Cloud sync** — Collections sync across machines via Steam Cloud.
-- **Caching** — Library and achievement data cached locally to avoid redundant API calls.
-- **Error handling** — Clear messages for network issues, invalid API keys, and file errors.
+- **Modern desktop app** — Built with Tauri + React, dark Steam-inspired theme
+- **No paid APIs** — Fully rule-based classification using Steam's own data
+- **Saved classifications** — Results persist between runs. Only new games get classified
+- **Manual overrides** — Fix any game the rules got wrong. Overrides always take priority
+- **Cloud sync** — Collections sync across machines via Steam Cloud
+- **Caching** — Library and store data cached locally to avoid redundant API calls
+- **"What should I play next?"** — Chat panel with game recommendations (deterministic fallback or local AI)
+- **AI ambiguity assistant** — For uncertain classifications, ask AI for a second opinion
+- **Export** — Download your classifications as JSON for debugging or sharing
 
-## Building a Standalone Executable
+## Optional: Local AI
 
-```powershell
-pip install pyinstaller
-python build.py          # GUI exe → dist/SteamBacklogOrganizer.exe
-python build.py --cli    # CLI exe → dist/SteamBacklogOrganizer-CLI.exe
-```
+The app bundles a local AI engine for smarter game recommendations and classification second opinions. On first use, it downloads a small model (~2 GB) — no external software needed.
+
+To set up: **Settings > AI Assistant > Download AI Model**
+
+The AI is used for:
+- **Game recommendations** — "What should I play next?" chat
+- **Ambiguity resolution** — Second opinions on uncertain classifications
+
+The AI is **never** used for core classification — rules stay canonical. GPU acceleration is automatic if you have an NVIDIA GPU.
 
 ## Important Notes
 
 - **Steam must be closed** when writing collections
-- **API keys are stored locally** in `%APPDATA%/SteamBacklogOrganizer/config/settings.json` — not embedded in the exe
+- **API keys are stored locally** in `%APPDATA%/SteamBacklogOrganizer/config/settings.json`
+- **All data stays on your machine** — no cloud services, no telemetry
 
 ## Development Log
 
 ### v0.1 — Initial release
-- AI-only classification using Claude API (all 569 games sent every run)
-- Wrote collections to Steam's local cloud storage file
-
-### v0.2 — Iteration
-- Achievement data and existing user collections as AI context improved accuracy
-- Batch processing with progress save/resume handled interruptions
-- Collections sync fix (updates Steam's sync metadata files)
-- Added NOT_A_GAME category, manual overrides, saved classifications
+- AI-only classification using Claude API
 
 ### v1.0 — Hybrid rewrite
-- **Rule-based classification engine** — Uses Steam Store API (game type, genres, categories), achievement patterns, and playtime to classify ~70-80% of games for free
-- **AI became optional** — Rules handled most games; AI only classified the ambiguous remainder
-- **Steam Store API integration** — Fetches game type/genres/categories with permanent caching
+- Rule-based engine for most games, AI for ambiguous remainder
 
-### v2.0 — Pure rules, no AI (current)
-- **Removed AI/Anthropic dependency entirely** — No paid API keys needed
-- **Expanded rules from 9 to 14** — Covers all cases including moderate achievement + playtime heuristics, significant SP playtime detection, and genre-based fallbacks
-- **GUI** — CustomTkinter app with Simple and Detailed view modes
-- **Error handling** — Timeouts on all API calls, clear error messages for network/auth/permission failures, graceful handling of corrupt cache files
+### v2.0 — Pure rules
+- Removed AI dependency entirely, expanded to 14 rules, CustomTkinter GUI
+
+### v3.0 — Full rebuild (current)
+- **Complete rewrite** — Tauri v2 + React 19 + Rust backend
+- **Single binary** — No Python runtime needed
+- **Modern UI** — Dark Steam-themed design with card grid, animations, search/filter
+- **Rust classifier** — All 14 rules ported with 100% parity against Python (verified with 569-game test suite)
+- **Optional local AI** — Bundled llama-server with auto-download, GPU acceleration, no external dependency
+- **Chat panel** — "What should I play next?" with retrieve-then-rank
+- **Settings** — Steam config, AI setup + GPU toggle, JSON export, all in one panel
+
+## Architecture
+
+See [`CLAUDE.md`](./CLAUDE.md) for architecture details, build plan, and parity testing strategy.
 
 ## Feedback & Support
 

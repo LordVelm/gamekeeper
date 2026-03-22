@@ -1,0 +1,8367 @@
+{
+  "10": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Keyboard Only Option",
+      "Stereo Sound",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "80": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "100": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "220": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Workshop",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "Includes Source SDK",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing",
+      "Steam Timeline"
+    ]
+  },
+  "240": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Includes Source SDK",
+      "Family Sharing"
+    ]
+  },
+  "320": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Multi-player",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Valve Anti-Cheat enabled",
+      "Includes Source SDK",
+      "Family Sharing"
+    ]
+  },
+  "360": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Multi-player",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "400": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Captions available",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Includes level editor",
+      "Includes Source SDK",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "440": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "categories": [
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Workshop",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Includes level editor",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet"
+    ]
+  },
+  "500": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Captions available",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Steam Leaderboards",
+      "Includes Source SDK",
+      "Commentary available",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "550": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Workshop",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Includes Source SDK",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing",
+      "Steam Timeline"
+    ]
+  },
+  "620": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Workshop",
+      "Steam Workshop",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Stats",
+      "Includes level editor",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "730": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Free To Play"
+    ],
+    "categories": [
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Steam Timeline"
+    ]
+  },
+  "2620": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "2630": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "2640": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "2820": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Captions available",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "3270": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "4000": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Workshop",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Includes level editor",
+      "Includes Source SDK",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "4700": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "4760": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "4770": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "4920": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "Strategy"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Includes level editor",
+      "Family Sharing"
+    ]
+  },
+  "6020": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "6030": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "6060": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "6850": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "6860": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "6870": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "6880": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "6900": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "6910": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "6920": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "6980": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "7650": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "7660": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "7670": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "7730": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "7760": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "7770": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "7940": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "8190": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "8200": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8210": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8220": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8230": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8240": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8250": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8260": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8270": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8280": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8290": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8300": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "8600": {
+    "type": "game",
+    "genres": [
+      "Racing"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "8660": {
+    "type": "dlc",
+    "genres": [
+      "Racing"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Downloadable Content",
+      "Family Sharing"
+    ]
+  },
+  "8850": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "8870": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "8930": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "8980": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "9050": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "9070": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "9480": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "10090": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Family Sharing"
+    ]
+  },
+  "10150": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "10180": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "10190": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "10500": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "11390": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Racing",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "11450": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "12100": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "12110": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "12120": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "12140": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "12150": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "12200": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "12210": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet"
+    ]
+  },
+  "12230": {
+    "type": "game",
+    "genres": [],
+    "categories": [
+      "Family Sharing"
+    ]
+  },
+  "12240": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "12250": {
+    "type": "game",
+    "genres": [],
+    "categories": [
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "12710": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "12770": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Full controller support",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "12810": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "12830": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "13520": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "15100": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "16450": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "17300": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "17410": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "17450": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "17460": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "17470": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "19900": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "20900": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "20920": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "21000": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "21090": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "21100": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "21110": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "21120": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "21900": {
+    "type": "advertising",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Family Sharing"
+    ]
+  },
+  "22000": {
+    "type": "game",
+    "genres": [
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "22100": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Trading Cards",
+      "Includes level editor",
+      "Family Sharing"
+    ]
+  },
+  "22320": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "22330": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "22370": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "22380": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "23310": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "23490": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "24010": {
+    "type": "game",
+    "genres": [
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "In-App Purchases",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "24240": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "24780": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "24960": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "24980": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "25800": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "29180": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Family Sharing"
+    ]
+  },
+  "31220": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "31230": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "31240": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "31250": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "31260": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "32330": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "32370": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "32380": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "32390": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "32400": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "32430": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "32440": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "32500": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "33230": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player"
+    ]
+  },
+  "34030": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "34330": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "35000": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "35140": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "35450": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "Simulation"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Includes level editor",
+      "Family Sharing"
+    ]
+  },
+  "35700": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "35720": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "38400": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "38410": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "38420": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "39140": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "39530": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Family Sharing"
+    ]
+  },
+  "39560": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Family Sharing"
+    ]
+  },
+  "40300": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "40390": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "40800": {
+    "type": "game",
+    "genres": [
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "42680": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "42690": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "42700": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "42710": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Valve Anti-Cheat enabled",
+      "Family Sharing"
+    ]
+  },
+  "42910": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "43110": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "44200": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "44320": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "44340": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op"
+    ]
+  },
+  "47780": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "47810": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "47890": {
+    "type": "game",
+    "genres": [
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "48160": {
+    "type": "advertising",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op"
+    ]
+  },
+  "48190": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Partial Controller Support"
+    ]
+  },
+  "48720": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Family Sharing"
+    ]
+  },
+  "49520": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "50130": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "50300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "50620": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "50650": {
+    "type": "advertising",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "55230": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "57300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Captions available",
+      "Includes level editor",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "57600": {
+    "type": "dlc",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Downloadable Content",
+      "Family Sharing"
+    ]
+  },
+  "57690": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "63380": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "65300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "65560": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "65930": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "70000": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Multi-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "72200": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "72850": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "78000": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "91310": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "92800": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "96100": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Family Sharing"
+    ]
+  },
+  "98200": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Turn Notifications",
+      "Family Sharing"
+    ]
+  },
+  "99810": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "102500": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "104900": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "105400": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "105450": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "105600": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "107100": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "108800": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "110800": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support"
+    ]
+  },
+  "113200": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "115320": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "200110": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "200260": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "200510": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "201040": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "201570": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "201700": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "201810": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "201870": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements"
+    ]
+  },
+  "202170": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "202970": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "202990": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "203140": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "203160": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "203770": {
+    "type": "game",
+    "genres": [
+      "RPG",
+      "Simulation",
+      "Strategy",
+      "Free To Play"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Trading Cards"
+    ]
+  },
+  "204030": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "204100": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Partial Controller Support"
+    ]
+  },
+  "204300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "204360": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Custom Volume Controls",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "205100": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Color Alternatives",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "206420": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "206440": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "206760": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "207610": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "207750": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "207930": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "208200": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "208480": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "208580": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "208650": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "209000": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "209690": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "211160": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "211420": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "211500": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "211600": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "211740": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "212680": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "212910": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "213330": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "213670": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "213850": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "214510": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "214870": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "214950": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "216250": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "217060": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "217200": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "218620": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Tracked Controller Support",
+      "VR Supported",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "219150": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "219640": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "219740": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "220240": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Partial Controller Support"
+    ]
+  },
+  "220440": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "220700": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "221380": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "221640": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "222730": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "224480": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "225080": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "225540": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "225600": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "225640": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "227300": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "228400": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "228960": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "230290": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Early Access"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Workshop",
+      "Adjustable Text Size",
+      "Custom Volume Controls",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Touch Only Option",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "231740": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "232010": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "232430": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "233270": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "233720": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "234140": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "234190": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "234630": {
+    "type": "game",
+    "genres": [
+      "Racing",
+      "Simulation",
+      "Sports"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "VR Supported",
+      "Steam Trading Cards",
+      "VR Support",
+      "Partial Controller Support",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "234650": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "234670": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "235460": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "235900": {
+    "type": "game",
+    "genres": [
+      "RPG",
+      "Design & Illustration",
+      "Education",
+      "Web Publishing",
+      "Game Development"
+    ],
+    "categories": [
+      "Single-player"
+    ]
+  },
+  "236390": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Massively Multiplayer",
+      "Simulation",
+      "Free To Play"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "MMO",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "VR Supported",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Remote Play on Phone",
+      "Remote Play on Tablet"
+    ]
+  },
+  "236430": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "236830": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "236850": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "237110": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "237930": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "237990": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "238010": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Cloud",
+      "Commentary available",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "238090": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "238460": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "239030": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "239140": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "239160": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "239350": {
+    "type": "game",
+    "genres": [
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "239450": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "239820": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "241930": {
+    "type": "game",
+    "genres": [],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "242050": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Stereo Sound",
+      "Surround Sound"
+    ]
+  },
+  "242550": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together"
+    ]
+  },
+  "242700": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "242920": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "243470": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support"
+    ]
+  },
+  "245280": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "245470": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "246620": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "247430": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "248650": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Casual",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "248820": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Partial Controller Support",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "249130": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "250320": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "250900": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "254700": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "255710": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "256290": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "258180": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "258760": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "260210": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements"
+    ]
+  },
+  "261030": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "261110": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "264140": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "265890": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "265930": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "266130": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "267530": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "267900": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Shared/Split Screen",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "268050": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Color Alternatives",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "268910": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "270880": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "271590": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV"
+    ]
+  },
+  "271900": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "272510": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "274170": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "274290": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "Family Sharing"
+    ]
+  },
+  "275850": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Tracked Controller Support",
+      "VR Supported",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Chat Speech-to-text",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "277590": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements"
+    ]
+  },
+  "278460": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "281690": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "281990": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "284160": {
+    "type": "game",
+    "genres": [
+      "Racing",
+      "Simulation",
+      "Early Access"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "285160": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "285310": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "285330": {
+    "type": "game",
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "285420": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "286160": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Tracked Controller Support",
+      "VR Supported",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "287700": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "In-App Purchases",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "288470": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "289650": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support"
+    ]
+  },
+  "290460": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "292030": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "292120": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "292140": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "292230": {
+    "type": "game",
+    "genres": [
+      "Design & Illustration",
+      "Utilities"
+    ],
+    "categories": [
+      "Steam Workshop"
+    ]
+  },
+  "296470": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Sports"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "298110": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Partial Controller Support"
+    ]
+  },
+  "300540": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "301910": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "302060": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "302080": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "302510": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "304390": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Partial Controller Support"
+    ]
+  },
+  "304410": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "304930": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Free To Play"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Stats",
+      "Includes level editor",
+      "Remote Play on Tablet"
+    ]
+  },
+  "306130": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG"
+    ],
+    "categories": [
+      "Multi-player",
+      "MMO",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Trading Cards",
+      "Captions available",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "307690": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Racing"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "307780": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "310950": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "311210": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Valve Anti-Cheat enabled",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "311340": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "311560": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support"
+    ]
+  },
+  "312660": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "313690": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "314160": {
+    "type": "game",
+    "genres": [
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "315210": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "In-App Purchases",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "315260": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "317060": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Stats",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "318430": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "319630": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "321040": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "322330": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "330840": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "335300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "346010": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "349040": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "350080": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Color Alternatives",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "351970": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "354380": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support"
+    ]
+  },
+  "356190": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "360430": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "367520": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "368500": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support"
+    ]
+  },
+  "371660": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Trading Cards",
+      "Partial Controller Support"
+    ]
+  },
+  "374320": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "375230": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play",
+      "Massively Multiplayer"
+    ],
+    "categories": [
+      "Multi-player",
+      "MMO",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "Stats",
+      "Family Sharing"
+    ]
+  },
+  "376300": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "377160": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "379430": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "379720": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Color Alternatives",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "381210": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "388410": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "394160": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "394510": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "397540": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "403400": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "403430": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "403640": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Color Alternatives",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "409710": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Commentary available",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "409720": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "413150": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "427190": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "431960": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Indie",
+      "Animation & Modeling",
+      "Design & Illustration",
+      "Photo Editing",
+      "Utilities"
+    ],
+    "categories": [
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Workshop",
+      "Includes level editor"
+    ]
+  },
+  "438640": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "447040": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Partial Controller Support"
+    ]
+  },
+  "448280": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Tracked Controller Support",
+      "VR Only",
+      "Steam Trading Cards",
+      "Captions available",
+      "VR Support",
+      "SteamVR Collectibles",
+      "Family Sharing"
+    ]
+  },
+  "449800": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Family Sharing"
+    ]
+  },
+  "450540": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Simulation",
+      "Early Access"
+    ],
+    "categories": [
+      "Single-player",
+      "Tracked Controller Support",
+      "VR Only",
+      "VR Support",
+      "Family Sharing"
+    ]
+  },
+  "455400": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "455910": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "462780": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "476600": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "476620": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Co-op",
+      "Online Co-op",
+      "Shared/Split Screen Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Steam Cloud",
+      "Valve Anti-Cheat enabled",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "485510": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "489830": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "495140": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "498240": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "502500": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "502820": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Tracked Controller Support",
+      "VR Only",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "524220": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "543870": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Stats",
+      "Steam Leaderboards",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "552520": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "Includes level editor",
+      "HDR available"
+    ]
+  },
+  "553850": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Chat Speech-to-text",
+      "Chat Text-to-speech",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Narrated Game Menus",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Family Sharing"
+    ]
+  },
+  "555160": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Tracked Controller Support",
+      "VR Only"
+    ]
+  },
+  "570940": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "578650": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "582160": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Remote Play on Tablet",
+      "HDR available"
+    ]
+  },
+  "582660": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Massively Multiplayer",
+      "RPG",
+      "Strategy"
+    ],
+    "categories": [
+      "Multi-player",
+      "MMO",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Partial Controller Support"
+    ]
+  },
+  "587620": {
+    "type": "game",
+    "genres": [
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "589290": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "Massively Multiplayer",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Multi-player",
+      "MMO",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Adjustable Text Size",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Stats",
+      "Steam Leaderboards",
+      "Includes level editor",
+      "Includes Source SDK"
+    ]
+  },
+  "601050": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "606280": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "611670": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Tracked Controller Support",
+      "VR Only",
+      "VR Support",
+      "SteamVR Collectibles",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "612880": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Color Alternatives",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "613100": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "614570": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Color Alternatives",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "617830": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Tracked Controller Support",
+      "VR Supported",
+      "SteamVR Collectibles",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "620980": {
+    "type": "game",
+    "genres": [
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Tracked Controller Support",
+      "VR Only",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "621060": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "627270": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "629730": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Tracked Controller Support",
+      "VR Only",
+      "Family Sharing"
+    ]
+  },
+  "654310": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "729040": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "731490": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "752480": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Tracked Controller Support",
+      "VR Only",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "803330": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "812140": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "HDR available"
+    ]
+  },
+  "814380": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "847370": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "895870": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "VR Supported",
+      "Family Sharing"
+    ]
+  },
+  "896890": {
+    "type": "game",
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Tracked Controller Support",
+      "VR Only",
+      "Family Sharing"
+    ]
+  },
+  "899440": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "911400": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Partial Controller Support"
+    ]
+  },
+  "920210": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "939960": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Partial Controller Support"
+    ]
+  },
+  "945360": {
+    "type": "game",
+    "genres": [
+      "Casual"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "950670": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "960910": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "960990": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "961490": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "976310": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Shared/Split Screen PvP",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Custom Volume Controls",
+      "Keyboard Only Option",
+      "Narrated Game Menus",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "976730": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "990080": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Narrated Game Menus",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "993090": {
+    "type": "game",
+    "genres": [
+      "Utilities"
+    ],
+    "categories": []
+  },
+  "996580": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "1017180": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Early Access"
+    ],
+    "categories": [
+      "Single-player",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "1017900": {
+    "type": "game",
+    "genres": [
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "LAN PvP",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Includes level editor",
+      "Family Sharing"
+    ]
+  },
+  "1020790": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Steam Leaderboards",
+      "Family Sharing"
+    ]
+  },
+  "1029690": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Subtitle Options",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "1030300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "1030830": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "1030840": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "1056960": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Color Alternatives",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "1085660": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Free To Play"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Subtitle Options",
+      "Partial Controller Support"
+    ]
+  },
+  "1086940": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "RPG",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "LAN Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "1088850": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "1091500": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "1113000": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "1133320": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Tracked Controller Support",
+      "VR Only",
+      "Family Sharing"
+    ]
+  },
+  "1151340": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Multi-player",
+      "MMO",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Remote Play on Tablet"
+    ]
+  },
+  "1151640": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "1158310": {
+    "type": "game",
+    "genres": [
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Steam Workshop",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Mouse Only Option",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Steam Cloud",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "1167630": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Workshop",
+      "Steam Cloud",
+      "Includes level editor",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "1172380": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Surround Sound",
+      "Remote Play on Tablet",
+      "Remote Play on TV",
+      "HDR available"
+    ]
+  },
+  "1172620": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet",
+      "Family Sharing"
+    ]
+  },
+  "1172710": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1174180": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet"
+    ]
+  },
+  "1190460": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1222140": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1222690": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1222730": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1237320": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1237950": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1237970": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1238040": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1245620": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "1259420": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1261040": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1266700": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1267910": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1282690": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1294760": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1328670": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1343400": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1350650": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1446650": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1449690": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1466860": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1468720": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1517290": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1522160": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1546970": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1546990": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1547000": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1551360": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1583230": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1593500": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1599660": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1601570": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1659420": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1689620": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1693980": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1716740": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1771300": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "1774580": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1817070": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "1817190": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1836200": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1850570": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1888930": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Narrated Game Menus",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "Remote Play on TV",
+      "Family Sharing"
+    ]
+  },
+  "1895880": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1903340": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1920490": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1937780": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1938090": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1941540": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1968340": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "1971870": {
+    "type": "",
+    "genres": [],
+    "categories": []
+  },
+  "2050650": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "2208920": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Captions available",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Mouse Only Option",
+      "Narrated Game Menus",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "HDR available"
+    ]
+  },
+  "2215430": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "2322010": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Narrated Game Menus",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "2358720": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2362420": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player"
+    ]
+  },
+  "2369390": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Captions available",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "HDR available"
+    ]
+  },
+  "2420110": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "2440510": {
+    "type": "game",
+    "genres": [
+      "Racing"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "2523720": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Captions available",
+      "Chat Speech-to-text",
+      "Chat Text-to-speech",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Narrated Game Menus",
+      "Stereo Sound",
+      "Surround Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2544090": {
+    "type": "game",
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Family Sharing"
+    ]
+  },
+  "2552430": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2552440": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2552450": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2561580": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2623190": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Surround Sound",
+      "Partial Controller Support",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "2635410": {
+    "type": "game",
+    "genres": [],
+    "categories": []
+  },
+  "2651280": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Narrated Game Menus",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "2668510": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "HDR available"
+    ]
+  },
+  "2677660": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "2807960": {
+    "type": "game",
+    "genres": [
+      "Action"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "In-App Purchases",
+      "Camera Comfort",
+      "Chat Speech-to-text",
+      "Chat Text-to-speech",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Steam Cloud",
+      "HDR available"
+    ]
+  },
+  "2840770": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Captions available",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "HDR available"
+    ]
+  },
+  "2842040": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Captions available",
+      "In-App Purchases",
+      "HDR available"
+    ]
+  },
+  "2878600": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Sports"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Full controller support",
+      "Family Sharing"
+    ]
+  },
+  "2950340": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Shared/Split Screen Co-op",
+      "Shared/Split Screen",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Cloud",
+      "Remote Play Together",
+      "Family Sharing"
+    ]
+  },
+  "2951630": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Cross-Platform Multiplayer",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Surround Sound",
+      "Family Sharing"
+    ]
+  },
+  "3035570": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Captions available",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Mouse Only Option",
+      "Narrated Game Menus",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Partial Controller Support",
+      "HDR available"
+    ]
+  },
+  "3159330": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Steam Trading Cards",
+      "Captions available",
+      "In-App Purchases",
+      "Adjustable Text Size",
+      "Camera Comfort",
+      "Color Alternatives",
+      "Custom Volume Controls",
+      "Adjustable Difficulty",
+      "Keyboard Only Option",
+      "Mouse Only Option",
+      "Narrated Game Menus",
+      "Playable without Timed Input",
+      "Save Anytime",
+      "Stereo Sound",
+      "Subtitle Options",
+      "Surround Sound",
+      "Partial Controller Support",
+      "HDR available"
+    ]
+  },
+  "3240220": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Racing"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "In-App Purchases",
+      "Partial Controller Support",
+      "Remote Play on Phone",
+      "Remote Play on Tablet"
+    ]
+  },
+  "3241660": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Early Access"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Camera Comfort",
+      "Custom Volume Controls",
+      "Playable without Timed Input",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  },
+  "3400930": {
+    "type": "game",
+    "genres": [
+      "Casual",
+      "Simulation"
+    ],
+    "categories": [
+      "Multi-player",
+      "PvP",
+      "Online PvP",
+      "Steam Achievements",
+      "Family Sharing"
+    ]
+  },
+  "3527290": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "categories": [
+      "Single-player",
+      "Multi-player",
+      "Co-op",
+      "Online Co-op",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Family Sharing"
+    ]
+  },
+  "3764200": {
+    "type": "game",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Captions available",
+      "Steam Cloud",
+      "HDR available",
+      "Family Sharing"
+    ]
+  },
+  "3837340": {
+    "type": "game",
+    "genres": [
+      "RPG"
+    ],
+    "categories": [
+      "Single-player",
+      "Steam Achievements",
+      "Full controller support",
+      "Steam Trading Cards",
+      "Custom Volume Controls",
+      "Keyboard Only Option",
+      "Stereo Sound",
+      "Steam Cloud",
+      "Family Sharing"
+    ]
+  }
+}

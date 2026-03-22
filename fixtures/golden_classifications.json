@@ -1,0 +1,3985 @@
+[
+  {
+    "appid": 10,
+    "name": "Counter-Strike",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 80,
+    "name": "Counter-Strike: Condition Zero",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 100,
+    "name": "Counter-Strike: Condition Zero Deleted Scenes",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 220,
+    "name": "Half-Life 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 240,
+    "name": "Counter-Strike: Source",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 320,
+    "name": "Half-Life 2: Deathmatch",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 360,
+    "name": "Half-Life Deathmatch: Source",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 400,
+    "name": "Portal",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.0h)"
+  },
+  {
+    "appid": 440,
+    "name": "Team Fortress 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 500,
+    "name": "Left 4 Dead",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 550,
+    "name": "Left 4 Dead 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 620,
+    "name": "Portal 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.0h)"
+  },
+  {
+    "appid": 730,
+    "name": "Counter-Strike 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 2620,
+    "name": "Call of Duty (2003)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2630,
+    "name": "Call of Duty 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2640,
+    "name": "Call of Duty: United Offensive",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2820,
+    "name": "X3: Terran Conflict",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 3270,
+    "name": "Painkiller Overdose",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 4000,
+    "name": "Garry's Mod",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (11.9h)"
+  },
+  {
+    "appid": 4700,
+    "name": "Total War: MEDIEVAL II - Definitive Edition",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 4760,
+    "name": "Rome: Total War",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 4770,
+    "name": "Rome: Total War - Alexander",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 4920,
+    "name": "Natural Selection 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 6020,
+    "name": "STAR WARS\u2122 Jedi Knight: Jedi Academy\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6030,
+    "name": "STAR WARS\u2122 Jedi Knight II: Jedi Outcast\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6060,
+    "name": "Star Wars: Battlefront 2 (Classic, 2005)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (11.0h)"
+  },
+  {
+    "appid": 6850,
+    "name": "Hitman 2: Silent Assassin",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6860,
+    "name": "Hitman: Blood Money",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6870,
+    "name": "Battlestations: Midway",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6880,
+    "name": "Just Cause",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6900,
+    "name": "Hitman: Codename 47",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6910,
+    "name": "Deus Ex: Game of the Year Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6920,
+    "name": "Deus Ex: Invisible War",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 6980,
+    "name": "Thief: Deadly Shadows",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 7650,
+    "name": "X-COM: Terror from the Deep",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 7660,
+    "name": "X-COM: Apocalypse",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 7670,
+    "name": "BioShock",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.8h)"
+  },
+  {
+    "appid": 7730,
+    "name": "X-COM: Interceptor",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 7760,
+    "name": "X-COM: UFO Defense",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 7770,
+    "name": "X-COM: Enforcer",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 7940,
+    "name": "Call of Duty 4: Modern Warfare (2007)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 8190,
+    "name": "Just Cause 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8200,
+    "name": "Sam & Max 101: Culture Shock",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8210,
+    "name": "Sam & Max 102: Situation: Comedy",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8220,
+    "name": "Sam & Max 103: The Mole, the Mob and the Meatball",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8230,
+    "name": "Sam & Max 104: Abe Lincoln Must Die!",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8240,
+    "name": "Sam & Max 105: Reality 2.0",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8250,
+    "name": "Sam & Max 106: Bright Side of the Moon",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8260,
+    "name": "Sam & Max 201: Ice Station Santa",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8270,
+    "name": "Sam & Max 202: Moai Better Blues",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8280,
+    "name": "Sam & Max 203: Night of the Raving Dead",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8290,
+    "name": "Sam & Max 204: Chariots of the Dogs",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8300,
+    "name": "Sam & Max 205: What's New Beelzebub?",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8600,
+    "name": "RACE 07",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: racing"
+  },
+  {
+    "appid": 8660,
+    "name": "GTR Evolution",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: Steam type: dlc"
+  },
+  {
+    "appid": 8850,
+    "name": "BioShock 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 8870,
+    "name": "BioShock Infinite",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (5.3h)"
+  },
+  {
+    "appid": 8930,
+    "name": "Sid Meier's Civilization V",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.4h)"
+  },
+  {
+    "appid": 8980,
+    "name": "Borderlands GOTY",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 9050,
+    "name": "DOOM 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 9070,
+    "name": "DOOM 3: Resurrection of Evil",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 9480,
+    "name": "Saints Row 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 10090,
+    "name": "Call of Duty: World at War",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.7h)"
+  },
+  {
+    "appid": 10150,
+    "name": "Prototype",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 10180,
+    "name": "Call of Duty: Modern Warfare 2 (2009)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 10190,
+    "name": "Call of Duty: Modern Warfare 2 (2009) - Multiplayer",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.0h)"
+  },
+  {
+    "appid": 10500,
+    "name": "Total War: EMPIRE - Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.4h)"
+  },
+  {
+    "appid": 11390,
+    "name": "Crash Time 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, racing"
+  },
+  {
+    "appid": 11450,
+    "name": "Overlord",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12100,
+    "name": "Grand Theft Auto III",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12110,
+    "name": "Grand Theft Auto: Vice City",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.6h)"
+  },
+  {
+    "appid": 12120,
+    "name": "Grand Theft Auto: San Andreas",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.4h)"
+  },
+  {
+    "appid": 12140,
+    "name": "Max Payne",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12150,
+    "name": "Max Payne 2: The Fall of Max Payne",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12200,
+    "name": "Bully: Scholarship Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12210,
+    "name": "Grand Theft Auto IV: The Complete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.1h)"
+  },
+  {
+    "appid": 12230,
+    "name": "Grand Theft Auto III",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 12240,
+    "name": "Grand Theft Auto: Vice City",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 12250,
+    "name": "Grand Theft Auto: San Andreas",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 12710,
+    "name": "Overlord: Raising Hell",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12770,
+    "name": "Rise of the Argonauts",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12810,
+    "name": "Overlord II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 12830,
+    "name": "Operation Flashpoint: Dragon Rising",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 13520,
+    "name": "Far Cry",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 15100,
+    "name": "Assassin's Creed",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 16450,
+    "name": "F.E.A.R. 2: Project Origin",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 17300,
+    "name": "Crysis",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.3h)"
+  },
+  {
+    "appid": 17410,
+    "name": "Mirror's Edge",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 17450,
+    "name": "Dragon Age: Origins",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 17460,
+    "name": "Mass Effect (2007)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 17470,
+    "name": "Dead Space (2008)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 19900,
+    "name": "Far Cry 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 20900,
+    "name": "The Witcher: Enhanced Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.8h)"
+  },
+  {
+    "appid": 20920,
+    "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.5h)"
+  },
+  {
+    "appid": 21000,
+    "name": "LEGO\u00ae Batman\u2122: The Videogame",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 21090,
+    "name": "F.E.A.R.",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 21100,
+    "name": "F.E.A.R. 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 21110,
+    "name": "F.E.A.R.: Extraction Point",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 21120,
+    "name": "F.E.A.R.: Perseus Mandate",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 21900,
+    "name": "Tom Clancy's H.A.W.X.",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.9h)"
+  },
+  {
+    "appid": 22000,
+    "name": "World of Goo",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 22100,
+    "name": "Mount & Blade",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.1h)"
+  },
+  {
+    "appid": 22320,
+    "name": "The Elder Scrolls III: Morrowind",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 22330,
+    "name": "The Elder Scrolls IV: Oblivion Game of the Year Edition (2009)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (4.7h)"
+  },
+  {
+    "appid": 22370,
+    "name": "Fallout 3 - Game of the Year Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 22380,
+    "name": "Fallout: New Vegas",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.7h)"
+  },
+  {
+    "appid": 23310,
+    "name": "The Last Remnant",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 23490,
+    "name": "Tropico 3 - Steam Special Edition",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 24010,
+    "name": "Train Simulator Classic",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 24240,
+    "name": "PAYDAY: The Heist",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 24780,
+    "name": "SimCity 4 Deluxe",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 24960,
+    "name": "Battlefield: Bad Company\u2122 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.8h)"
+  },
+  {
+    "appid": 24980,
+    "name": "Mass Effect 2 (2010)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 25800,
+    "name": "Europa Universalis III",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 29180,
+    "name": "Osmos",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 31220,
+    "name": "Sam & Max 301: The Penal Zone",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 31230,
+    "name": "Sam & Max 302: The Tomb of Sammun-Mak",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 31240,
+    "name": "Sam & Max 303: They Stole Max's Brain!",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 31250,
+    "name": "Sam & Max 304: Beyond the Alley of the Dolls",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 31260,
+    "name": "Sam & Max 305: The City that Dares not Sleep",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 32330,
+    "name": "LEGO\u24c7 Indiana Jones\u2122: The Original Adventures",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 32370,
+    "name": "STAR WARS\u2122 Knights of the Old Republic\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 32380,
+    "name": "STAR WARS\u2122 Jedi Knight: Dark Forces II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 32390,
+    "name": "STAR WARS\u2122 Jedi Knight: Mysteries of the Sith\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 32400,
+    "name": "STAR WARS\u2122: Dark Forces",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 32430,
+    "name": "STAR WARS\u2122: The Force Unleashed\u2122 Ultimate Sith Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.7h)"
+  },
+  {
+    "appid": 32440,
+    "name": "LEGO\u00ae Star Wars\u2122: The Complete Saga",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 32500,
+    "name": "STAR WARS\u2122: The Force Unleashed\u2122 II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 33230,
+    "name": "Assassin's Creed II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 34030,
+    "name": "Total War: NAPOLEON - Definitive Edition",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 34330,
+    "name": "Total War: SHOGUN 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 35000,
+    "name": "Mini Ninjas",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 35140,
+    "name": "Batman: Arkham Asylum GOTY Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 35450,
+    "name": "Rising Storm/Red Orchestra 2 Multiplayer",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 35700,
+    "name": "Trine",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 35720,
+    "name": "Trine 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 38400,
+    "name": "Fallout",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 38410,
+    "name": "Fallout 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 38420,
+    "name": "Fallout Tactics",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 39140,
+    "name": "FINAL FANTASY VII (2013)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 39530,
+    "name": "Painkiller: Black Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 39560,
+    "name": "Painkiller: Resurrection",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 40300,
+    "name": "Risen",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 40390,
+    "name": "Risen 2 - Dark Waters",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 40800,
+    "name": "Super Meat Boy",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 42680,
+    "name": "Call of Duty\u00ae: Modern Warfare\u00ae 3 (2011)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 42690,
+    "name": "Call of Duty\u00ae: Modern Warfare\u00ae 3 (2011) - Multiplayer",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.3h) but no clear completion signal"
+  },
+  {
+    "appid": 42700,
+    "name": "Call of Duty: Black Ops",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 42710,
+    "name": "Call of Duty: Black Ops - Multiplayer",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (19.7h) but no clear completion signal"
+  },
+  {
+    "appid": 42910,
+    "name": "Magicka",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 43110,
+    "name": "Metro 2033",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 44200,
+    "name": "Galcon Fusion",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 44320,
+    "name": "DiRT 3",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 44340,
+    "name": "Operation Flashpoint: Red River",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 47780,
+    "name": "Dead Space 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 47810,
+    "name": "Dragon Age: Origins - Ultimate Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 47890,
+    "name": "The Sims\u2122 3",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 48160,
+    "name": "Tom Clancy's H.A.W.X. 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 48190,
+    "name": "Assassin's Creed Brotherhood",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 48720,
+    "name": "Mount & Blade: With Fire and Sword",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 49520,
+    "name": "Borderlands 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 50130,
+    "name": "Mafia II (Classic)",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (44.8% achievements, 14.3h played)"
+  },
+  {
+    "appid": 50300,
+    "name": "Spec Ops: The Line",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 50620,
+    "name": "Darksiders",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 50650,
+    "name": "Darksiders II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 55230,
+    "name": "Saints Row: The Third",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (15.8h) but no clear completion signal"
+  },
+  {
+    "appid": 57300,
+    "name": "Amnesia: The Dark Descent",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 57600,
+    "name": "Tropico 3: Absolute Power",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: Steam type: dlc"
+  },
+  {
+    "appid": 57690,
+    "name": "Tropico 4",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 63380,
+    "name": "Sniper Elite V2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.2h)"
+  },
+  {
+    "appid": 65300,
+    "name": "Dustforce",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 65560,
+    "name": "Painkiller: Redemption",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 65930,
+    "name": "The Bureau: XCOM Declassified",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 70000,
+    "name": "Dino D-Day",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 72200,
+    "name": "Universe Sandbox Legacy",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, casual"
+  },
+  {
+    "appid": 72850,
+    "name": "The Elder Scrolls V: Skyrim",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Rule: Achievement completion: 100.0%"
+  },
+  {
+    "appid": 78000,
+    "name": "Bejeweled 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 91310,
+    "name": "Dead Island",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 92800,
+    "name": "SpaceChem",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 96100,
+    "name": "Defy Gravity",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 98200,
+    "name": "Frozen Synapse",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 99810,
+    "name": "Bulletstorm",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 102500,
+    "name": "Kingdoms of Amalur: Reckoning\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 104900,
+    "name": "ORION: Prelude",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 105400,
+    "name": "Fable III",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 105450,
+    "name": "Age of Empires\u00ae III (2007)",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 105600,
+    "name": "Terraria",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 107100,
+    "name": "Bastion",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 108800,
+    "name": "Crysis 2 Maximum Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 110800,
+    "name": "L.A. Noire",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 113200,
+    "name": "The Binding of Isaac",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 115320,
+    "name": "PROTOTYPE 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 200110,
+    "name": "Nosgoth",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 200260,
+    "name": "Batman: Arkham City GOTY",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 200510,
+    "name": "XCOM: Enemy Unknown",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 201040,
+    "name": "Galcon Legends",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 201570,
+    "name": "Really Big Sky",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 201700,
+    "name": "DiRT Showdown",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 201810,
+    "name": "Wolfenstein: The New Order",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (12.2h)"
+  },
+  {
+    "appid": 201870,
+    "name": "Assassin's Creed Revelations",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 202170,
+    "name": "Sleeping Dogs\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 202970,
+    "name": "Call of Duty: Black Ops II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.3h)"
+  },
+  {
+    "appid": 202990,
+    "name": "Call of Duty: Black Ops II - Multiplayer",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.8h)"
+  },
+  {
+    "appid": 203140,
+    "name": "Hitman: Absolution",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 203160,
+    "name": "Tomb Raider",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 203770,
+    "name": "Crusader Kings II",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (72.0% achievements, 293.9h played)"
+  },
+  {
+    "appid": 204030,
+    "name": "Fable - The Lost Chapters",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 204100,
+    "name": "Max Payne 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 204300,
+    "name": "Awesomenauts",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 204360,
+    "name": "Castle Crashers",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 205100,
+    "name": "Dishonored",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 206420,
+    "name": "Saints Row IV",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (30.2h) but no clear completion signal"
+  },
+  {
+    "appid": 206440,
+    "name": "To the Moon",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 206760,
+    "name": "Painkiller: Recurring Evil",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 207610,
+    "name": "The Walking Dead",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (5.8h) but no clear completion signal"
+  },
+  {
+    "appid": 207750,
+    "name": "Symphony",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 207930,
+    "name": "Sacred Citadel",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 208200,
+    "name": "DOOM 3: BFG Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.2h) but no clear completion signal"
+  },
+  {
+    "appid": 208480,
+    "name": "Assassin's Creed\u00ae III",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.1h) but no clear completion signal"
+  },
+  {
+    "appid": 208580,
+    "name": "STAR WARS\u2122 Knights of the Old Republic\u2122 II: The Sith Lords\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.1h) but no clear completion signal"
+  },
+  {
+    "appid": 208650,
+    "name": "Batman\u2122: Arkham Knight",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 209000,
+    "name": "Batman\u2122: Arkham Origins",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 209690,
+    "name": "Fieldrunners",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 211160,
+    "name": "Viking: Battle for Asgard",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 211420,
+    "name": "DARK SOULS\u2122: Prepare To Die Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 211500,
+    "name": "RaceRoom Racing Experience ",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 211600,
+    "name": "Thief Gold",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 211740,
+    "name": "Thief\u2122 II: The Metal Age",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 212680,
+    "name": "FTL: Faster Than Light",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 212910,
+    "name": "Call of Duty: Black Ops II - Zombies",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 213330,
+    "name": "LEGO\u00ae Batman\u2122 2: DC Super Heroes",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 213670,
+    "name": "South Park\u2122: The Stick of Truth\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 213850,
+    "name": "Magic 2014 ",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 214510,
+    "name": "LEGO\u00ae The Lord of the Rings\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 214870,
+    "name": "Painkiller Hell & Damnation",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 214950,
+    "name": "Total War: ROME II - Emperor Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 216250,
+    "name": "Dead Island Riptide",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 217060,
+    "name": "Total War Battles: SHOGUN",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 217200,
+    "name": "Worms Armageddon",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 218620,
+    "name": "PAYDAY 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 219150,
+    "name": "Hotline Miami",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (2.2h) but no clear completion signal"
+  },
+  {
+    "appid": 219640,
+    "name": "Chivalry: Medieval Warfare",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 219740,
+    "name": "Don't Starve",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 220240,
+    "name": "Far Cry\u00ae 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 220440,
+    "name": "DmC Devil May Cry",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 220700,
+    "name": "RPG Maker VX Ace",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: name matches not-a-game pattern"
+  },
+  {
+    "appid": 221380,
+    "name": "Age of Empires II (2013)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (1.5h) but no clear completion signal"
+  },
+  {
+    "appid": 221640,
+    "name": "Super Hexagon",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 222730,
+    "name": "Reus",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.5h) but no clear completion signal"
+  },
+  {
+    "appid": 224480,
+    "name": "Octodad: Dadliest Catch",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.4h) but no clear completion signal"
+  },
+  {
+    "appid": 225080,
+    "name": "Brothers - A Tale of Two Sons",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 225540,
+    "name": "Just Cause 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.4h) but no clear completion signal"
+  },
+  {
+    "appid": 225600,
+    "name": "Blade Symphony",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 225640,
+    "name": "Sacred 2 Gold",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 227300,
+    "name": "Euro Truck Simulator 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (5.5h) but no clear completion signal"
+  },
+  {
+    "appid": 228400,
+    "name": "ACE COMBAT\u2122 ASSAULT HORIZON Enhanced Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 228960,
+    "name": "Skulls of the Shogun",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 230290,
+    "name": "Universe Sandbox",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, casual"
+  },
+  {
+    "appid": 231740,
+    "name": "Knights of Pen and Paper +1",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 232010,
+    "name": "Euro Truck Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 232430,
+    "name": "Gone Home",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 233270,
+    "name": "Far Cry\u00ae 3 Blood Dragon",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.3h) but no clear completion signal"
+  },
+  {
+    "appid": 233720,
+    "name": "Surgeon Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.2h) but no clear completion signal"
+  },
+  {
+    "appid": 234140,
+    "name": "Mad Max",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.4h) but no clear completion signal"
+  },
+  {
+    "appid": 234190,
+    "name": "Receiver",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 234630,
+    "name": "Project CARS",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 234650,
+    "name": "Shadowrun Returns",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 234670,
+    "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 3 Full Burst",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.5h)"
+  },
+  {
+    "appid": 235460,
+    "name": "METAL GEAR RISING: REVENGEANCE",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.3h)"
+  },
+  {
+    "appid": 235900,
+    "name": "RPG Maker XP",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: name matches not-a-game pattern"
+  },
+  {
+    "appid": 236390,
+    "name": "War Thunder",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (30.2h) but no clear completion signal"
+  },
+  {
+    "appid": 236430,
+    "name": "DARK SOULS\u2122 II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 236830,
+    "name": "Red Orchestra 2: Heroes of Stalingrad - Single Player",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 236850,
+    "name": "Europa Universalis IV",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.7h)"
+  },
+  {
+    "appid": 237110,
+    "name": "Mortal Kombat Komplete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.3h)"
+  },
+  {
+    "appid": 237930,
+    "name": "Transistor",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 237990,
+    "name": "The Banner Saga",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 238010,
+    "name": "Deus Ex: Human Revolution - Director's Cut",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 238090,
+    "name": "Sniper Elite 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 238460,
+    "name": "BattleBlock Theater",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 239030,
+    "name": "Papers, Please",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 239140,
+    "name": "Dying Light",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 239160,
+    "name": "Thief",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 239350,
+    "name": "Spelunky",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 239450,
+    "name": "Gun Monkeys",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 239820,
+    "name": "Game Dev Tycoon",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.2h)"
+  },
+  {
+    "appid": 241930,
+    "name": "Middle-earth\u2122: Shadow of Mordor\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 242050,
+    "name": "Assassin's Creed IV Black Flag",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 242550,
+    "name": "Rayman Legends",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 242700,
+    "name": "Injustice: Gods Among Us Ultimate Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.8h)"
+  },
+  {
+    "appid": 242920,
+    "name": "Banished",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (6.2h)"
+  },
+  {
+    "appid": 243470,
+    "name": "Watch_Dogs",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 245280,
+    "name": "ENSLAVED\u2122: Odyssey to the West\u2122 Premium Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 245470,
+    "name": "Democracy 3",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 246620,
+    "name": "Plague Inc: Evolved",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Rule: Story achievement: A_TheEndPlague"
+  },
+  {
+    "appid": 247430,
+    "name": "Hitman: Contracts",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 248650,
+    "name": "Draw a Stickman: EPIC",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 248820,
+    "name": "Risk of Rain (2013)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 249130,
+    "name": "LEGO\u00ae MARVEL Super Heroes",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.5h)"
+  },
+  {
+    "appid": 250320,
+    "name": "The Wolf Among Us",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.9h)"
+  },
+  {
+    "appid": 250900,
+    "name": "The Binding of Isaac: Rebirth",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 254700,
+    "name": "Resident Evil 4 (2005)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 255710,
+    "name": "Cities: Skylines",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.8h)"
+  },
+  {
+    "appid": 256290,
+    "name": "Child of Light",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 258180,
+    "name": "Deus Ex: The Fall",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 258760,
+    "name": "Scania Truck Driving Simulator",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 260210,
+    "name": "Assassin's Creed Liberation",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 261030,
+    "name": "The Walking Dead: Season Two",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 261110,
+    "name": "Killer is Dead",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 264140,
+    "name": "Pixel Piracy",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 265890,
+    "name": "Hexcells",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual, strategy"
+  },
+  {
+    "appid": 265930,
+    "name": "Goat Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.8h)"
+  },
+  {
+    "appid": 266130,
+    "name": "Breach & Clear",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 267530,
+    "name": "The LEGO\u00ae Movie - Videogame",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 267900,
+    "name": "Guilty Gear Isuka",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 268050,
+    "name": "The Evil Within",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 268910,
+    "name": "Cuphead",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 270880,
+    "name": "American Truck Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.3h)"
+  },
+  {
+    "appid": 271590,
+    "name": "Grand Theft Auto V Legacy",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (132.1h) but no clear completion signal"
+  },
+  {
+    "appid": 271900,
+    "name": "Hexcells Plus",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual, strategy"
+  },
+  {
+    "appid": 272510,
+    "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM Revolution",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 274170,
+    "name": "Hotline Miami 2: Wrong Number",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 274290,
+    "name": "Gods Will Be Watching",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.3h)"
+  },
+  {
+    "appid": 275850,
+    "name": "No Man's Sky",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.9h)"
+  },
+  {
+    "appid": 277590,
+    "name": "Assassin's Creed Freedom Cry",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 278460,
+    "name": "Skyborn",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 281690,
+    "name": "The Legend of Korra\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.5h) but no clear completion signal"
+  },
+  {
+    "appid": 281990,
+    "name": "Stellaris",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 284160,
+    "name": "BeamNG.drive",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.8h)"
+  },
+  {
+    "appid": 285160,
+    "name": "LEGO\u00ae The Hobbit\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 285310,
+    "name": "RollerCoaster Tycoon: Deluxe",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 285330,
+    "name": "RollerCoaster Tycoon 2: Triple Thrill Pack",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 285420,
+    "name": "Deadly Sin 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 286160,
+    "name": "Tabletop Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.5h)"
+  },
+  {
+    "appid": 287700,
+    "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 288470,
+    "name": "Fable Anniversary",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 289650,
+    "name": "Assassin's Creed Unity",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 290460,
+    "name": "Legionwood 2: Rise of the Eternal's Realm",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 292030,
+    "name": "The Witcher 3: Wild Hunt",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 292120,
+    "name": "FINAL FANTASY XIII",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 292140,
+    "name": "FINAL FANTASY XIII-2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 292230,
+    "name": "Game Character Hub",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 296470,
+    "name": "Mount Your Friends",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, sports"
+  },
+  {
+    "appid": 298110,
+    "name": "Far Cry 4",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (26.2h) but no clear completion signal"
+  },
+  {
+    "appid": 300540,
+    "name": "Sweet Lily Dreams",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 301910,
+    "name": "Saints Row: Gat out of Hell",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 302060,
+    "name": "Trucks & Trailers",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 302080,
+    "name": "Bus Driver",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 302510,
+    "name": "Ryse: Son of Rome",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 304390,
+    "name": "FOR HONOR",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 304410,
+    "name": "Hexcells Infinite",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual, strategy"
+  },
+  {
+    "appid": 304930,
+    "name": "Unturned",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 306130,
+    "name": "The Elder Scrolls Online",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 307690,
+    "name": "Sleeping Dogs: Definitive Edition",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: racing"
+  },
+  {
+    "appid": 307780,
+    "name": "Mortal Kombat X",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.4h)"
+  },
+  {
+    "appid": 310950,
+    "name": "Street Fighter V",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 311210,
+    "name": "Call of Duty: Black Ops III",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.8h)"
+  },
+  {
+    "appid": 311340,
+    "name": "METAL GEAR SOLID V: GROUND ZEROES",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.4h)"
+  },
+  {
+    "appid": 311560,
+    "name": "Assassin's Creed Rogue",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (13.0h)"
+  },
+  {
+    "appid": 312660,
+    "name": "Sniper Elite 4",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 313690,
+    "name": "LEGO\u00ae Batman\u2122 3: Beyond Gotham",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 314160,
+    "name": "Microsoft Flight Simulator X: Steam Edition",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 315210,
+    "name": "Suicide Squad: Kill the Justice League",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 315260,
+    "name": "Space Hack",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 317060,
+    "name": "Attractio",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 318430,
+    "name": "Squishy the Suicidal Pig",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 319630,
+    "name": "Life is Strange\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 321040,
+    "name": "DiRT 3 Complete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.1h) but no clear completion signal"
+  },
+  {
+    "appid": 322330,
+    "name": "Don't Starve Together",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, strategy"
+  },
+  {
+    "appid": 330840,
+    "name": "Game of Thrones - A Telltale Games Series",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 335300,
+    "name": "DARK SOULS\u2122 II: Scholar of the First Sin",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 346010,
+    "name": "Besiege",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.9h)"
+  },
+  {
+    "appid": 349040,
+    "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.6h)"
+  },
+  {
+    "appid": 350080,
+    "name": "Wolfenstein: The Old Blood ",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.5h)"
+  },
+  {
+    "appid": 351970,
+    "name": "Tales of Zestiria",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 354380,
+    "name": "Assassin\u2019s Creed\u00ae Chronicles: China",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.8h)"
+  },
+  {
+    "appid": 356190,
+    "name": "Middle-earth\u2122: Shadow of War\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 360430,
+    "name": "Mafia III: Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.0h)"
+  },
+  {
+    "appid": 367520,
+    "name": "Hollow Knight",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 368500,
+    "name": "Assassin's Creed Syndicate",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 371660,
+    "name": "Far Cry Primal",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (7.0h)"
+  },
+  {
+    "appid": 374320,
+    "name": "DARK SOULS\u2122 III",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 375230,
+    "name": "Warhammer 40,000: Eternal Crusade",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 376300,
+    "name": "GUILTY GEAR Xrd -SIGN-",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 377160,
+    "name": "Fallout 4",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (32.3h) but no clear completion signal"
+  },
+  {
+    "appid": 379430,
+    "name": "Kingdom Come: Deliverance",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 379720,
+    "name": "DOOM",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 381210,
+    "name": "Dead by Daylight",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 388410,
+    "name": "Darksiders II Deathinitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 394160,
+    "name": "ARCADE GAME SERIES: PAC-MAN",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 394510,
+    "name": "HELLDIVERS\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 397540,
+    "name": "Borderlands 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 403400,
+    "name": "ARCADE GAME SERIES: DIG DUG",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 403430,
+    "name": "ARCADE GAME SERIES: GALAGA",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 403640,
+    "name": "Dishonored 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.4h)"
+  },
+  {
+    "appid": 409710,
+    "name": "BioShock Remastered",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 409720,
+    "name": "BioShock 2 Remastered",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 413150,
+    "name": "Stardew Valley",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 427190,
+    "name": "Dead Rising",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 431960,
+    "name": "Wallpaper Engine",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: name matches not-a-game pattern"
+  },
+  {
+    "appid": 438640,
+    "name": "LEGO\u00ae STAR WARS\u2122: The Force Awakens",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 447040,
+    "name": "Watch_Dogs 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (6.1h)"
+  },
+  {
+    "appid": 448280,
+    "name": "Job Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.1h)"
+  },
+  {
+    "appid": 449800,
+    "name": "Attack on Titan / A.O.T. Wings of Freedom",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (48.8% achievements, 8.6h played)"
+  },
+  {
+    "appid": 450540,
+    "name": "Hot Dogs, Horseshoes & Hand Grenades",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.6h)"
+  },
+  {
+    "appid": 455400,
+    "name": "PAC-MAN 256",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 455910,
+    "name": "STAR WARS\u2122: Rogue Squadron 3D",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 462780,
+    "name": "Darksiders Warmastered Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 476600,
+    "name": "Call of Duty: WWII",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (8.8h)"
+  },
+  {
+    "appid": 476620,
+    "name": "Call of Duty: WWII - Multiplayer",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.5h)"
+  },
+  {
+    "appid": 485510,
+    "name": "Nioh: Complete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 489830,
+    "name": "The Elder Scrolls V: Skyrim Special Edition",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Rule: Achievement completion: 100.0%"
+  },
+  {
+    "appid": 495140,
+    "name": "NARUTO: Ultimate Ninja STORM",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 498240,
+    "name": "Batman - The Telltale Series",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 502500,
+    "name": "ACE COMBAT\u21227: SKIES UNKNOWN",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 502820,
+    "name": "Batman\u2122: Arkham VR",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 524220,
+    "name": "NieR:Automata\u2122",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.1h)"
+  },
+  {
+    "appid": 543870,
+    "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 552520,
+    "name": "Far Cry 5",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (20.1h) but no clear completion signal"
+  },
+  {
+    "appid": 553850,
+    "name": "HELLDIVERS\u2122 2",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 555160,
+    "name": "Pavlov VR",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 570940,
+    "name": "DARK SOULS\u2122: REMASTERED",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 578650,
+    "name": "The Outer Worlds",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 582160,
+    "name": "Assassin's Creed Origins",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (35.1h) but no clear completion signal"
+  },
+  {
+    "appid": 582660,
+    "name": "Black Desert",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 587620,
+    "name": "Okami HD",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 589290,
+    "name": "Holdfast: Nations At War",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 601050,
+    "name": "Attack on Titan 2 - A.O.T.2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 606280,
+    "name": "Darksiders III",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 611670,
+    "name": "The Elder Scrolls V: Skyrim VR",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 612880,
+    "name": "Wolfenstein II: The New Colossus",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 613100,
+    "name": "House Flipper",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.6h)"
+  },
+  {
+    "appid": 614570,
+    "name": "Dishonored\u00ae: Death of the Outsider\u2122 ",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 617830,
+    "name": "SUPERHOT VR",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.3h)"
+  },
+  {
+    "appid": 620980,
+    "name": "Beat Saber",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.2h)"
+  },
+  {
+    "appid": 621060,
+    "name": "PC Building Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.4h)"
+  },
+  {
+    "appid": 627270,
+    "name": "Injustice\u2122 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 629730,
+    "name": "Blade & Sorcery",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (60.6h) but no clear completion signal"
+  },
+  {
+    "appid": 654310,
+    "name": "For Honor - Public Test",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: name matches not-a-game pattern"
+  },
+  {
+    "appid": 729040,
+    "name": "Borderlands GOTY Enhanced",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 731490,
+    "name": "Crash Bandicoot\u2122 N. Sane Trilogy",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 752480,
+    "name": "Sniper Elite VR",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 803330,
+    "name": "Destroy All Humans!",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.7h)"
+  },
+  {
+    "appid": 812140,
+    "name": "Assassin's Creed Odyssey",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (66.7% achievements, 30.9h played)"
+  },
+  {
+    "appid": 814380,
+    "name": "Sekiro\u2122: Shadows Die Twice",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 847370,
+    "name": "Sunset Overdrive",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 895870,
+    "name": "Project Wingman",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 896890,
+    "name": "VR Paradise",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation"
+  },
+  {
+    "appid": 899440,
+    "name": "GOD EATER 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 911400,
+    "name": "Assassin's Creed III Remastered",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 920210,
+    "name": "LEGO\u00ae Star Wars\u2122: The Skywalker Saga",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 939960,
+    "name": "Far Cry New Dawn",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 945360,
+    "name": "Among Us",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 950670,
+    "name": "Gothic Playable Teaser",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: name matches not-a-game pattern"
+  },
+  {
+    "appid": 960910,
+    "name": "Heavy Rain",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 960990,
+    "name": "Beyond: Two Souls",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 961490,
+    "name": "Travis Strikes Again: No More Heroes Complete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 976310,
+    "name": "Mortal Kombat 11",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 976730,
+    "name": "Halo: The Master Chief Collection",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.6h)"
+  },
+  {
+    "appid": 990080,
+    "name": "Hogwarts Legacy",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (51.1% achievements, 36.0h played)"
+  },
+  {
+    "appid": 993090,
+    "name": "Lossless Scaling",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 996580,
+    "name": "Spyro\u2122 Reignited Trilogy",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.1h)"
+  },
+  {
+    "appid": 1017180,
+    "name": "The Long Drive",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: simulation, casual"
+  },
+  {
+    "appid": 1017900,
+    "name": "Age of Empires: Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.8h)"
+  },
+  {
+    "appid": 1020790,
+    "name": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1029690,
+    "name": "Sniper Elite 5",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1030300,
+    "name": "Hollow Knight: Silksong",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1030830,
+    "name": "Mafia II: Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1030840,
+    "name": "Mafia: Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1056960,
+    "name": "Wolfenstein: Youngblood",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1085660,
+    "name": "Destiny 2",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Rule: Achievement completion: 91.3%"
+  },
+  {
+    "appid": 1086940,
+    "name": "Baldur's Gate 3",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.3h)"
+  },
+  {
+    "appid": 1088850,
+    "name": "Marvel's Guardians of the Galaxy",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1091500,
+    "name": "Cyberpunk 2077",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Manual override"
+  },
+  {
+    "appid": 1113000,
+    "name": "Persona 4 Golden",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1133320,
+    "name": "Westworld Awakening",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1151340,
+    "name": "Fallout 76",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 1151640,
+    "name": "Horizon Zero Dawn\u2122 Complete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1158310,
+    "name": "Crusader Kings III",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (2.9h)"
+  },
+  {
+    "appid": 1167630,
+    "name": "Teardown",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (12.9h)"
+  },
+  {
+    "appid": 1172380,
+    "name": "STAR WARS Jedi: Fallen Order\u2122 ",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (51.3% achievements, 25.4h played)"
+  },
+  {
+    "appid": 1172620,
+    "name": "Sea of Thieves",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 1172710,
+    "name": "Dune: Awakening",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1174180,
+    "name": "Red Dead Redemption 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (60.1h) but no clear completion signal"
+  },
+  {
+    "appid": 1190460,
+    "name": "DEATH STRANDING",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1222140,
+    "name": "Detroit: Become Human",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1222690,
+    "name": "Dragon Age\u2122 Inquisition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1222730,
+    "name": "STAR WARS\u2122: Squadrons",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (2.6h) but no clear completion signal"
+  },
+  {
+    "appid": 1237320,
+    "name": "Sonic Frontiers",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1237950,
+    "name": "STAR WARS\u2122 Battlefront\u2122 II",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1237970,
+    "name": "Titanfall\u00ae 2",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1238040,
+    "name": "Dragon Age II: Ultimate Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1245620,
+    "name": "ELDEN RING",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1259420,
+    "name": "Days Gone",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1261040,
+    "name": "Streamer Life Simulator",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1266700,
+    "name": "Destroy All Humans! 2 - Reprobed",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1267910,
+    "name": "Melvor Idle",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1282690,
+    "name": "Crysis\u00ae 3 ",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1294760,
+    "name": "Hard Bullet",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (25.9h) but no clear completion signal"
+  },
+  {
+    "appid": 1328670,
+    "name": "Mass Effect\u2122 Legendary Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1343400,
+    "name": "RuneScape",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.5h) but no clear completion signal"
+  },
+  {
+    "appid": 1350650,
+    "name": "FreshWomen - Season 1",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1446650,
+    "name": "BRAVELY DEFAULT II",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1449690,
+    "name": "The Walking Dead: The Telltale Definitive Series",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1466860,
+    "name": "Age of Empires IV: Anniversary Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1468720,
+    "name": "Ultimate Epic Battle Simulator 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.9h) but no clear completion signal"
+  },
+  {
+    "appid": 1517290,
+    "name": "Battlefield\u2122 2042",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1522160,
+    "name": "Disney Epic Mickey: Rebrushed",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1546970,
+    "name": "Grand Theft Auto III - The Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1546990,
+    "name": "Grand Theft Auto: Vice City - The Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.9h) but no clear completion signal"
+  },
+  {
+    "appid": 1547000,
+    "name": "Grand Theft Auto: San Andreas - The Definitive Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1551360,
+    "name": "Forza Horizon 5",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (2.5h) but no clear completion signal"
+  },
+  {
+    "appid": 1583230,
+    "name": "High On Life",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1593500,
+    "name": "God of War",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1599660,
+    "name": "Sackboy\u2122: A Big Adventure",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1601570,
+    "name": "The Alters",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1659420,
+    "name": "UNCHARTED\u2122: Legacy of Thieves Collection",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1689620,
+    "name": "BLEACH Rebirth of Souls",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1693980,
+    "name": "Dead Space",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1716740,
+    "name": "Starfield",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1771300,
+    "name": "Kingdom Come: Deliverance II",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1774580,
+    "name": "STAR WARS Jedi: Survivor\u2122",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (43.4% achievements, 28.4h played)"
+  },
+  {
+    "appid": 1817070,
+    "name": "Marvel\u2019s Spider-Man Remastered",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.9h)"
+  },
+  {
+    "appid": 1817190,
+    "name": "Marvel's Spider-Man: Miles Morales",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (40.0% achievements, 8.8h played)"
+  },
+  {
+    "appid": 1836200,
+    "name": "Fallout 76 Public Test Server",
+    "category": "NOT_A_GAME",
+    "confidence": "HIGH",
+    "reason": "Rule: name matches not-a-game pattern"
+  },
+  {
+    "appid": 1850570,
+    "name": "DEATH STRANDING DIRECTOR'S CUT",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1888930,
+    "name": "The Last of Us\u2122 Part I",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 1895880,
+    "name": "Ratchet & Clank: Rift Apart",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1903340,
+    "name": "Clair Obscur: Expedition 33",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (1.3h) but no clear completion signal"
+  },
+  {
+    "appid": 1920490,
+    "name": "The Outer Worlds: Spacer's Choice Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1937780,
+    "name": "Total War: PHARAOH",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1938090,
+    "name": "Call of Duty\u00ae",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (23.4h) but no clear completion signal"
+  },
+  {
+    "appid": 1941540,
+    "name": "Mafia: The Old Country",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 1968340,
+    "name": "Project Gunship",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (0.1h) but no clear completion signal"
+  },
+  {
+    "appid": 1971870,
+    "name": "Mortal Kombat 1",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 2050650,
+    "name": "Resident Evil 4",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2208920,
+    "name": "Assassin's Creed Valhalla",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Manual override"
+  },
+  {
+    "appid": 2215430,
+    "name": "Ghost of Tsushima DIRECTOR'S CUT",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Played (24.1h) but no clear completion signal"
+  },
+  {
+    "appid": 2322010,
+    "name": "God of War Ragnar\u00f6k",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2358720,
+    "name": "Black Myth: Wukong",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2362420,
+    "name": "Mass Effect 2 (2010) Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2369390,
+    "name": "Far Cry 6",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.1h)"
+  },
+  {
+    "appid": 2420110,
+    "name": "Horizon Forbidden West\u2122 Complete Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2440510,
+    "name": "Forza Motorsport",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: racing"
+  },
+  {
+    "appid": 2523720,
+    "name": "Gears of War: Reloaded",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2544090,
+    "name": "Milfy City - Final Edition",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (11.6h)"
+  },
+  {
+    "appid": 2552430,
+    "name": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2552440,
+    "name": "KINGDOM HEARTS HD 2.8 Final Chapter Prologue",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2552450,
+    "name": "KINGDOM HEARTS III + Re Mind (DLC)",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2561580,
+    "name": "Horizon Zero Dawn\u2122 Remastered",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2623190,
+    "name": "The Elder Scrolls IV: Oblivion Remastered",
+    "category": "COMPLETED",
+    "confidence": "HIGH",
+    "reason": "Rule: Achievement completion: 100.0%"
+  },
+  {
+    "appid": 2635410,
+    "name": "Holdfast: Nations At War - Testing Branch",
+    "category": "IN_PROGRESS",
+    "confidence": "MEDIUM",
+    "reason": "Rule: No classification signals \u2014 defaulted to In Progress"
+  },
+  {
+    "appid": 2651280,
+    "name": "Marvel's Spider-Man 2",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2668510,
+    "name": "Red Dead Redemption",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2677660,
+    "name": "Indiana Jones and the Great Circle",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2807960,
+    "name": "Battlefield\u2122 6",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2840770,
+    "name": "Avatar: Frontiers of Pandora",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2842040,
+    "name": "Star Wars Outlaws",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 2878600,
+    "name": "Harry Potter: Quidditch Champions",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: sports"
+  },
+  {
+    "appid": 2950340,
+    "name": "LEGO\u00ae Harry Potter\u2122 Collection",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: casual"
+  },
+  {
+    "appid": 2951630,
+    "name": "Total War: PHARAOH DYNASTIES",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Genre: strategy"
+  },
+  {
+    "appid": 3035570,
+    "name": "Assassin's Creed Mirage",
+    "category": "COMPLETED",
+    "confidence": "MEDIUM",
+    "reason": "Rule: Likely completed (65.6% achievements, 21.8h played)"
+  },
+  {
+    "appid": 3159330,
+    "name": "Assassin's Creed Shadows",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.1h)"
+  },
+  {
+    "appid": 3240220,
+    "name": "Grand Theft Auto V Enhanced",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (0.4h)"
+  },
+  {
+    "appid": 3241660,
+    "name": "R.E.P.O.",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (3.5h)"
+  },
+  {
+    "appid": 3400930,
+    "name": "Guilty as Sock!",
+    "category": "ENDLESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Multiplayer-only (no single-player)"
+  },
+  {
+    "appid": 3527290,
+    "name": "PEAK",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Single-player with low playtime (1.4h)"
+  },
+  {
+    "appid": 3764200,
+    "name": "Resident Evil Requiem",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  },
+  {
+    "appid": 3837340,
+    "name": "FINAL FANTASY VII",
+    "category": "IN_PROGRESS",
+    "confidence": "HIGH",
+    "reason": "Rule: Unplayed single-player game (backlog)"
+  }
+]

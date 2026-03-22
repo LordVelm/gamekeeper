@@ -1,9 +1,15 @@
+# Python
 .config/
 .cache/
 __pycache__/
 venv/
-dist/
-build/
 *.spec
 *.pyc
 steam_library_organized.json
+
+# Node / Tauri
+node_modules/
+dist/
+build/
+app/src-tauri/target/
+package-lock.json
