@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { open } from "@tauri-apps/plugin-shell";
 import { saveConfig, checkConfig } from "../lib/commands";
 
 interface Props {
@@ -43,8 +44,37 @@ export default function SetupScreen({ onComplete, error, hasExistingConfig }: Pr
             Gamekeeper
           </h1>
           <p className="text-steam-text-dim">
-            Automatically organize your Steam library into collections.
+            Your personal Steam library manager.
           </p>
+        </div>
+
+        <div className="mb-6 p-4 rounded-lg bg-steam-surface border border-steam-border">
+          <h3 className="text-sm font-medium text-white mb-2">Getting started</h3>
+          <ol className="text-xs text-steam-text-dim space-y-2 list-decimal list-inside">
+            <li>
+              Get a free Steam Web API Key at{" "}
+              <button
+                type="button"
+                onClick={() => open("https://steamcommunity.com/dev/apikey")}
+                className="text-steam-blue hover:underline"
+              >
+                steamcommunity.com/dev/apikey
+              </button>
+              {" "}(requires a Steam account)
+            </li>
+            <li>
+              Find your Steam ID at{" "}
+              <button
+                type="button"
+                onClick={() => open("https://steamid.io")}
+                className="text-steam-blue hover:underline"
+              >
+                steamid.io
+              </button>
+              {" "}— copy the <span className="text-steam-text">steamID64</span> (17-digit number)
+            </li>
+            <li>Paste both below and click Save &amp; Sync</li>
+          </ol>
         </div>
 
         {hasExistingConfig && (
@@ -70,9 +100,13 @@ export default function SetupScreen({ onComplete, error, hasExistingConfig }: Pr
             />
             <p className="text-xs text-steam-text-dim mt-1">
               Get one free at{" "}
-              <span className="text-steam-blue">
+              <button
+                type="button"
+                onClick={() => open("https://steamcommunity.com/dev/apikey")}
+                className="text-steam-blue hover:underline"
+              >
                 steamcommunity.com/dev/apikey
-              </span>
+              </button>
             </p>
           </div>
 
