@@ -1,11 +1,13 @@
-# Steam Backlog Organizer
+# Gamekeeper
+
+Your personal Steam library manager.
 
 Automatically categorizes your Steam game library into four collections:
 
-- **Completed** - Games you've finished the main story/campaign
-- **In Progress / Backlog** - Completable games you haven't finished yet
-- **Endless** - Games with no real ending (multiplayer, sandbox, strategy, etc.)
-- **Not a Game** - Demos, tools, utilities, soundtracks, etc.
+- **Completed** — Games you've finished the main story/campaign
+- **In Progress / Backlog** — Completable games you haven't finished yet
+- **Endless** — Games with no real ending (multiplayer, sandbox, strategy, etc.)
+- **Not a Game** — Demos, tools, utilities, soundtracks, etc.
 
 Results are written directly to your Steam library as collections (synced across machines) and optionally exported as JSON.
 
@@ -25,7 +27,7 @@ No external AI or paid APIs needed beyond the free Steam Web API key.
 - Windows 10/11 (macOS/Linux support planned)
 - A [Steam Web API key](https://steamcommunity.com/dev/apikey) (free)
 - Your Steam profile's game details set to **Public**
-- Optional: ~2 GB disk space for local AI features (auto-downloaded on first use)
+- Optional: ~5 GB disk space for local AI features (auto-downloaded on first use)
 
 ## Installation
 
@@ -34,65 +36,59 @@ Download the latest installer from [Releases](https://github.com/LordVelm/steam-
 Or build from source:
 
 ```bash
-cd steam-backlog-organizer
-npm install
 cd app
+npm install
 npx tauri build
 ```
 
 ## Features
 
-- **Modern desktop app** — Built with Tauri + React, dark Steam-inspired theme
+- **Modern desktop app** — Built with Tauri + React + TypeScript, dark Steam-inspired theme
 - **No paid APIs** — Fully rule-based classification using Steam's own data
 - **Saved classifications** — Results persist between runs. Only new games get classified
 - **Manual overrides** — Fix any game the rules got wrong. Overrides always take priority
 - **Cloud sync** — Collections sync across machines via Steam Cloud
 - **Caching** — Library and store data cached locally to avoid redundant API calls
-- **"What should I play next?"** — Chat panel with game recommendations (deterministic fallback or local AI)
+- **"What should I play next?"** — Conversational AI chat panel with personalized game recommendations
 - **AI ambiguity assistant** — For uncertain classifications, ask AI for a second opinion
-- **Export** — Download your classifications as JSON for debugging or sharing
+- **Vanity URL support** — Enter your Steam ID or custom profile URL name
+- **Export** — Download your classifications as JSON
 
 ## Optional: Local AI
 
-The app bundles a local AI engine for smarter game recommendations and classification second opinions. On first use, it downloads a small model (~2 GB) — no external software needed.
+The app bundles a local AI engine (Qwen2.5-7B) for smarter game recommendations and classification second opinions. On first use, it downloads the model (~3.5 GB) — no external software needed.
 
 To set up: **Settings > AI Assistant > Download AI Model**
 
 The AI is used for:
-- **Game recommendations** — "What should I play next?" chat
+- **Game recommendations** — "What should I play next?" conversational chat
 - **Ambiguity resolution** — Second opinions on uncertain classifications
 
-The AI is **never** used for core classification — rules stay canonical. GPU acceleration is automatic if you have an NVIDIA GPU.
+The AI is **never** used for core classification — rules stay canonical. GPU acceleration is automatic if you have an NVIDIA GPU with CUDA support; CPU fallback is fully functional.
+
+## System Requirements
+
+| | Minimum (without AI) | Recommended (with AI) |
+|---|---|---|
+| OS | Windows 10 64-bit | Windows 10/11 64-bit |
+| RAM | 4 GB | 8 GB (16 GB for best performance) |
+| Storage | 100 MB | 5 GB free |
+| GPU | Not required | NVIDIA GPU with 4+ GB VRAM (optional) |
+| Network | Internet for Steam API sync | Internet for Steam API sync |
 
 ## Important Notes
 
 - **Steam must be closed** when writing collections
-- **API keys are stored locally** in `%APPDATA%/SteamBacklogOrganizer/config/settings.json`
+- **API keys are stored locally** in `%APPDATA%/Gamekeeper/config/settings.json`
 - **All data stays on your machine** — no cloud services, no telemetry
 
-## Development Log
+## Development
 
-### v0.1 — Initial release
-- AI-only classification using Claude API
+Built with Tauri v2 + React 19 + TypeScript + Rust. See [`CLAUDE.md`](./CLAUDE.md) for architecture details.
 
-### v1.0 — Hybrid rewrite
-- Rule-based engine for most games, AI for ambiguous remainder
+## License
 
-### v2.0 — Pure rules
-- Removed AI dependency entirely, expanded to 14 rules, CustomTkinter GUI
-
-### v3.0 — Full rebuild (current)
-- **Complete rewrite** — Tauri v2 + React 19 + Rust backend
-- **Single binary** — No Python runtime needed
-- **Modern UI** — Dark Steam-themed design with card grid, animations, search/filter
-- **Rust classifier** — All 14 rules ported with 100% parity against Python (verified with 569-game test suite)
-- **Optional local AI** — Bundled llama-server with auto-download, GPU acceleration, no external dependency
-- **Chat panel** — "What should I play next?" with retrieve-then-rank
-- **Settings** — Steam config, AI setup + GPU toggle, JSON export, all in one panel
-
-## Architecture
-
-See [`CLAUDE.md`](./CLAUDE.md) for architecture details, build plan, and parity testing strategy.
+[MIT](./LICENSE) — Created by [LordVelm](https://github.com/LordVelm)
 
 ## Feedback & Support
 
