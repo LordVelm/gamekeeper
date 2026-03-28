@@ -23,6 +23,8 @@ struct AppState {
     overrides: Mutex<HashMap<String, String>>,
     hltb_cache: Mutex<HashMap<String, hltb::HltbEntry>>,
     sync_cancelled: Arc<AtomicBool>,
+    hltb_cancelled: Arc<AtomicBool>,
+    hltb_fetching: Arc<AtomicBool>,
 }
 
 // -- Tauri commands --
@@ -860,9 +862,19 @@ async fn fetch_hltb_data(
     state: State<'_, AppState>,
     app: tauri::AppHandle,
 ) -> Result<(), String> {
+    // Prevent concurrent HLTB fetches
+    if state.hltb_fetching.load(Ordering::SeqCst) {
+        return Ok(());
+    }
+
     let classifications = state.classifications.lock().map_err(|e| e.to_string())?.clone();
     let existing_cache = state.hltb_cache.lock().map_err(|e| e.to_string())?.clone();
-    let cancel = state.sync_cancelled.clone();
+    let cancel = state.hltb_cancelled.clone();
+    let fetching = state.hltb_fetching.clone();
+
+    // Reset cancel flag for new fetch
+    cancel.store(false, Ordering::SeqCst);
+    fetching.store(true, Ordering::SeqCst);
 
     // Build game list with categories for priority sorting
     let games: Vec<(u64, String, String)> = classifications
@@ -876,16 +888,17 @@ async fn fetch_hltb_data(
     tokio::spawn(async move {
         match hltb::fetch_hltb_batch(games, existing_cache, app_handle.clone(), cancel).await {
             Ok(new_cache) => {
-                // Update in-memory state
-                let app_state = app_handle.state::<AppState>();
-                let mut guard = app_state.hltb_cache.lock().unwrap();
-                *guard = new_cache;
-                drop(guard);
+                let app_state: tauri::State<AppState> = app_handle.state();
+                match app_state.hltb_cache.lock() {
+                    Ok(mut guard) => { *guard = new_cache; }
+                    Err(e) => eprintln!("[HLTB] Failed to update cache: {e}"),
+                };
             }
             Err(e) => {
                 eprintln!("HLTB fetch error: {e}");
             }
         }
+        fetching.store(false, Ordering::SeqCst);
     });
 
     Ok(())
@@ -918,6 +931,8 @@ pub fn run() {
             overrides: Mutex::new(overrides),
             hltb_cache: Mutex::new(hltb_cache),
             sync_cancelled: Arc::new(AtomicBool::new(false)),
+            hltb_cancelled: Arc::new(AtomicBool::new(false)),
+            hltb_fetching: Arc::new(AtomicBool::new(false)),
         })
         .manage(LlmState {
             server_process: Mutex::new(None),
@@ -967,10 +982,11 @@ pub fn run() {
             llm::stop_server(&llm_state);
             // Save HLTB cache on exit
             {
-                let app_state = app_handle.state::<AppState>();
-                let cache = app_state.hltb_cache.lock().unwrap();
-                let _ = cache::save_hltb_cache(&cache);
-                drop(cache);
+                let app_state: tauri::State<AppState> = app_handle.state();
+                match app_state.hltb_cache.lock() {
+                    Ok(cache) => { let _ = cache::save_hltb_cache(&cache); }
+                    Err(_) => eprintln!("[HLTB] Could not save cache on exit (mutex poisoned)"),
+                };
             }
         }
     });

@@ -120,7 +120,7 @@ export default function GameGrid({ games, hltbCache, hltbFetching, hltbProgress,
                 onChange={(e) => {
                   setMaxHoursInput(e.target.value);
                   const val = Number(e.target.value);
-                  if (!isNaN(val) && val > 0) setMaxHours(val);
+                  if (!isNaN(val) && isFinite(val) && val > 0) setMaxHours(val);
                 }}
                 onBlur={() => setMaxHoursInput(String(maxHours))}
                 className="w-12 px-1 py-0.5 rounded bg-steam-surface border border-steam-border text-steam-blue text-xs text-center font-semibold"

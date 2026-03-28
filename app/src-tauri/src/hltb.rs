@@ -50,8 +50,8 @@ pub fn normalize_title(title: &str) -> String {
         " - digital edition",
     ];
     for suffix in &suffixes {
-        if let Some(pos) = s.find(suffix) {
-            s.truncate(pos);
+        if s.ends_with(suffix) {
+            s.truncate(s.len() - suffix.len());
         }
     }
     // Normalize whitespace
@@ -428,7 +428,9 @@ pub async fn fetch_hltb_batch(
             backoff = BACKOFF_INITIAL;
 
             // Save cache after every successful fetch
-            let _ = cache::save_hltb_cache(&cache);
+            if let Err(e) = cache::save_hltb_cache(&cache) {
+                eprintln!("[HLTB] Cache save error: {e}");
+            }
         }
 
         // Rate limit delay
