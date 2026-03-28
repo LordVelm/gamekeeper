@@ -7,8 +7,8 @@ use futures_util::StreamExt;
 use serde::{Deserialize, Serialize};
 use tauri::{AppHandle, Emitter, Manager};
 
-const MODEL_URL: &str = "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-Q8_0.gguf";
-const MODEL_FILENAME: &str = "Qwen3.5-9B-Q8_0.gguf";
+const MODEL_URL: &str = "https://huggingface.co/bartowski/Qwen2.5-14B-Instruct-GGUF/resolve/main/Qwen2.5-14B-Instruct-Q8_0.gguf";
+const MODEL_FILENAME: &str = "Qwen2.5-14B-Instruct-Q8_0.gguf";
 pub const LLAMA_SERVER_PORT: u16 = 39282; // Different port from debt planner (39281)
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -38,75 +38,6 @@ pub struct GpuStatus {
     pub gpu_detected: bool,
     pub cuda_build: bool,
     pub using_gpu: bool,
-}
-
-/// Strip `<think>...</think>` blocks that Qwen3.x models may emit.
-fn strip_think_tags(text: &str) -> String {
-    let mut result = text.to_string();
-    while let Some(start) = result.find("<think>") {
-        if let Some(end) = result.find("</think>") {
-            result = format!("{}{}", &result[..start], &result[end + 8..]);
-        } else {
-            // Unclosed <think> tag — strip from <think> to end
-            result = result[..start].to_string();
-            break;
-        }
-    }
-    result.trim().to_string()
-}
-
-/// Extract a JSON response from reasoning_content when the model puts its answer there.
-/// Scans for the last JSON object containing "message" or "picks" keys.
-fn extract_json_from_reasoning(reasoning: &str) -> String {
-    // Look for JSON objects in the reasoning text, starting from the end
-    // (the final answer is usually at the end of the reasoning)
-    let mut best_json = String::new();
-
-    for (i, _) in reasoning.match_indices('{') {
-        let candidate = &reasoning[i..];
-        // Try to find matching closing brace using depth tracking
-        let mut depth = 0;
-        let mut in_string = false;
-        let mut escape_next = false;
-        let mut end_idx = None;
-        for (j, ch) in candidate.char_indices() {
-            if escape_next {
-                escape_next = false;
-                continue;
-            }
-            if ch == '\\' && in_string {
-                escape_next = true;
-                continue;
-            }
-            if ch == '"' {
-                in_string = !in_string;
-                continue;
-            }
-            if in_string {
-                continue;
-            }
-            if ch == '{' {
-                depth += 1;
-            } else if ch == '}' {
-                depth -= 1;
-                if depth == 0 {
-                    end_idx = Some(j + 1);
-                    break;
-                }
-            }
-        }
-        if let Some(end) = end_idx {
-            let json_str = &candidate[..end];
-            // Check if this looks like our expected response format
-            if (json_str.contains("\"message\"") || json_str.contains("\"picks\""))
-                && serde_json::from_str::<serde_json::Value>(json_str).is_ok()
-            {
-                best_json = json_str.to_string();
-            }
-        }
-    }
-
-    best_json
 }
 
 /// Game recommendation from the LLM.
@@ -441,7 +372,6 @@ pub fn start_server(data_dir: &Path, state: &LlmState) -> Result<(), String> {
         .arg("--ctx-size")
         .arg("16384")
         .arg("--cont-batching")
-        .arg("--jinja")
         .stdout(Stdio::null())
         .stderr(Stdio::null());
 
@@ -579,7 +509,6 @@ async fn run_inference_chat(
         "model": "local",
         "messages": messages,
         "temperature": 0.8,
-        "enable_thinking": false,
         "response_format": {"type": "json_object"}
     });
 
@@ -616,25 +545,16 @@ async fn run_inference_chat(
         return Err(format!("AI server error: {}", err));
     }
 
-    let message = &response["choices"][0]["message"];
-
-    // Primary: use "content" field
-    let content = message["content"].as_str().unwrap_or("").to_string();
-
-    // Fallback: if content is empty but reasoning_content has data (Qwen3.x thinking mode),
-    // look for JSON in the reasoning output
-    let raw = if content.is_empty() {
-        let reasoning = message["reasoning_content"].as_str().unwrap_or("");
-        extract_json_from_reasoning(reasoning)
-    } else {
-        content
-    };
+    let raw = response["choices"][0]["message"]["content"]
+        .as_str()
+        .unwrap_or("")
+        .to_string();
 
     if raw.is_empty() {
         return Err("AI returned empty response. Try again.".to_string());
     }
 
-    let cleaned = strip_think_tags(&raw)
+    let cleaned = raw
         .trim()
         .trim_start_matches("```json")
         .trim_start_matches("```")
@@ -663,7 +583,6 @@ async fn run_inference_raw(prompt: &str) -> Result<String, String> {
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.1,
-        "enable_thinking": false,
         "response_format": {"type": "json_object"}
     });
 
@@ -700,22 +619,16 @@ async fn run_inference_raw(prompt: &str) -> Result<String, String> {
         return Err(format!("AI server error: {}", err));
     }
 
-    let message = &response["choices"][0]["message"];
-    let content = message["content"].as_str().unwrap_or("").to_string();
-
-    let raw = if content.is_empty() {
-        let reasoning = message["reasoning_content"].as_str().unwrap_or("");
-        extract_json_from_reasoning(reasoning)
-    } else {
-        content
-    };
+    let raw = response["choices"][0]["message"]["content"]
+        .as_str()
+        .unwrap_or("")
+        .to_string();
 
     if raw.is_empty() {
         return Err("AI returned empty response. Try again.".to_string());
     }
 
-    // Clean thinking tags and markdown code blocks if present
-    let cleaned = strip_think_tags(&raw)
+    let cleaned = raw
         .trim()
         .trim_start_matches("```json")
         .trim_start_matches("```")

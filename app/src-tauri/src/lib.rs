@@ -592,9 +592,10 @@ fn build_candidate_summaries(
     games: &[steam_api::OwnedGame],
     store_cache: &HashMap<String, steam_api::StoreDetails>,
     hltb_cache: &HashMap<String, hltb::HltbEntry>,
+    max_candidates: usize,
 ) -> Vec<serde_json::Value> {
     let mut summaries = Vec::new();
-    for c in candidates.iter().take(40) {
+    for c in candidates.iter().take(max_candidates) {
         let playtime = games
             .iter()
             .find(|g| g.appid == c.appid)
@@ -657,8 +658,9 @@ async fn get_recommendations(
         });
     }
 
-    // Build a compact profile of candidates (max 40 for LLM context)
-    let candidate_summaries = build_candidate_summaries(&candidates, &games, &store_cache, &hltb_cache);
+    // Fewer candidates on follow-ups to reduce prompt size and speed up inference
+    let max_candidates = if request.history.is_empty() { 40 } else { 15 };
+    let candidate_summaries = build_candidate_summaries(&candidates, &games, &store_cache, &hltb_cache, max_candidates);
 
     // Step 2: Check if AI is set up
     let data_dir = llm::get_data_dir(&app);
