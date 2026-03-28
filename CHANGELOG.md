@@ -13,7 +13,8 @@ All notable changes to Gamekeeper will be documented in this file.
 - Filter settings persist across app restarts
 
 ### Changed
-- AI model upgraded to Qwen3.5-9B Q8_0 (~9.5 GB) for better chat quality and thinking mode support
+- AI model upgraded to Qwen2.5-14B-Instruct Q8_0 (~16 GB) for faster inference and higher quality responses
+- Follow-up messages in AI chat use a trimmed candidate list (15 instead of 40) for snappier responses
 - Settings panel now includes Completion Times section with HLTB attribution and explanation
 
 ### Fixed

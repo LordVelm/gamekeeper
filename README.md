@@ -1,37 +1,65 @@
-# Gamekeeper
+<p align="center">
+  <img src="app/src-tauri/icons/icon.png" width="128" alt="Gamekeeper icon" />
+</p>
 
-Your personal Steam library manager.
+<h1 align="center">Gamekeeper</h1>
 
-Automatically categorizes your Steam game library into four collections:
+<p align="center">
+  <strong>Got 500+ Steam games and no idea what to play?</strong><br/>
+  Gamekeeper organizes your library, shows how long each game takes, and recommends what to play next.
+</p>
 
-- **Completed** — Games you've finished the main story/campaign
-- **In Progress / Backlog** — Completable games you haven't finished yet
-- **Endless** — Games with no real ending (multiplayer, sandbox, strategy, etc.)
-- **Not a Game** — Demos, tools, utilities, soundtracks, etc.
+<p align="center">
+  <a href="https://github.com/LordVelm/gamekeeper/releases/latest"><img src="https://img.shields.io/github/v/release/LordVelm/gamekeeper?style=flat-square&color=66c0f4" alt="Latest Release" /></a>
+  <a href="https://github.com/LordVelm/gamekeeper/blob/master/LICENSE"><img src="https://img.shields.io/github/license/LordVelm/gamekeeper?style=flat-square" alt="License" /></a>
+  <img src="https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square" alt="Windows" />
+</p>
 
-Results are written directly to your Steam library as collections (synced across machines) and optionally exported as JSON.
+---
 
-## How It Works
+<!-- TODO: Add 2-3 screenshots here
+![Game library grid](docs/screenshots/grid.png)
+![Game detail with HLTB](docs/screenshots/detail.png)
+![AI chat](docs/screenshots/chat.png)
+-->
 
-Classification uses **rule-based logic** that analyzes your Steam data:
+## What It Does
 
-- **Steam Store data** — Game type (demo, tool, DLC), genres, categories (single-player, multiplayer)
-- **Achievement data** — Story-completion achievement names, achievement percentage
-- **Playtime** — Hours played relative to game type
-- **14 priority rules** — Deterministic, auditable, no black boxes
+Gamekeeper automatically sorts every game in your Steam library into four collections:
 
-No external AI or paid APIs needed beyond the free Steam Web API key.
+| Collection | What goes here |
+|---|---|
+| **Completed** | Games you've finished the main story |
+| **In Progress** | Completable games you haven't finished yet |
+| **Endless** | Multiplayer, sandbox, strategy... games with no real ending |
+| **Not a Game** | Demos, tools, soundtracks, servers |
 
-## Requirements
+Collections sync across machines via Steam Cloud. No manual sorting required.
 
-- Windows 10/11 (macOS/Linux support planned)
-- A [Steam Web API key](https://steamcommunity.com/dev/apikey) (free)
-- Your Steam profile's game details set to **Public**
-- Optional: ~5 GB disk space for local AI features (auto-downloaded on first use)
+**How?** 14 deterministic rules analyze your Steam data (store info, achievements, playtime). No paid APIs, no black boxes. Just your free Steam Web API key.
 
-## Installation
+## Features
 
-Download the latest installer from [Releases](https://github.com/LordVelm/steam-backlog-organizer/releases).
+**Organize**
+- Automatic classification with 14 priority rules
+- Manual overrides when you disagree (overrides always win)
+- Results persist between runs. Only new games get re-classified
+
+**Discover**
+- **HowLongToBeat integration** — Completion time estimates for every game, fetched automatically
+- **"Short games" filter** — Slider to find games that fit the time you have tonight
+- **"What should I play next?"** — AI chat that knows your library, playtime, and how long each game takes
+- **Time-aware recommendations** — Ask "I have 2 hours" and it picks games that actually fit
+
+**Built right**
+- Dark Steam-inspired theme
+- All data stays on your machine. No cloud services, no telemetry
+- Cached locally so subsequent launches are instant
+- Tested on a 571-game library
+
+## Download
+
+**[Download the latest release](https://github.com/LordVelm/gamekeeper/releases/latest)** (Windows installer)
 
 Or build from source:
 
@@ -41,32 +69,19 @@ npm install
 npx tauri build
 ```
 
-## Features
-
-- **Modern desktop app** — Built with Tauri + React + TypeScript, dark Steam-inspired theme
-- **No paid APIs** — Fully rule-based classification using Steam's own data
-- **Saved classifications** — Results persist between runs. Only new games get classified
-- **Manual overrides** — Fix any game the rules got wrong. Overrides always take priority
-- **Cloud sync** — Collections sync across machines via Steam Cloud
-- **Caching** — Library and store data cached locally to avoid redundant API calls
-- **HowLongToBeat integration** — Completion time estimates for every game in your library, fetched automatically
-- **"Short games" filter** — Find games that fit your schedule with adjustable max hours slider
-- **"What should I play next?"** — Conversational AI chat panel with personalized, time-aware game recommendations
-- **AI ambiguity assistant** — For uncertain classifications, ask AI for a second opinion
-- **Vanity URL support** — Enter your Steam ID or custom profile URL name
-- **Export** — Download your classifications as JSON
+You'll need a free [Steam Web API key](https://steamcommunity.com/dev/apikey) and your Steam profile's game details set to **Public**.
 
 ## Optional: Local AI
 
-The app bundles a local AI engine (Qwen3.5-9B) for smarter game recommendations and classification second opinions. On first use, it downloads the model (~9.5 GB) — no external software needed.
+Gamekeeper bundles a local AI engine (Qwen2.5-14B-Instruct) for game recommendations and classification second opinions. On first use, it downloads the model (~16 GB). No external software, no API keys, no subscriptions.
 
-To set up: **Settings > AI Assistant > Download AI Model**
+The AI powers:
+- **"What should I play next?"** — Conversational chat grounded in your actual library data
+- **Ambiguity assistant** — Second opinions on games the rules aren't sure about
 
-The AI is used for:
-- **Game recommendations** — "What should I play next?" conversational chat
-- **Ambiguity resolution** — Second opinions on uncertain classifications
+The AI is never used for core classification. Rules stay canonical. GPU acceleration is automatic with NVIDIA CUDA. CPU fallback works too (just slower).
 
-The AI is **never** used for core classification — rules stay canonical. GPU acceleration is automatic if you have an NVIDIA GPU with CUDA support; CPU fallback is fully functional.
+**To set up:** Settings > AI Assistant > Download AI Model
 
 ## System Requirements
 
@@ -74,27 +89,27 @@ The AI is **never** used for core classification — rules stay canonical. GPU a
 |---|---|---|
 | OS | Windows 10 64-bit | Windows 10/11 64-bit |
 | RAM | 4 GB | 16 GB |
-| Storage | 100 MB | 12 GB free |
-| GPU | Not required | NVIDIA GPU with 12+ GB VRAM (optional) |
-| Network | Internet for Steam API sync | Internet for Steam API sync |
+| Storage | 100 MB | 18 GB free |
+| GPU | Not required | NVIDIA GPU with 16+ GB VRAM (optional) |
 
-## Important Notes
+## Good to Know
 
-- **First sync takes time** — Steam's API is rate-limited, so fetching achievements, store details, and completion times for a large library (500+ games) can take 10–15 minutes. This is a one-time process — subsequent launches use cached data and only fetch new games.
-- **Completion time data** — Provided by [HowLongToBeat](https://howlongtobeat.com/) (community-sourced, unofficial integration). Data is cached locally and refreshed after each sync.
-- **Steam must be closed** when writing collections
-- **API keys are stored locally** in `%APPDATA%/Gamekeeper/config/settings.json`
-- **All data stays on your machine** — no cloud services, no telemetry
+- **First sync takes 10-15 minutes** for large libraries (500+ games) due to Steam API rate limits. After that, launches use cached data and only fetch new games.
+- **Completion times** are from [HowLongToBeat](https://howlongtobeat.com/) (community-sourced, unofficial). Cached locally and refreshed on each sync.
+- **Steam must be closed** when writing collections.
+- **All data is local** — API keys in `%APPDATA%/Gamekeeper/config/settings.json`, game data in `%APPDATA%/Gamekeeper/cache/`.
 
-## Development
+## Built With
 
-Built with Tauri v2 + React 19 + TypeScript + Rust. See [`CLAUDE.md`](./CLAUDE.md) for architecture details.
+[Tauri v2](https://tauri.app/) + [React 19](https://react.dev/) + TypeScript + Rust
+
+See [`CLAUDE.md`](./CLAUDE.md) for architecture details.
 
 ## License
 
 [MIT](./LICENSE) — Created by [LordVelm](https://github.com/LordVelm)
 
-## Feedback & Support
+## Feedback
 
-- **Bug reports & feature requests** — [Open an issue](https://github.com/LordVelm/steam-backlog-organizer/issues)
+- **Bug reports & feature requests** — [Open an issue](https://github.com/LordVelm/gamekeeper/issues)
 - **Support the project** — [Buy Me a Coffee](https://buymeacoffee.com/lordvelm)
