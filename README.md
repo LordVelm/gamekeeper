@@ -17,11 +17,15 @@
 
 ---
 
-<!-- TODO: Add 2-3 screenshots here
-![Game library grid](docs/screenshots/grid.png)
-![Game detail with HLTB](docs/screenshots/detail.png)
-![AI chat](docs/screenshots/chat.png)
--->
+<p align="center">
+  <img src="docs/screenshots/library.png" width="720" alt="Game library with 571 games" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/grid-short-games.png" width="720" alt="Short games filter with HLTB completion times" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/ai-chat.png" width="720" alt="AI chat recommending games based on available time" />
+</p>
 
 ## What It Does
 
