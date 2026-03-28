@@ -7,9 +7,13 @@ import {
   getClassifications,
   onSyncProgress,
   cancelSync,
+  getHltbCache,
+  fetchHltbData,
+  onHltbComplete,
   Classification,
   CategoryKey,
   ConfigStatus,
+  HltbEntry,
   SyncProgress as SyncProgressEvent,
 } from "./lib/commands";
 import TitleBar from "./components/TitleBar";
@@ -54,6 +58,9 @@ export default function App() {
   const [showWriteToSteam, setShowWriteToSteam] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [showChat, setShowChat] = useState(false);
+  const [hltbCache, setHltbCache] = useState<Record<string, HltbEntry>>({});
+  const [hltbFetching, setHltbFetching] = useState(false);
+  const [hltbProgress, setHltbProgress] = useState<{ current: number; total: number } | null>(null);
 
   // Track when each sync step started for ETA calculation
   const stepStartTime = useRef<number>(0);
@@ -61,6 +68,21 @@ export default function App() {
 
   useEffect(() => {
     initialize();
+
+    // Load HLTB cache on startup
+    getHltbCache().then(setHltbCache).catch(() => {});
+
+    const unlistenHltb = onHltbComplete((data) => {
+      setHltbFetching(false);
+      setHltbProgress(null);
+      // Reload cache after fetch completes
+      getHltbCache().then(setHltbCache).catch(() => {});
+    });
+
+    // Refresh HLTB cache periodically during fetch so data appears incrementally
+    const hltbRefreshInterval = setInterval(() => {
+      getHltbCache().then(setHltbCache).catch(() => {});
+    }, 10000); // every 10 seconds
 
     const unlisten = onSyncProgress((p: SyncProgressEvent) => {
       // Reset timer when step changes
@@ -87,10 +109,18 @@ export default function App() {
         total: p.total,
         eta,
       });
+
+      // Track HLTB fetch progress separately for the ready-state banner
+      if (p.step === "Fetching completion times") {
+        setHltbProgress({ current: p.current, total: p.total });
+        setHltbFetching(true);
+      }
     });
 
     return () => {
       unlisten.then((fn) => fn());
+      unlistenHltb.then((fn) => fn());
+      clearInterval(hltbRefreshInterval);
     };
   }, []);
 
@@ -132,6 +162,10 @@ export default function App() {
       setClassifications(results);
 
       setPhase("ready");
+
+      // Start HLTB background fetch after sync
+      setHltbFetching(true);
+      fetchHltbData().catch(() => setHltbFetching(false));
     } catch (e) {
       const msg = String(e);
       if (msg.includes("cancelled")) {
@@ -165,6 +199,10 @@ export default function App() {
       setClassifications(results);
 
       setPhase("ready");
+
+      // Start HLTB background fetch after resync
+      setHltbFetching(true);
+      fetchHltbData().catch(() => setHltbFetching(false));
     } catch (e) {
       const msg = String(e);
       if (msg.includes("cancelled")) {
@@ -278,6 +316,9 @@ export default function App() {
         <main className="flex-1 overflow-hidden">
           <GameGrid
             games={filteredGames}
+            hltbCache={hltbCache}
+            hltbFetching={hltbFetching}
+            hltbProgress={hltbProgress}
             onOverrideChange={async () => {
               const results = await classifyGames();
               setClassifications(results);
