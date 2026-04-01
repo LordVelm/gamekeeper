@@ -209,13 +209,18 @@ This is a dev-only tool — remove before shipping.
 
 ---
 
-## Design DNA (target UI — align with debt planner)
+## Design System
 
-- **Theme:** Dark, “Steam-meets-Netflix” polish (not raw Tk).
-- **Colors (reference):** Background `#171a21`, Surface `#1b2838`, Primary `#66c0f4`; category accents — Completed `#4CAF50`, In Progress `#FFC107`, Endless `#2196F3`.
-- **Layout:** Card-based browsing where possible; responsive grid; avoid unbounded list widgets without virtualization.
-- **Semantics:** Surface **confidence** (if exposed by rules) as **badges**; **reason** strings as **tooltips** or detail drawer.
-- **Framework:** **Tauri + React** (not CustomTkinter for new work).
+Always read DESIGN.md before making any visual or UI decisions.
+All font choices, colors, spacing, and aesthetic direction are defined there.
+Do not deviate without explicit user approval.
+
+- **Aesthetic:** Modern Curator (clean, structured, premium)
+- **Fonts:** Space Grotesk (display), Geist (body), Geist Mono (data)
+- **Accent:** #14b8a6 (teal, distinct from Steam blue and SaveForge amber)
+- **Tailwind prefix:** `steam-` for custom colors (legacy naming), `font-display` / `font-mono` for fonts
+- **Layout:** Card-based browsing, responsive grid, sidebar + content
+- **Framework:** Tauri + React (not CustomTkinter for new work)
 
 ---
 
