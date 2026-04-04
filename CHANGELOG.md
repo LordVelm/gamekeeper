@@ -2,6 +2,13 @@
 
 All notable changes to Gamekeeper will be documented in this file.
 
+## [3.2.1] - 2026-04-04
+
+### Changed
+- New "Modern Curator" design system: teal accent (#14b8a6), Space Grotesk/Geist typography, neutral grays
+- New app icon: teal shield with controller motif (AI-generated with Flux.1 Dev)
+- Updated README with screenshots and repo metadata
+
 ## [3.2.0] - 2026-03-28
 
 ### Added
