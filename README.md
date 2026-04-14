@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="app/src-tauri/icons/icon.png" width="128" alt="Gamekeeper icon" />
+  <img src="app/src-tauri/icons/128x128@2x.png" width="128" alt="Gamekeeper icon" />
 </p>
 
 <h1 align="center">Gamekeeper</h1>
